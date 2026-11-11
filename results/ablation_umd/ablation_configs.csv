@@ -1,0 +1,246 @@
+config,label,budget,category,accuracy_mean,accuracy_std,delta_vs_baseline_mean,delta_vs_baseline_std,gt_coverage_mean
+random+clip,Baseline: Random selection + CLIP rerank,1,contain,0.4750,0.1920,0.0000,0.0000,0.4750
+random+clip,Baseline: Random selection + CLIP rerank,1,cut,0.5200,0.0630,0.0000,0.0000,0.5200
+random+clip,Baseline: Random selection + CLIP rerank,1,grasp,0.3920,0.0335,0.0000,0.0000,0.3920
+random+clip,Baseline: Random selection + CLIP rerank,1,pound,0.4270,0.0781,0.0000,0.0000,0.4270
+random+clip,Baseline: Random selection + CLIP rerank,1,scoop,0.4979,0.0593,0.0000,0.0000,0.4979
+random+clip,Baseline: Random selection + CLIP rerank,1,wgrasp,0.6375,0.1892,0.0000,0.0000,0.6375
+random+clip,Baseline: Random selection + CLIP rerank,1,overall,0.4348,0.0295,0.0000,0.0000,0.4348
+random+clip,Baseline: Random selection + CLIP rerank,2,contain,0.4250,0.1392,0.0000,0.0000,0.8125
+random+clip,Baseline: Random selection + CLIP rerank,2,cut,0.4489,0.0552,0.0000,0.0000,0.8111
+random+clip,Baseline: Random selection + CLIP rerank,2,grasp,0.4492,0.0240,0.0000,0.0000,0.6628
+random+clip,Baseline: Random selection + CLIP rerank,2,pound,0.4027,0.0806,0.0000,0.0000,0.7324
+random+clip,Baseline: Random selection + CLIP rerank,2,scoop,0.5104,0.0398,0.0000,0.0000,0.7896
+random+clip,Baseline: Random selection + CLIP rerank,2,wgrasp,0.4000,0.1658,0.0000,0.0000,0.9375
+random+clip,Baseline: Random selection + CLIP rerank,2,overall,0.4510,0.0176,0.0000,0.0000,0.7171
+random+clip,Baseline: Random selection + CLIP rerank,3,contain,0.4375,0.0839,0.0000,0.0000,1.0000
+random+clip,Baseline: Random selection + CLIP rerank,3,cut,0.3733,0.0871,0.0000,0.0000,0.9578
+random+clip,Baseline: Random selection + CLIP rerank,3,grasp,0.4854,0.0181,0.0000,0.0000,0.8352
+random+clip,Baseline: Random selection + CLIP rerank,3,pound,0.3703,0.0705,0.0000,0.0000,0.8649
+random+clip,Baseline: Random selection + CLIP rerank,3,scoop,0.5187,0.0531,0.0000,0.0000,0.9375
+random+clip,Baseline: Random selection + CLIP rerank,3,wgrasp,0.2875,0.1586,0.0000,0.0000,0.9875
+random+clip,Baseline: Random selection + CLIP rerank,3,overall,0.4574,0.0161,0.0000,0.0000,0.8759
+random+clip,Baseline: Random selection + CLIP rerank,4,contain,0.3875,0.1038,0.0000,0.0000,1.0000
+random+clip,Baseline: Random selection + CLIP rerank,4,cut,0.3844,0.0507,0.0000,0.0000,0.9978
+random+clip,Baseline: Random selection + CLIP rerank,4,grasp,0.5151,0.0270,0.0000,0.0000,0.9372
+random+clip,Baseline: Random selection + CLIP rerank,4,pound,0.3676,0.0439,0.0000,0.0000,0.9703
+random+clip,Baseline: Random selection + CLIP rerank,4,scoop,0.5312,0.0387,0.0000,0.0000,0.9708
+random+clip,Baseline: Random selection + CLIP rerank,4,wgrasp,0.1250,0.1250,0.0000,0.0000,1.0000
+random+clip,Baseline: Random selection + CLIP rerank,4,overall,0.4725,0.0244,0.0000,0.0000,0.9562
+random+clip,Baseline: Random selection + CLIP rerank,5,contain,0.3750,0.0000,0.0000,0.0000,1.0000
+random+clip,Baseline: Random selection + CLIP rerank,5,cut,0.4000,0.0000,0.0000,0.0000,1.0000
+random+clip,Baseline: Random selection + CLIP rerank,5,grasp,0.5327,0.0000,0.0000,0.0000,1.0000
+random+clip,Baseline: Random selection + CLIP rerank,5,pound,0.3514,0.0000,0.0000,0.0000,1.0000
+random+clip,Baseline: Random selection + CLIP rerank,5,scoop,0.5417,0.0000,0.0000,0.0000,1.0000
+random+clip,Baseline: Random selection + CLIP rerank,5,wgrasp,0.0000,0.0000,0.0000,0.0000,1.0000
+random+clip,Baseline: Random selection + CLIP rerank,5,overall,0.4812,0.0000,0.0000,0.0000,1.0000
+random+learned,Random selection + Learned rerank,1,contain,0.4750,0.1920,0.0000,0.0000,0.4750
+random+learned,Random selection + Learned rerank,1,cut,0.5200,0.0630,0.0000,0.0000,0.5200
+random+learned,Random selection + Learned rerank,1,grasp,0.3920,0.0335,0.0000,0.0000,0.3920
+random+learned,Random selection + Learned rerank,1,pound,0.4270,0.0781,0.0000,0.0000,0.4270
+random+learned,Random selection + Learned rerank,1,scoop,0.4979,0.0593,0.0000,0.0000,0.4979
+random+learned,Random selection + Learned rerank,1,wgrasp,0.6375,0.1892,0.0000,0.0000,0.6375
+random+learned,Random selection + Learned rerank,1,overall,0.4348,0.0295,0.0000,0.0000,0.4348
+random+learned,Random selection + Learned rerank,2,contain,0.6125,0.0673,0.1875,0.1505,0.8125
+random+learned,Random selection + Learned rerank,2,cut,0.6022,0.0685,0.1533,0.0798,0.8111
+random+learned,Random selection + Learned rerank,2,grasp,0.5472,0.0160,0.0980,0.0199,0.6628
+random+learned,Random selection + Learned rerank,2,pound,0.6270,0.0713,0.2243,0.0453,0.7324
+random+learned,Random selection + Learned rerank,2,scoop,0.6083,0.0637,0.0979,0.0582,0.7896
+random+learned,Random selection + Learned rerank,2,wgrasp,0.4375,0.2183,0.0375,0.0800,0.9375
+random+learned,Random selection + Learned rerank,2,overall,0.5704,0.0168,0.1194,0.0200,0.7171
+random+learned,Random selection + Learned rerank,3,contain,0.7125,0.1125,0.2750,0.1658,1.0000
+random+learned,Random selection + Learned rerank,3,cut,0.6911,0.0438,0.3178,0.1221,0.9578
+random+learned,Random selection + Learned rerank,3,grasp,0.5995,0.0273,0.1141,0.0278,0.8352
+random+learned,Random selection + Learned rerank,3,pound,0.7865,0.0699,0.4162,0.0757,0.8649
+random+learned,Random selection + Learned rerank,3,scoop,0.6896,0.0378,0.1708,0.0708,0.9375
+random+learned,Random selection + Learned rerank,3,wgrasp,0.2875,0.2095,0.0000,0.1118,0.9875
+random+learned,Random selection + Learned rerank,3,overall,0.6394,0.0202,0.1820,0.0256,0.8759
+random+learned,Random selection + Learned rerank,4,contain,0.5750,0.0612,0.1875,0.1008,1.0000
+random+learned,Random selection + Learned rerank,4,cut,0.7867,0.0424,0.4022,0.0828,0.9978
+random+learned,Random selection + Learned rerank,4,grasp,0.6251,0.0232,0.1101,0.0386,0.9372
+random+learned,Random selection + Learned rerank,4,pound,0.9081,0.0439,0.5405,0.0468,0.9703
+random+learned,Random selection + Learned rerank,4,scoop,0.6937,0.0229,0.1625,0.0382,0.9708
+random+learned,Random selection + Learned rerank,4,wgrasp,0.1750,0.1500,0.0500,0.1500,1.0000
+random+learned,Random selection + Learned rerank,4,overall,0.6745,0.0159,0.2020,0.0299,0.9562
+random+learned,Random selection + Learned rerank,5,contain,0.5000,0.0000,0.1250,0.0000,1.0000
+random+learned,Random selection + Learned rerank,5,cut,0.8444,0.0000,0.4444,0.0000,1.0000
+random+learned,Random selection + Learned rerank,5,grasp,0.6382,0.0000,0.1055,0.0000,1.0000
+random+learned,Random selection + Learned rerank,5,pound,0.9730,0.0000,0.6216,0.0000,1.0000
+random+learned,Random selection + Learned rerank,5,scoop,0.7292,0.0000,0.1875,0.0000,1.0000
+random+learned,Random selection + Learned rerank,5,wgrasp,0.0000,0.0000,0.0000,0.0000,1.0000
+random+learned,Random selection + Learned rerank,5,overall,0.6957,0.0000,0.2145,0.0000,1.0000
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,1,contain,0.4750,0.1920,0.0000,0.0000,0.4750
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,1,cut,0.5200,0.0630,0.0000,0.0000,0.5200
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,1,grasp,0.3920,0.0335,0.0000,0.0000,0.3920
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,1,pound,0.4270,0.0781,0.0000,0.0000,0.4270
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,1,scoop,0.4979,0.0593,0.0000,0.0000,0.4979
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,1,wgrasp,0.6375,0.1892,0.0000,0.0000,0.6375
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,1,overall,0.4348,0.0295,0.0000,0.0000,0.4348
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,2,contain,0.3750,0.0000,-0.0500,0.1392,0.7875
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,2,cut,0.4000,0.0000,-0.0489,0.0552,0.7556
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,2,grasp,0.5327,0.0000,0.0834,0.0240,0.7387
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,2,pound,0.3514,0.0000,-0.0514,0.0806,0.6514
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,2,scoop,0.5417,0.0000,0.0312,0.0398,0.7771
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,2,wgrasp,0.0000,0.0000,-0.4000,0.1658,0.7500
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,2,overall,0.4812,0.0000,0.0301,0.0176,0.7383
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,3,contain,0.3750,0.0000,-0.0625,0.0839,0.9500
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,3,cut,0.4000,0.0000,0.0267,0.0871,0.9333
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,3,grasp,0.5327,0.0000,0.0472,0.0181,0.8844
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,3,pound,0.3514,0.0000,-0.0189,0.0705,0.8432
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,3,scoop,0.5417,0.0000,0.0229,0.0531,0.8875
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,3,wgrasp,0.0000,0.0000,-0.2875,0.1586,0.9750
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,3,overall,0.4812,0.0000,0.0238,0.0161,0.8904
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,4,contain,0.3750,0.0000,-0.0125,0.1038,1.0000
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,4,cut,0.4000,0.0000,0.0156,0.0507,0.9956
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,4,grasp,0.5327,0.0000,0.0176,0.0270,0.9447
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,4,pound,0.3514,0.0000,-0.0162,0.0439,0.9541
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,4,scoop,0.5417,0.0000,0.0104,0.0387,0.9542
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,4,wgrasp,0.0000,0.0000,-0.1250,0.1250,1.0000
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,4,overall,0.4812,0.0000,0.0087,0.0244,0.9562
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,5,contain,0.3750,0.0000,0.0000,0.0000,1.0000
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,5,cut,0.4000,0.0000,0.0000,0.0000,1.0000
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,5,grasp,0.5327,0.0000,0.0000,0.0000,1.0000
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,5,pound,0.3514,0.0000,0.0000,0.0000,1.0000
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,5,scoop,0.5417,0.0000,0.0000,0.0000,1.0000
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,5,wgrasp,0.0000,0.0000,0.0000,0.0000,1.0000
+clip_rel+clip,CLIP-relevance selection + CLIP rerank,5,overall,0.4812,0.0000,0.0000,0.0000,1.0000
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,1,contain,0.4750,0.1920,0.0000,0.0000,0.4750
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,1,cut,0.5200,0.0630,0.0000,0.0000,0.5200
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,1,grasp,0.3920,0.0335,0.0000,0.0000,0.3920
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,1,pound,0.4270,0.0781,0.0000,0.0000,0.4270
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,1,scoop,0.4979,0.0593,0.0000,0.0000,0.4979
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,1,wgrasp,0.6375,0.1892,0.0000,0.0000,0.6375
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,1,overall,0.4348,0.0295,0.0000,0.0000,0.4348
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,2,contain,0.4500,0.0829,0.0250,0.1458,0.9000
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,2,cut,0.3756,0.0321,-0.0733,0.0621,0.7600
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,2,grasp,0.5015,0.0149,0.0523,0.0256,0.7005
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,2,pound,0.3243,0.0541,-0.0784,0.0699,0.6946
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,2,scoop,0.4917,0.0250,-0.0187,0.0400,0.7625
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,2,wgrasp,0.2500,0.1250,-0.1500,0.1561,0.8875
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,2,overall,0.4577,0.0098,0.0067,0.0165,0.7252
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,3,contain,0.3875,0.0375,-0.0500,0.0829,1.0000
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,3,cut,0.4067,0.0102,0.0333,0.0907,0.9733
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,3,grasp,0.5176,0.0087,0.0322,0.0195,0.8643
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,3,pound,0.3378,0.0218,-0.0324,0.0836,0.9054
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,3,scoop,0.5104,0.0268,-0.0083,0.0529,0.9125
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,3,wgrasp,0.0625,0.0625,-0.2250,0.1225,1.0000
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,3,overall,0.4693,0.0069,0.0119,0.0163,0.8959
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,4,contain,0.3750,0.0000,-0.0125,0.1038,1.0000
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,4,cut,0.4000,0.0000,0.0156,0.0507,1.0000
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,4,grasp,0.5362,0.0039,0.0211,0.0284,0.9543
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,4,pound,0.3649,0.0135,-0.0027,0.0426,0.9757
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,4,scoop,0.5479,0.0095,0.0167,0.0358,0.9792
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,4,wgrasp,0.0000,0.0000,-0.1250,0.1250,1.0000
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,4,overall,0.4855,0.0023,0.0130,0.0250,0.9681
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,5,contain,0.3750,0.0000,0.0000,0.0000,1.0000
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,5,cut,0.4000,0.0000,0.0000,0.0000,1.0000
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,5,grasp,0.5327,0.0000,0.0000,0.0000,1.0000
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,5,pound,0.3514,0.0000,0.0000,0.0000,1.0000
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,5,scoop,0.5417,0.0000,0.0000,0.0000,1.0000
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,5,wgrasp,0.0000,0.0000,0.0000,0.0000,1.0000
+clip_rel_nov+clip,CLIP-relevance+novelty selection + CLIP rerank,5,overall,0.4812,0.0000,0.0000,0.0000,1.0000
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,1,contain,0.4750,0.1920,0.0000,0.0000,0.4750
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,1,cut,0.5200,0.0630,0.0000,0.0000,0.5200
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,1,grasp,0.3920,0.0335,0.0000,0.0000,0.3920
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,1,pound,0.4270,0.0781,0.0000,0.0000,0.4270
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,1,scoop,0.4979,0.0593,0.0000,0.0000,0.4979
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,1,wgrasp,0.6375,0.1892,0.0000,0.0000,0.6375
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,1,overall,0.4348,0.0295,0.0000,0.0000,0.4348
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,2,contain,0.6875,0.1281,0.2625,0.2197,0.9000
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,2,cut,0.4511,0.0373,0.0022,0.0491,0.7600
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,2,grasp,0.5482,0.0293,0.0990,0.0259,0.7005
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,2,pound,0.5946,0.0580,0.1919,0.0963,0.6946
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,2,scoop,0.5875,0.0482,0.0771,0.0639,0.7625
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,2,wgrasp,0.2500,0.1250,-0.1500,0.1920,0.8875
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,2,overall,0.5423,0.0163,0.0913,0.0142,0.7252
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,3,contain,0.6125,0.0875,0.1750,0.1392,1.0000
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,3,cut,0.5267,0.0605,0.1533,0.1059,0.9733
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,3,grasp,0.6201,0.0180,0.1347,0.0192,0.8643
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,3,pound,0.8108,0.0436,0.4405,0.0605,0.9054
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,3,scoop,0.6667,0.0417,0.1479,0.0470,0.9125
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,3,wgrasp,0.2000,0.1146,-0.0875,0.1375,1.0000
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,3,overall,0.6249,0.0147,0.1675,0.0165,0.8959
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,4,contain,0.5000,0.0791,0.1125,0.1179,1.0000
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,4,cut,0.6867,0.0336,0.3022,0.0765,1.0000
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,4,grasp,0.6116,0.0173,0.0965,0.0336,0.9543
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,4,pound,0.9189,0.0209,0.5514,0.0501,0.9757
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,4,scoop,0.7000,0.0191,0.1688,0.0451,0.9792
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,4,wgrasp,0.0500,0.0829,-0.0750,0.1392,1.0000
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,4,overall,0.6510,0.0095,0.1786,0.0305,0.9681
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,5,contain,0.5000,0.0000,0.1250,0.0000,1.0000
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,5,cut,0.8444,0.0000,0.4444,0.0000,1.0000
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,5,grasp,0.6382,0.0000,0.1055,0.0000,1.0000
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,5,pound,0.9730,0.0000,0.6216,0.0000,1.0000
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,5,scoop,0.7292,0.0000,0.1875,0.0000,1.0000
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,5,wgrasp,0.0000,0.0000,0.0000,0.0000,1.0000
+clip_rel_nov+learned,CLIP-relevance+novelty selection + Learned rerank,5,overall,0.6957,0.0000,0.2145,0.0000,1.0000
+trained+clip,Trained selection + CLIP rerank,1,contain,0.4750,0.1920,0.0000,0.0000,0.4750
+trained+clip,Trained selection + CLIP rerank,1,cut,0.5200,0.0630,0.0000,0.0000,0.5200
+trained+clip,Trained selection + CLIP rerank,1,grasp,0.3920,0.0335,0.0000,0.0000,0.3920
+trained+clip,Trained selection + CLIP rerank,1,pound,0.4270,0.0781,0.0000,0.0000,0.4270
+trained+clip,Trained selection + CLIP rerank,1,scoop,0.4979,0.0593,0.0000,0.0000,0.4979
+trained+clip,Trained selection + CLIP rerank,1,wgrasp,0.6375,0.1892,0.0000,0.0000,0.6375
+trained+clip,Trained selection + CLIP rerank,1,overall,0.4348,0.0295,0.0000,0.0000,0.4348
+trained+clip,Trained selection + CLIP rerank,2,contain,0.2750,0.1225,-0.1500,0.1561,0.7375
+trained+clip,Trained selection + CLIP rerank,2,cut,0.4089,0.0509,-0.0400,0.0888,0.8467
+trained+clip,Trained selection + CLIP rerank,2,grasp,0.5513,0.0219,0.1020,0.0323,0.7769
+trained+clip,Trained selection + CLIP rerank,2,pound,0.6000,0.0660,0.1973,0.0321,0.9703
+trained+clip,Trained selection + CLIP rerank,2,scoop,0.5458,0.0358,0.0354,0.0544,0.9000
+trained+clip,Trained selection + CLIP rerank,2,wgrasp,0.2000,0.1146,-0.2000,0.1953,0.8500
+trained+clip,Trained selection + CLIP rerank,2,overall,0.5226,0.0166,0.0716,0.0179,0.8246
+trained+clip,Trained selection + CLIP rerank,3,contain,0.3250,0.0829,-0.1125,0.0875,0.9500
+trained+clip,Trained selection + CLIP rerank,3,cut,0.3756,0.0491,0.0022,0.0785,0.9644
+trained+clip,Trained selection + CLIP rerank,3,grasp,0.5603,0.0144,0.0749,0.0246,0.9201
+trained+clip,Trained selection + CLIP rerank,3,pound,0.5459,0.0465,0.1757,0.0767,0.9757
+trained+clip,Trained selection + CLIP rerank,3,scoop,0.5000,0.0384,-0.0188,0.0531,0.9729
+trained+clip,Trained selection + CLIP rerank,3,wgrasp,0.0000,0.0000,-0.2875,0.1586,1.0000
+trained+clip,Trained selection + CLIP rerank,3,overall,0.5078,0.0126,0.0504,0.0151,0.9417
+trained+clip,Trained selection + CLIP rerank,4,contain,0.4250,0.0612,0.0375,0.1256,1.0000
+trained+clip,Trained selection + CLIP rerank,4,cut,0.3800,0.0232,-0.0044,0.0569,1.0000
+trained+clip,Trained selection + CLIP rerank,4,grasp,0.5397,0.0153,0.0246,0.0281,0.9864
+trained+clip,Trained selection + CLIP rerank,4,pound,0.4649,0.0432,0.0973,0.0422,0.9919
+trained+clip,Trained selection + CLIP rerank,4,scoop,0.5479,0.0264,0.0167,0.0557,0.9833
+trained+clip,Trained selection + CLIP rerank,4,wgrasp,0.0000,0.0000,-0.1250,0.1250,1.0000
+trained+clip,Trained selection + CLIP rerank,4,overall,0.4968,0.0137,0.0243,0.0249,0.9890
+trained+clip,Trained selection + CLIP rerank,5,contain,0.3750,0.0000,0.0000,0.0000,1.0000
+trained+clip,Trained selection + CLIP rerank,5,cut,0.4000,0.0000,0.0000,0.0000,1.0000
+trained+clip,Trained selection + CLIP rerank,5,grasp,0.5327,0.0000,0.0000,0.0000,1.0000
+trained+clip,Trained selection + CLIP rerank,5,pound,0.3514,0.0000,0.0000,0.0000,1.0000
+trained+clip,Trained selection + CLIP rerank,5,scoop,0.5417,0.0000,0.0000,0.0000,1.0000
+trained+clip,Trained selection + CLIP rerank,5,wgrasp,0.0000,0.0000,0.0000,0.0000,1.0000
+trained+clip,Trained selection + CLIP rerank,5,overall,0.4812,0.0000,0.0000,0.0000,1.0000
+trained+learned,Trained selection + Learned rerank (full pipeline),1,contain,0.4750,0.1920,0.0000,0.0000,0.4750
+trained+learned,Trained selection + Learned rerank (full pipeline),1,cut,0.5200,0.0630,0.0000,0.0000,0.5200
+trained+learned,Trained selection + Learned rerank (full pipeline),1,grasp,0.3920,0.0335,0.0000,0.0000,0.3920
+trained+learned,Trained selection + Learned rerank (full pipeline),1,pound,0.4270,0.0781,0.0000,0.0000,0.4270
+trained+learned,Trained selection + Learned rerank (full pipeline),1,scoop,0.4979,0.0593,0.0000,0.0000,0.4979
+trained+learned,Trained selection + Learned rerank (full pipeline),1,wgrasp,0.6375,0.1892,0.0000,0.0000,0.6375
+trained+learned,Trained selection + Learned rerank (full pipeline),1,overall,0.4348,0.0295,0.0000,0.0000,0.4348
+trained+learned,Trained selection + Learned rerank (full pipeline),2,contain,0.3125,0.0625,-0.1125,0.1420,0.7375
+trained+learned,Trained selection + Learned rerank (full pipeline),2,cut,0.6822,0.0244,0.2333,0.0547,0.8467
+trained+learned,Trained selection + Learned rerank (full pipeline),2,grasp,0.6221,0.0166,0.1729,0.0347,0.7769
+trained+learned,Trained selection + Learned rerank (full pipeline),2,pound,0.9486,0.0081,0.5459,0.0763,0.9703
+trained+learned,Trained selection + Learned rerank (full pipeline),2,scoop,0.7458,0.0224,0.2354,0.0427,0.9000
+trained+learned,Trained selection + Learned rerank (full pipeline),2,wgrasp,0.2375,0.1038,-0.1625,0.1682,0.8500
+trained+learned,Trained selection + Learned rerank (full pipeline),2,overall,0.6661,0.0104,0.2151,0.0225,0.8246
+trained+learned,Trained selection + Learned rerank (full pipeline),3,contain,0.3875,0.0673,-0.0500,0.1000,0.9500
+trained+learned,Trained selection + Learned rerank (full pipeline),3,cut,0.7711,0.0200,0.3978,0.0913,0.9644
+trained+learned,Trained selection + Learned rerank (full pipeline),3,grasp,0.6372,0.0116,0.1518,0.0188,0.9201
+trained+learned,Trained selection + Learned rerank (full pipeline),3,pound,0.9486,0.0081,0.5784,0.0717,0.9757
+trained+learned,Trained selection + Learned rerank (full pipeline),3,scoop,0.7292,0.0000,0.2104,0.0531,0.9729
+trained+learned,Trained selection + Learned rerank (full pipeline),3,wgrasp,0.0750,0.0612,-0.2125,0.1772,1.0000
+trained+learned,Trained selection + Learned rerank (full pipeline),3,overall,0.6820,0.0059,0.2246,0.0150,0.9417
+trained+learned,Trained selection + Learned rerank (full pipeline),4,contain,0.4500,0.0612,0.0625,0.1152,1.0000
+trained+learned,Trained selection + Learned rerank (full pipeline),4,cut,0.8333,0.0111,0.4489,0.0464,1.0000
+trained+learned,Trained selection + Learned rerank (full pipeline),4,grasp,0.6417,0.0045,0.1266,0.0267,0.9864
+trained+learned,Trained selection + Learned rerank (full pipeline),4,pound,0.9649,0.0124,0.5973,0.0443,0.9919
+trained+learned,Trained selection + Learned rerank (full pipeline),4,scoop,0.7292,0.0000,0.1979,0.0387,0.9833
+trained+learned,Trained selection + Learned rerank (full pipeline),4,wgrasp,0.0000,0.0000,-0.1250,0.1250,1.0000
+trained+learned,Trained selection + Learned rerank (full pipeline),4,overall,0.6942,0.0037,0.2217,0.0241,0.9890
+trained+learned,Trained selection + Learned rerank (full pipeline),5,contain,0.5000,0.0000,0.1250,0.0000,1.0000
+trained+learned,Trained selection + Learned rerank (full pipeline),5,cut,0.8444,0.0000,0.4444,0.0000,1.0000
+trained+learned,Trained selection + Learned rerank (full pipeline),5,grasp,0.6382,0.0000,0.1055,0.0000,1.0000
+trained+learned,Trained selection + Learned rerank (full pipeline),5,pound,0.9730,0.0000,0.6216,0.0000,1.0000
+trained+learned,Trained selection + Learned rerank (full pipeline),5,scoop,0.7292,0.0000,0.1875,0.0000,1.0000
+trained+learned,Trained selection + Learned rerank (full pipeline),5,wgrasp,0.0000,0.0000,0.0000,0.0000,1.0000
+trained+learned,Trained selection + Learned rerank (full pipeline),5,overall,0.6957,0.0000,0.2145,0.0000,1.0000

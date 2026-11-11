@@ -1,0 +1,211 @@
+component,comparison,method_config,baseline_config,budget,category,accuracy_gain_vs_baseline_mean,accuracy_gain_vs_baseline_std,gt_coverage_gain_vs_baseline_mean
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,1,contain,0.0000,0.0000,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,1,cut,0.0000,0.0000,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,1,grasp,0.0000,0.0000,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,1,pound,0.0000,0.0000,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,1,scoop,0.0000,0.0000,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,1,wgrasp,0.0000,0.0000,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,1,overall,0.0000,0.0000,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,2,contain,0.1875,0.1505,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,2,cut,0.1533,0.0798,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,2,grasp,0.0980,0.0199,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,2,pound,0.2243,0.0453,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,2,scoop,0.0979,0.0582,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,2,wgrasp,0.0375,0.0800,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,2,overall,0.1194,0.0200,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,3,contain,0.2750,0.1658,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,3,cut,0.3178,0.1221,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,3,grasp,0.1141,0.0278,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,3,pound,0.4162,0.0757,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,3,scoop,0.1708,0.0708,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,3,wgrasp,0.0000,0.1118,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,3,overall,0.1820,0.0256,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,4,contain,0.1875,0.1008,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,4,cut,0.4022,0.0828,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,4,grasp,0.1101,0.0386,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,4,pound,0.5405,0.0468,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,4,scoop,0.1625,0.0382,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,4,wgrasp,0.0500,0.1500,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,4,overall,0.2020,0.0299,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,5,contain,0.1250,0.0000,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,5,cut,0.4444,0.0000,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,5,grasp,0.1055,0.0000,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,5,pound,0.6216,0.0000,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,5,scoop,0.1875,0.0000,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,5,wgrasp,0.0000,0.0000,0.0000
+learned_rerank,Learned rerank vs baseline [Random selection + Learned rerank],random+learned,random+clip,5,overall,0.2145,0.0000,0.0000
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,1,contain,0.0000,0.0000,0.0000
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,1,cut,0.0000,0.0000,0.0000
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,1,grasp,0.0000,0.0000,0.0000
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,1,pound,0.0000,0.0000,0.0000
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,1,scoop,0.0000,0.0000,0.0000
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,1,wgrasp,0.0000,0.0000,0.0000
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,1,overall,0.0000,0.0000,0.0000
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,2,contain,-0.0500,0.1392,-0.0250
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,2,cut,-0.0489,0.0552,-0.0556
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,2,grasp,0.0834,0.0240,0.0759
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,2,pound,-0.0514,0.0806,-0.0811
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,2,scoop,0.0312,0.0398,-0.0125
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,2,wgrasp,-0.4000,0.1658,-0.1875
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,2,overall,0.0301,0.0176,0.0212
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,3,contain,-0.0625,0.0839,-0.0500
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,3,cut,0.0267,0.0871,-0.0244
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,3,grasp,0.0472,0.0181,0.0492
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,3,pound,-0.0189,0.0705,-0.0216
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,3,scoop,0.0229,0.0531,-0.0500
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,3,wgrasp,-0.2875,0.1586,-0.0125
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,3,overall,0.0238,0.0161,0.0145
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,4,contain,-0.0125,0.1038,0.0000
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,4,cut,0.0156,0.0507,-0.0022
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,4,grasp,0.0176,0.0270,0.0075
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,4,pound,-0.0162,0.0439,-0.0162
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,4,scoop,0.0104,0.0387,-0.0167
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,4,wgrasp,-0.1250,0.1250,0.0000
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,4,overall,0.0087,0.0244,0.0000
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,5,contain,0.0000,0.0000,0.0000
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,5,cut,0.0000,0.0000,0.0000
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,5,grasp,0.0000,0.0000,0.0000
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,5,pound,0.0000,0.0000,0.0000
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,5,scoop,0.0000,0.0000,0.0000
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,5,wgrasp,0.0000,0.0000,0.0000
+clip_rel_selection,CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank],clip_rel+clip,random+clip,5,overall,0.0000,0.0000,0.0000
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,1,contain,0.0000,0.0000,0.0000
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,1,cut,0.0000,0.0000,0.0000
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,1,grasp,0.0000,0.0000,0.0000
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,1,pound,0.0000,0.0000,0.0000
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,1,scoop,0.0000,0.0000,0.0000
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,1,wgrasp,0.0000,0.0000,0.0000
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,1,overall,0.0000,0.0000,0.0000
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,2,contain,0.0250,0.1458,0.0875
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,2,cut,-0.0733,0.0621,-0.0511
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,2,grasp,0.0523,0.0256,0.0377
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,2,pound,-0.0784,0.0699,-0.0378
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,2,scoop,-0.0187,0.0400,-0.0271
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,2,wgrasp,-0.1500,0.1561,-0.0500
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,2,overall,0.0067,0.0165,0.0081
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,3,contain,-0.0500,0.0829,0.0000
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,3,cut,0.0333,0.0907,0.0156
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,3,grasp,0.0322,0.0195,0.0291
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,3,pound,-0.0324,0.0836,0.0405
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,3,scoop,-0.0083,0.0529,-0.0250
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,3,wgrasp,-0.2250,0.1225,0.0125
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,3,overall,0.0119,0.0163,0.0200
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,4,contain,-0.0125,0.1038,0.0000
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,4,cut,0.0156,0.0507,0.0022
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,4,grasp,0.0211,0.0284,0.0171
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,4,pound,-0.0027,0.0426,0.0054
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,4,scoop,0.0167,0.0358,0.0083
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,4,wgrasp,-0.1250,0.1250,0.0000
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,4,overall,0.0130,0.0250,0.0119
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,5,contain,0.0000,0.0000,0.0000
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,5,cut,0.0000,0.0000,0.0000
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,5,grasp,0.0000,0.0000,0.0000
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,5,pound,0.0000,0.0000,0.0000
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,5,scoop,0.0000,0.0000,0.0000
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,5,wgrasp,0.0000,0.0000,0.0000
+clip_rel_nov_selection,CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank],clip_rel_nov+clip,random+clip,5,overall,0.0000,0.0000,0.0000
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,1,contain,0.0000,0.0000,0.0000
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,1,cut,0.0000,0.0000,0.0000
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,1,grasp,0.0000,0.0000,0.0000
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,1,pound,0.0000,0.0000,0.0000
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,1,scoop,0.0000,0.0000,0.0000
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,1,wgrasp,0.0000,0.0000,0.0000
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,1,overall,0.0000,0.0000,0.0000
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,2,contain,-0.1500,0.1561,-0.0750
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,2,cut,-0.0400,0.0888,0.0356
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,2,grasp,0.1020,0.0323,0.1141
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,2,pound,0.1973,0.0321,0.2378
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,2,scoop,0.0354,0.0544,0.1104
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,2,wgrasp,-0.2000,0.1953,-0.0875
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,2,overall,0.0716,0.0179,0.1075
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,3,contain,-0.1125,0.0875,-0.0500
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,3,cut,0.0022,0.0785,0.0067
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,3,grasp,0.0749,0.0246,0.0849
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,3,pound,0.1757,0.0767,0.1108
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,3,scoop,-0.0188,0.0531,0.0354
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,3,wgrasp,-0.2875,0.1586,0.0125
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,3,overall,0.0504,0.0151,0.0658
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,4,contain,0.0375,0.1256,0.0000
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,4,cut,-0.0044,0.0569,0.0022
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,4,grasp,0.0246,0.0281,0.0492
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,4,pound,0.0973,0.0422,0.0216
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,4,scoop,0.0167,0.0557,0.0125
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,4,wgrasp,-0.1250,0.1250,0.0000
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,4,overall,0.0243,0.0249,0.0328
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,5,contain,0.0000,0.0000,0.0000
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,5,cut,0.0000,0.0000,0.0000
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,5,grasp,0.0000,0.0000,0.0000
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,5,pound,0.0000,0.0000,0.0000
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,5,scoop,0.0000,0.0000,0.0000
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,5,wgrasp,0.0000,0.0000,0.0000
+trained_selection,Trained selection vs baseline [Trained selection + CLIP rerank],trained+clip,random+clip,5,overall,0.0000,0.0000,0.0000
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,1,contain,0.0000,0.0000,0.0000
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,1,cut,0.0000,0.0000,0.0000
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,1,grasp,0.0000,0.0000,0.0000
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,1,pound,0.0000,0.0000,0.0000
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,1,scoop,0.0000,0.0000,0.0000
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,1,wgrasp,0.0000,0.0000,0.0000
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,1,overall,0.0000,0.0000,0.0000
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,2,contain,0.2625,0.2197,0.0875
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,2,cut,0.0022,0.0491,-0.0511
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,2,grasp,0.0990,0.0259,0.0377
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,2,pound,0.1919,0.0963,-0.0378
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,2,scoop,0.0771,0.0639,-0.0271
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,2,wgrasp,-0.1500,0.1920,-0.0500
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,2,overall,0.0913,0.0142,0.0081
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,3,contain,0.1750,0.1392,0.0000
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,3,cut,0.1533,0.1059,0.0156
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,3,grasp,0.1347,0.0192,0.0291
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,3,pound,0.4405,0.0605,0.0405
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,3,scoop,0.1479,0.0470,-0.0250
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,3,wgrasp,-0.0875,0.1375,0.0125
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,3,overall,0.1675,0.0165,0.0200
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,4,contain,0.1125,0.1179,0.0000
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,4,cut,0.3022,0.0765,0.0022
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,4,grasp,0.0965,0.0336,0.0171
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,4,pound,0.5514,0.0501,0.0054
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,4,scoop,0.1688,0.0451,0.0083
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,4,wgrasp,-0.0750,0.1392,0.0000
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,4,overall,0.1786,0.0305,0.0119
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,5,contain,0.1250,0.0000,0.0000
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,5,cut,0.4444,0.0000,0.0000
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,5,grasp,0.1055,0.0000,0.0000
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,5,pound,0.6216,0.0000,0.0000
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,5,scoop,0.1875,0.0000,0.0000
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,5,wgrasp,0.0000,0.0000,0.0000
+clip_rel_nov_selection_learned_rerank,CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank],clip_rel_nov+learned,random+clip,5,overall,0.2145,0.0000,0.0000
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,1,contain,0.0000,0.0000,0.0000
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,1,cut,0.0000,0.0000,0.0000
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,1,grasp,0.0000,0.0000,0.0000
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,1,pound,0.0000,0.0000,0.0000
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,1,scoop,0.0000,0.0000,0.0000
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,1,wgrasp,0.0000,0.0000,0.0000
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,1,overall,0.0000,0.0000,0.0000
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,2,contain,-0.1125,0.1420,-0.0750
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,2,cut,0.2333,0.0547,0.0356
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,2,grasp,0.1729,0.0347,0.1141
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,2,pound,0.5459,0.0763,0.2378
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,2,scoop,0.2354,0.0427,0.1104
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,2,wgrasp,-0.1625,0.1682,-0.0875
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,2,overall,0.2151,0.0225,0.1075
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,3,contain,-0.0500,0.1000,-0.0500
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,3,cut,0.3978,0.0913,0.0067
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,3,grasp,0.1518,0.0188,0.0849
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,3,pound,0.5784,0.0717,0.1108
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,3,scoop,0.2104,0.0531,0.0354
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,3,wgrasp,-0.2125,0.1772,0.0125
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,3,overall,0.2246,0.0150,0.0658
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,4,contain,0.0625,0.1152,0.0000
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,4,cut,0.4489,0.0464,0.0022
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,4,grasp,0.1266,0.0267,0.0492
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,4,pound,0.5973,0.0443,0.0216
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,4,scoop,0.1979,0.0387,0.0125
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,4,wgrasp,-0.1250,0.1250,0.0000
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,4,overall,0.2217,0.0241,0.0328
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,5,contain,0.1250,0.0000,0.0000
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,5,cut,0.4444,0.0000,0.0000
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,5,grasp,0.1055,0.0000,0.0000
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,5,pound,0.6216,0.0000,0.0000
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,5,scoop,0.1875,0.0000,0.0000
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,5,wgrasp,0.0000,0.0000,0.0000
+full_pipeline,Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank],trained+learned,random+clip,5,overall,0.2145,0.0000,0.0000

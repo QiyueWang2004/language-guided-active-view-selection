@@ -1,0 +1,2308 @@
+[
+  {
+    "id": "cup::cup_001",
+    "category": "cup",
+    "instruction": "find the view where the printed design is front-facing",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_001/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_001/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_001/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_001/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_001/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_001/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_001/view_05.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_002",
+    "category": "cup",
+    "instruction": "find the view where the printed design is front-facing",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_002/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_002/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_002/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_002/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_002/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_002/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_002/view_05.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_003",
+    "category": "cup",
+    "instruction": "find the view where the printed design is front-facing",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_003/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_003/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_003/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_003/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_003/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_003/view_04.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_004",
+    "category": "cup",
+    "instruction": "find the view where the printed design is front-facing",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_004/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_004/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_004/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_004/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_004/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_004/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_004/view_05.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_005",
+    "category": "cup",
+    "instruction": "find the view where the printed design is front-facing",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_005/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_005/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_005/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_005/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_005/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_005/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_005/view_03.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_006",
+    "category": "cup",
+    "instruction": "find the view where the printed design is front-facing",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_006/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_006/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_006/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_006/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_006/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_006/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_006/view_05.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_007",
+    "category": "cup",
+    "instruction": "find the view where the printed design is front-facing",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_007/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_007/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_007/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_007/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_007/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_007/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_007/view_04.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_008",
+    "category": "cup",
+    "instruction": "find the view where the printed design is front-facing",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_008/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_008/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_008/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_008/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_008/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_008/view_02.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_009",
+    "category": "cup",
+    "instruction": "find the view where the printed design is front-facing",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_009/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_009/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_009/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_009/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_009/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_009/view_03.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_010",
+    "category": "cup",
+    "instruction": "find the view where the printed design is front-facing",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_010/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_010/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_010/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_010/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_010/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_010/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_010/view_05.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_011",
+    "category": "cup",
+    "instruction": "find the view where the cup is most upright",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_011/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_011/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_011/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_011/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_011/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_011/view_04.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_012",
+    "category": "cup",
+    "instruction": "find the view where the printed design is front-facing",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_012/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_012/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_012/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_012/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_012/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_012/view_05.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_013",
+    "category": "cup",
+    "instruction": "find the view where the cup is most centered",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_013/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_013/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_013/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_013/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_013/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_013/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_013/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_013/view_03.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_014",
+    "category": "cup",
+    "instruction": "find the view where the cup is most upright",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_014/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_014/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_014/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_014/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_014/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_014/view_01.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_015",
+    "category": "cup",
+    "instruction": "find the view where the cup is most centered",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_015/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_015/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_015/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_015/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_015/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_015/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_015/view_03.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_016",
+    "category": "cup",
+    "instruction": "find the view where the printed design is front-facing",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_016/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_016/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_016/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_016/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_016/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_016/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_016/view_03.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_017",
+    "category": "cup",
+    "instruction": "find the view where the cup is most centered",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_017/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_017/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_017/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_017/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_017/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_017/view_04.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_018",
+    "category": "cup",
+    "instruction": "find the view where the cup is most centered",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_018/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_018/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_018/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_018/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_018/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_018/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_018/view_03.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_019",
+    "category": "cup",
+    "instruction": "find the view where the handle is on the right side",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_019/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_019/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_019/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_019/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_019/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_019/view_05.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_020",
+    "category": "cup",
+    "instruction": "find the view where the cup is most centered",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_020/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_020/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_020/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_020/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_020/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_020/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_020/view_02.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_021",
+    "category": "cup",
+    "instruction": "find the view where the printed design is front-facing",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_021/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_021/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_021/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_021/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_021/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_021/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_021/view_04.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_022",
+    "category": "cup",
+    "instruction": "find the view where the handle is on the right side",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_022/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_022/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_022/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_022/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_022/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_022/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_022/view_03.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_023",
+    "category": "cup",
+    "instruction": "find the view where the printed design is front-facing",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_023/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_023/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_023/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_023/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_023/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_023/view_02.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_024",
+    "category": "cup",
+    "instruction": "find the view where the printed design is front-facing",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_024/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_024/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_024/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_024/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_024/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_024/view_03.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_025",
+    "category": "cup",
+    "instruction": "find the view where the cup is most centered",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_025/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_025/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_025/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_025/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_025/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_025/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_025/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_025/view_05.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_026",
+    "category": "cup",
+    "instruction": "find the view where the cup is most centered",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_026/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_026/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_026/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_026/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_026/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_026/view_01.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_027",
+    "category": "cup",
+    "instruction": "find the view where the cup is most centered",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_027/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_027/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_027/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_027/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_027/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_027/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_027/view_04.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_028",
+    "category": "cup",
+    "instruction": "find the view where the cup is most centered",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_028/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_028/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_028/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_028/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_028/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_028/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_028/view_02.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_029",
+    "category": "cup",
+    "instruction": "find the view where the printed design is front-facing",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_029/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_029/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_029/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_029/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_029/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_029/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_029/view_03.jpg"
+    ]
+  },
+  {
+    "id": "cup::cup_030",
+    "category": "cup",
+    "instruction": "find the view where the cup is most centered",
+    "views": [
+      "E:/CO3D-subset-cup/cup/cup_030/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_030/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_030/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_030/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_030/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-cup/cup/cup_030/view_01.jpg",
+      "E:/CO3D-subset-cup/cup/cup_030/view_02.jpg",
+      "E:/CO3D-subset-cup/cup/cup_030/view_03.jpg",
+      "E:/CO3D-subset-cup/cup/cup_030/view_04.jpg",
+      "E:/CO3D-subset-cup/cup/cup_030/view_05.jpg"
+    ]
+  },
+  {
+    "id": "book::book_001",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_001/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_001/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_001/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_001/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_001/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_001/view_03.jpg"
+    ]
+  },
+  {
+    "id": "book::book_002",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_002/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_002/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_002/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_002/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_002/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_002/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_002/view_05.jpg"
+    ]
+  },
+  {
+    "id": "book::book_003",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_003/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_003/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_003/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_003/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_003/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_003/view_04.jpg"
+    ]
+  },
+  {
+    "id": "book::book_004",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_004/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_004/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_004/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_004/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_004/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_004/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_004/view_05.jpg"
+    ]
+  },
+  {
+    "id": "book::book_005",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_005/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_005/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_005/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_005/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_005/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_005/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_005/view_05.jpg"
+    ]
+  },
+  {
+    "id": "book::book_006",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_006/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_006/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_006/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_006/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_006/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_006/view_01.jpg"
+    ]
+  },
+  {
+    "id": "book::book_007",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_007/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_007/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_007/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_007/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_007/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_007/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_007/view_05.jpg"
+    ]
+  },
+  {
+    "id": "book::book_008",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_008/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_008/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_008/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_008/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_008/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_008/view_01.jpg"
+    ]
+  },
+  {
+    "id": "book::book_009",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_009/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_009/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_009/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_009/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_009/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_009/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_009/view_05.jpg"
+    ]
+  },
+  {
+    "id": "book::book_010",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_010/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_010/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_010/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_010/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_010/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_010/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_010/view_05.jpg"
+    ]
+  },
+  {
+    "id": "book::book_011",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_011/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_011/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_011/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_011/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_011/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_011/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_011/view_02.jpg"
+    ]
+  },
+  {
+    "id": "book::book_012",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_012/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_012/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_012/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_012/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_012/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_012/view_01.jpg"
+    ]
+  },
+  {
+    "id": "book::book_013",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_013/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_013/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_013/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_013/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_013/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_013/view_01.jpg"
+    ]
+  },
+  {
+    "id": "book::book_014",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_014/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_014/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_014/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_014/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_014/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_014/view_01.jpg"
+    ]
+  },
+  {
+    "id": "book::book_015",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_015/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_015/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_015/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_015/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_015/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_015/view_01.jpg"
+    ]
+  },
+  {
+    "id": "book::book_016",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_016/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_016/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_016/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_016/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_016/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_016/view_01.jpg"
+    ]
+  },
+  {
+    "id": "book::book_017",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_017/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_017/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_017/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_017/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_017/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_017/view_01.jpg"
+    ]
+  },
+  {
+    "id": "book::book_018",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_018/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_018/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_018/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_018/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_018/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_018/view_04.jpg"
+    ]
+  },
+  {
+    "id": "book::book_019",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_019/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_019/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_019/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_019/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_019/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_019/view_02.jpg"
+    ]
+  },
+  {
+    "id": "book::book_020",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_020/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_020/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_020/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_020/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_020/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_020/view_01.jpg"
+    ]
+  },
+  {
+    "id": "book::book_021",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_021/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_021/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_021/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_021/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_021/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_021/view_01.jpg"
+    ]
+  },
+  {
+    "id": "book::book_022",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_022/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_022/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_022/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_022/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_022/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_022/view_05.jpg"
+    ]
+  },
+  {
+    "id": "book::book_023",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_023/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_023/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_023/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_023/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_023/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_023/view_03.jpg"
+    ]
+  },
+  {
+    "id": "book::book_024",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_024/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_024/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_024/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_024/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_024/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_024/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_024/view_05.jpg"
+    ]
+  },
+  {
+    "id": "book::book_025",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_025/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_025/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_025/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_025/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_025/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_025/view_01.jpg"
+    ]
+  },
+  {
+    "id": "book::book_026",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_026/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_026/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_026/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_026/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_026/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_026/view_01.jpg"
+    ]
+  },
+  {
+    "id": "book::book_027",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_027/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_027/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_027/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_027/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_027/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_027/view_04.jpg"
+    ]
+  },
+  {
+    "id": "book::book_028",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_028/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_028/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_028/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_028/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_028/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_028/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_028/view_05.jpg"
+    ]
+  },
+  {
+    "id": "book::book_029",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_029/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_029/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_029/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_029/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_029/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_029/view_01.jpg"
+    ]
+  },
+  {
+    "id": "book::book_030",
+    "category": "book",
+    "instruction": "find the view where the book is most front-facing",
+    "views": [
+      "E:/CO3D-subset-book/book/book_030/view_01.jpg",
+      "E:/CO3D-subset-book/book/book_030/view_02.jpg",
+      "E:/CO3D-subset-book/book/book_030/view_03.jpg",
+      "E:/CO3D-subset-book/book/book_030/view_04.jpg",
+      "E:/CO3D-subset-book/book/book_030/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-book/book/book_030/view_02.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_001",
+    "category": "teddybear",
+    "instruction": "find the view where the face is most visible",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_001/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_001/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_001/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_001/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_001/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_001/view_01.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_002",
+    "category": "teddybear",
+    "instruction": "find the view where the face is most visible",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_002/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_002/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_002/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_002/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_002/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_002/view_05.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_003",
+    "category": "teddybear",
+    "instruction": "find the view where the face is most visible",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_003/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_003/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_003/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_003/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_003/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_003/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_003/view_03.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_004",
+    "category": "teddybear",
+    "instruction": "find the view where the face is most visible",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_004/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_004/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_004/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_004/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_004/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_004/view_05.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_004/view_01.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_005",
+    "category": "teddybear",
+    "instruction": "find the view where the face is most visible",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_005/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_005/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_005/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_005/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_005/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_005/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_005/view_04.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_006",
+    "category": "teddybear",
+    "instruction": "find the view where the face is most visible",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_006/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_006/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_006/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_006/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_006/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_006/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_006/view_05.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_007",
+    "category": "teddybear",
+    "instruction": "find the view where the face is most visible",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_007/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_007/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_007/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_007/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_007/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_007/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_007/view_05.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_008",
+    "category": "teddybear",
+    "instruction": "find the view where the face is most visible",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_008/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_008/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_008/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_008/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_008/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_008/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_008/view_05.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_009",
+    "category": "teddybear",
+    "instruction": "find the view where the face is most visible",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_009/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_009/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_009/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_009/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_009/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_009/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_009/view_05.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_010",
+    "category": "teddybear",
+    "instruction": "find the view where the face is most visible",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_010/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_010/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_010/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_010/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_010/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_010/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_010/view_05.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_011",
+    "category": "teddybear",
+    "instruction": "find the view where the teddybear is most upright",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_011/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_011/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_011/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_011/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_011/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_011/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_011/view_03.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_012",
+    "category": "teddybear",
+    "instruction": "find the view where the face is most visible",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_012/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_012/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_012/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_012/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_012/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_012/view_01.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_013",
+    "category": "teddybear",
+    "instruction": "find the view where the face is most visible",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_013/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_013/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_013/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_013/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_013/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_013/view_02.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_014",
+    "category": "teddybear",
+    "instruction": "find the view where the face is most visible",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_014/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_014/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_014/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_014/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_014/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_014/view_01.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_015",
+    "category": "teddybear",
+    "instruction": "find the view where the face is most visible",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_015/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_015/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_015/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_015/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_015/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_015/view_01.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_016",
+    "category": "teddybear",
+    "instruction": "find the view where the face is most visible",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_016/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_016/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_016/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_016/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_016/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_016/view_01.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_017",
+    "category": "teddybear",
+    "instruction": "find the view where the face is most visible",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_017/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_017/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_017/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_017/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_017/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_017/view_01.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_018",
+    "category": "teddybear",
+    "instruction": "find the view where the teddybear is most upright",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_018/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_018/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_018/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_018/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_018/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_018/view_01.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_019",
+    "category": "teddybear",
+    "instruction": "find the view where the teddybear is most upright",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_019/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_019/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_019/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_019/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_019/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_019/view_02.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_020",
+    "category": "teddybear",
+    "instruction": "find the view where the face is most visible",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_020/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_020/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_020/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_020/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_020/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_020/view_01.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_021",
+    "category": "teddybear",
+    "instruction": "find the view where the teddybear is most upright",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_021/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_021/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_021/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_021/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_021/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_021/view_01.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_022",
+    "category": "teddybear",
+    "instruction": "find the view where the face is most visible",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_022/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_022/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_022/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_022/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_022/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_022/view_01.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_023",
+    "category": "teddybear",
+    "instruction": "find the view where the face is most visible",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_023/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_023/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_023/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_023/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_023/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_023/view_01.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_024",
+    "category": "teddybear",
+    "instruction": "find the view where the teddybear is most upright",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_024/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_024/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_024/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_024/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_024/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_024/view_01.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_025",
+    "category": "teddybear",
+    "instruction": "find the view where the face is most visible",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_025/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_025/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_025/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_025/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_025/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_025/view_01.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_026",
+    "category": "teddybear",
+    "instruction": "find the view where the face is most visible",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_026/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_026/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_026/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_026/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_026/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_026/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_026/view_02.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_027",
+    "category": "teddybear",
+    "instruction": "find the view where the face is most visible",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_027/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_027/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_027/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_027/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_027/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_027/view_05.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_028",
+    "category": "teddybear",
+    "instruction": "find the view where the face is most visible",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_028/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_028/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_028/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_028/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_028/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_028/view_01.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_029",
+    "category": "teddybear",
+    "instruction": "find the view where the teddybear is most upright",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_029/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_029/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_029/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_029/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_029/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_029/view_01.jpg"
+    ]
+  },
+  {
+    "id": "teddybear::teddybear_030",
+    "category": "teddybear",
+    "instruction": "find the view where the teddybear is most upright",
+    "views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_030/view_01.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_030/view_02.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_030/view_03.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_030/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_030/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_030/view_04.jpg",
+      "E:/CO3D-subset-teddybear/teddybear/teddybear_030/view_05.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_001",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_001/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_001/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_001/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_001/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_001/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_001/view_04.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_002",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_002/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_002/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_002/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_002/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_002/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_002/view_03.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_003",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_003/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_003/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_003/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_003/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_003/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_003/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_003/view_05.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_004",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_004/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_004/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_004/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_004/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_004/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_004/view_03.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_005",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_005/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_005/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_005/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_005/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_005/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_005/view_01.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_006",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_006/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_006/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_006/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_006/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_006/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_006/view_03.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_007",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_007/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_007/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_007/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_007/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_007/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_007/view_01.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_008",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_008/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_008/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_008/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_008/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_008/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_008/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_008/view_03.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_009",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_009/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_009/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_009/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_009/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_009/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_009/view_03.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_010",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_010/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_010/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_010/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_010/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_010/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_010/view_01.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_011",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_011/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_011/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_011/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_011/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_011/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_011/view_03.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_012",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_012/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_012/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_012/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_012/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_012/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_012/view_01.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_013",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_013/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_013/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_013/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_013/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_013/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_013/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_013/view_05.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_014",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_014/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_014/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_014/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_014/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_014/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_014/view_01.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_015",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_015/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_015/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_015/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_015/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_015/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_015/view_02.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_016",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_016/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_016/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_016/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_016/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_016/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_016/view_01.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_017",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_017/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_017/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_017/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_017/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_017/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_017/view_01.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_018",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_018/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_018/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_018/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_018/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_018/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_018/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_018/view_04.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_019",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_019/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_019/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_019/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_019/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_019/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_019/view_01.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_020",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_020/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_020/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_020/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_020/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_020/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_020/view_01.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_021",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_021/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_021/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_021/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_021/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_021/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_021/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_021/view_04.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_022",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_022/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_022/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_022/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_022/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_022/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_022/view_04.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_023",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_023/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_023/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_023/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_023/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_023/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_023/view_01.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_024",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_024/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_024/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_024/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_024/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_024/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_024/view_02.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_025",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_025/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_025/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_025/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_025/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_025/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_025/view_01.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_026",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_026/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_026/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_026/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_026/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_026/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_026/view_01.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_027",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_027/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_027/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_027/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_027/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_027/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_027/view_05.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_028",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_028/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_028/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_028/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_028/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_028/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_028/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_028/view_04.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_029",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_029/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_029/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_029/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_029/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_029/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_029/view_02.jpg"
+    ]
+  },
+  {
+    "id": "handbag::handbag_030",
+    "category": "handbag",
+    "instruction": "find the view where the handbag is most front-facing",
+    "views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_030/view_01.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_030/view_02.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_030/view_03.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_030/view_04.jpg",
+      "E:/CO3D-subset-handbag/handbag/handbag_030/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-handbag/handbag/handbag_030/view_01.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_001",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_001/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_001/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_001/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_001/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_001/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_001/view_02.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_002",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_002/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_002/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_002/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_002/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_002/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_002/view_03.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_003",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_003/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_003/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_003/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_003/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_003/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_003/view_01.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_004",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_004/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_004/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_004/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_004/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_004/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_004/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_004/view_05.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_005",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_005/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_005/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_005/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_005/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_005/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_005/view_05.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_006",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_006/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_006/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_006/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_006/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_006/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_006/view_05.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_007",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_007/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_007/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_007/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_007/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_007/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_007/view_05.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_008",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_008/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_008/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_008/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_008/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_008/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_008/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_008/view_04.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_009",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_009/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_009/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_009/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_009/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_009/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_009/view_04.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_010",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_010/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_010/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_010/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_010/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_010/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_010/view_05.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_011",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_011/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_011/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_011/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_011/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_011/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_011/view_05.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_012",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_012/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_012/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_012/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_012/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_012/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_012/view_01.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_013",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_013/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_013/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_013/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_013/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_013/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_013/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_013/view_05.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_014",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_014/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_014/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_014/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_014/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_014/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_014/view_01.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_015",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_015/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_015/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_015/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_015/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_015/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_015/view_04.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_016",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_016/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_016/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_016/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_016/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_016/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_016/view_02.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_017",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_017/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_017/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_017/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_017/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_017/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_017/view_01.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_018",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_018/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_018/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_018/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_018/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_018/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_018/view_03.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_019",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_019/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_019/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_019/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_019/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_019/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_019/view_03.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_020",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_020/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_020/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_020/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_020/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_020/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_020/view_01.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_021",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_021/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_021/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_021/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_021/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_021/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_021/view_01.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_022",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_022/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_022/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_022/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_022/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_022/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_022/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_022/view_05.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_023",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_023/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_023/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_023/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_023/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_023/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_023/view_05.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_024",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_024/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_024/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_024/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_024/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_024/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_024/view_05.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_025",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_025/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_025/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_025/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_025/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_025/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_025/view_01.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_026",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_026/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_026/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_026/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_026/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_026/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_026/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_026/view_05.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_027",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_027/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_027/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_027/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_027/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_027/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_027/view_01.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_028",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_028/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_028/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_028/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_028/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_028/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_028/view_01.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_029",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_029/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_029/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_029/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_029/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_029/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_029/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_029/view_04.jpg"
+    ]
+  },
+  {
+    "id": "remote::remote_030",
+    "category": "remote",
+    "instruction": "find the view where the remote is most upright",
+    "views": [
+      "E:/CO3D-subset-remote/remote/remote_030/view_01.jpg",
+      "E:/CO3D-subset-remote/remote/remote_030/view_02.jpg",
+      "E:/CO3D-subset-remote/remote/remote_030/view_03.jpg",
+      "E:/CO3D-subset-remote/remote/remote_030/view_04.jpg",
+      "E:/CO3D-subset-remote/remote/remote_030/view_05.jpg"
+    ],
+    "gt_views": [
+      "E:/CO3D-subset-remote/remote/remote_030/view_03.jpg"
+    ]
+  }
+]

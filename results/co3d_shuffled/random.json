@@ -1,0 +1,35 @@
+{
+  "num_trials": 10,
+  "accuracy": 0.3,
+  "accuracy_std": 0.04195235392680606,
+  "avg_steps": 3.0,
+  "avg_steps_std": 0.0,
+  "num_samples": 50,
+  "per_category": {
+    "remote": {
+      "num_samples": 10,
+      "accuracy": 0.3,
+      "avg_steps": 3.0
+    },
+    "teddybear": {
+      "num_samples": 10,
+      "accuracy": 0.4,
+      "avg_steps": 3.0
+    },
+    "handbag": {
+      "num_samples": 10,
+      "accuracy": 0.3,
+      "avg_steps": 3.0
+    },
+    "cup": {
+      "num_samples": 10,
+      "accuracy": 0.2,
+      "avg_steps": 3.0
+    },
+    "book": {
+      "num_samples": 10,
+      "accuracy": 0.4,
+      "avg_steps": 3.0
+    }
+  }
+}

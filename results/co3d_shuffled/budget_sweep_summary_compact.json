@@ -1,0 +1,217 @@
+{
+  "1": {
+    "num_trials": 10,
+    "accuracy": 0.30599999999999994,
+    "accuracy_std": 0.0482078831727758,
+    "avg_steps": 1.0,
+    "avg_steps_std": 0.0,
+    "early_stop_rate": 0.0,
+    "early_stop_rate_std": 0.0,
+    "top_1_accuracy": 0.30599999999999994,
+    "top_1_accuracy_std": 0.0482078831727758,
+    "top_2_accuracy": 0.30599999999999994,
+    "top_2_accuracy_std": 0.0482078831727758,
+    "top_3_accuracy": 0.30599999999999994,
+    "top_3_accuracy_std": 0.0482078831727758,
+    "num_samples": 50,
+    "per_category": {
+      "remote": {
+        "num_samples": 10,
+        "accuracy": 0.1,
+        "avg_steps": 1.0
+      },
+      "teddybear": {
+        "num_samples": 10,
+        "accuracy": 0.4,
+        "avg_steps": 1.0
+      },
+      "handbag": {
+        "num_samples": 10,
+        "accuracy": 0.1,
+        "avg_steps": 1.0
+      },
+      "cup": {
+        "num_samples": 10,
+        "accuracy": 0.4,
+        "avg_steps": 1.0
+      },
+      "book": {
+        "num_samples": 10,
+        "accuracy": 0.2,
+        "avg_steps": 1.0
+      }
+    }
+  },
+  "2": {
+    "num_trials": 10,
+    "accuracy": 0.348,
+    "accuracy_std": 0.038157568056677825,
+    "avg_steps": 2.0,
+    "avg_steps_std": 0.0,
+    "early_stop_rate": 0.0,
+    "early_stop_rate_std": 0.0,
+    "top_1_accuracy": 0.348,
+    "top_1_accuracy_std": 0.038157568056677825,
+    "top_2_accuracy": 0.662,
+    "top_2_accuracy_std": 0.058275209137333854,
+    "top_3_accuracy": 0.662,
+    "top_3_accuracy_std": 0.058275209137333854,
+    "num_samples": 50,
+    "per_category": {
+      "remote": {
+        "num_samples": 10,
+        "accuracy": 0.4,
+        "avg_steps": 2.0
+      },
+      "teddybear": {
+        "num_samples": 10,
+        "accuracy": 0.1,
+        "avg_steps": 2.0
+      },
+      "handbag": {
+        "num_samples": 10,
+        "accuracy": 0.5,
+        "avg_steps": 2.0
+      },
+      "cup": {
+        "num_samples": 10,
+        "accuracy": 0.5,
+        "avg_steps": 2.0
+      },
+      "book": {
+        "num_samples": 10,
+        "accuracy": 0.3,
+        "avg_steps": 2.0
+      }
+    }
+  },
+  "3": {
+    "num_trials": 10,
+    "accuracy": 0.356,
+    "accuracy_std": 0.024979991993593596,
+    "avg_steps": 3.0,
+    "avg_steps_std": 0.0,
+    "early_stop_rate": 0.0,
+    "early_stop_rate_std": 0.0,
+    "top_1_accuracy": 0.356,
+    "top_1_accuracy_std": 0.024979991993593596,
+    "top_2_accuracy": 0.6,
+    "top_2_accuracy_std": 0.026832815729997468,
+    "top_3_accuracy": 0.898,
+    "top_3_accuracy_std": 0.02749545416973503,
+    "num_samples": 50,
+    "per_category": {
+      "remote": {
+        "num_samples": 10,
+        "accuracy": 0.4,
+        "avg_steps": 3.0
+      },
+      "teddybear": {
+        "num_samples": 10,
+        "accuracy": 0.2,
+        "avg_steps": 3.0
+      },
+      "handbag": {
+        "num_samples": 10,
+        "accuracy": 0.5,
+        "avg_steps": 3.0
+      },
+      "cup": {
+        "num_samples": 10,
+        "accuracy": 0.3,
+        "avg_steps": 3.0
+      },
+      "book": {
+        "num_samples": 10,
+        "accuracy": 0.4,
+        "avg_steps": 3.0
+      }
+    }
+  },
+  "4": {
+    "num_trials": 10,
+    "accuracy": 0.36,
+    "accuracy_std": 0.0,
+    "avg_steps": 4.0,
+    "avg_steps_std": 0.0,
+    "early_stop_rate": 0.0,
+    "early_stop_rate_std": 0.0,
+    "top_1_accuracy": 0.36,
+    "top_1_accuracy_std": 0.0,
+    "top_2_accuracy": 0.592,
+    "top_2_accuracy_std": 0.01326649916142161,
+    "top_3_accuracy": 0.724,
+    "top_3_accuracy_std": 0.014966629547095779,
+    "num_samples": 50,
+    "per_category": {
+      "remote": {
+        "num_samples": 10,
+        "accuracy": 0.4,
+        "avg_steps": 4.0
+      },
+      "teddybear": {
+        "num_samples": 10,
+        "accuracy": 0.2,
+        "avg_steps": 4.0
+      },
+      "handbag": {
+        "num_samples": 10,
+        "accuracy": 0.4,
+        "avg_steps": 4.0
+      },
+      "cup": {
+        "num_samples": 10,
+        "accuracy": 0.4,
+        "avg_steps": 4.0
+      },
+      "book": {
+        "num_samples": 10,
+        "accuracy": 0.4,
+        "avg_steps": 4.0
+      }
+    }
+  },
+  "5": {
+    "num_trials": 10,
+    "accuracy": 0.36,
+    "accuracy_std": 0.0,
+    "avg_steps": 5.0,
+    "avg_steps_std": 0.0,
+    "early_stop_rate": 0.0,
+    "early_stop_rate_std": 0.0,
+    "top_1_accuracy": 0.36,
+    "top_1_accuracy_std": 0.0,
+    "top_2_accuracy": 0.5600000000000002,
+    "top_2_accuracy_std": 1.1102230246251565e-16,
+    "top_3_accuracy": 0.6799999999999999,
+    "top_3_accuracy_std": 1.1102230246251565e-16,
+    "num_samples": 50,
+    "per_category": {
+      "remote": {
+        "num_samples": 10,
+        "accuracy": 0.4,
+        "avg_steps": 5.0
+      },
+      "teddybear": {
+        "num_samples": 10,
+        "accuracy": 0.2,
+        "avg_steps": 5.0
+      },
+      "handbag": {
+        "num_samples": 10,
+        "accuracy": 0.4,
+        "avg_steps": 5.0
+      },
+      "cup": {
+        "num_samples": 10,
+        "accuracy": 0.4,
+        "avg_steps": 5.0
+      },
+      "book": {
+        "num_samples": 10,
+        "accuracy": 0.4,
+        "avg_steps": 5.0
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "num_trials": 20,
+  "accuracy": 0.4618840579710145,
+  "accuracy_std": 0.018543363575770553,
+  "avg_steps": 3.0,
+  "avg_steps_std": 0.0,
+  "num_samples": 345,
+  "per_category": {
+    "grasp": {
+      "num_samples": 199,
+      "accuracy": 0.5226130653266332,
+      "avg_steps": 3.0
+    },
+    "cut": {
+      "num_samples": 45,
+      "accuracy": 0.4,
+      "avg_steps": 3.0
+    },
+    "pound": {
+      "num_samples": 37,
+      "accuracy": 0.35135135135135137,
+      "avg_steps": 3.0
+    },
+    "scoop": {
+      "num_samples": 48,
+      "accuracy": 0.4166666666666667,
+      "avg_steps": 3.0
+    },
+    "wgrasp": {
+      "num_samples": 8,
+      "accuracy": 0.25,
+      "avg_steps": 3.0
+    },
+    "contain": {
+      "num_samples": 8,
+      "accuracy": 0.375,
+      "avg_steps": 3.0
+    }
+  }
+}

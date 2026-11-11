@@ -1,0 +1,32 @@
+# Raw multi-view image corpora (tens of GB; not for GitHub)
+/book/
+/cup/
+/handbag/
+/remote/
+/teddybear/
+/CO3D-subset/
+
+# Local experiment dumps (packaged summaries live in results/)
+/outputs/
+/outputs_*/
+
+# Python / tooling
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Temp / local-only
+_rs_media/
+_rs_copy.pptx
+_*.py
+_tmp*/
+_slide_check/
+*.mpo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

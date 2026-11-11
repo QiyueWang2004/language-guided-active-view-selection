@@ -1,0 +1,242 @@
+{
+  "1": {
+    "num_trials": 20,
+    "accuracy": 0.43884057971014495,
+    "accuracy_std": 0.025292242734346066,
+    "avg_steps": 1.0,
+    "avg_steps_std": 0.0,
+    "early_stop_rate": 0.0,
+    "early_stop_rate_std": 0.0,
+    "top_1_accuracy": 0.43884057971014495,
+    "top_1_accuracy_std": 0.025292242734346066,
+    "top_2_accuracy": 0.43884057971014495,
+    "top_2_accuracy_std": 0.025292242734346066,
+    "top_3_accuracy": 0.43884057971014495,
+    "top_3_accuracy_std": 0.025292242734346066,
+    "num_samples": 345,
+    "per_category": {
+      "grasp": {
+        "num_samples": 199,
+        "accuracy": 0.4321608040201005,
+        "avg_steps": 1.0
+      },
+      "cut": {
+        "num_samples": 45,
+        "accuracy": 0.5555555555555556,
+        "avg_steps": 1.0
+      },
+      "pound": {
+        "num_samples": 37,
+        "accuracy": 0.4594594594594595,
+        "avg_steps": 1.0
+      },
+      "scoop": {
+        "num_samples": 48,
+        "accuracy": 0.5,
+        "avg_steps": 1.0
+      },
+      "wgrasp": {
+        "num_samples": 8,
+        "accuracy": 0.5,
+        "avg_steps": 1.0
+      },
+      "contain": {
+        "num_samples": 8,
+        "accuracy": 0.5,
+        "avg_steps": 1.0
+      }
+    }
+  },
+  "2": {
+    "num_trials": 20,
+    "accuracy": 0.4573913043478262,
+    "accuracy_std": 0.010791020561731186,
+    "avg_steps": 2.0,
+    "avg_steps_std": 0.0,
+    "early_stop_rate": 0.0,
+    "early_stop_rate_std": 0.0,
+    "top_1_accuracy": 0.4573913043478262,
+    "top_1_accuracy_std": 0.010791020561731186,
+    "top_2_accuracy": 0.7202898550724638,
+    "top_2_accuracy_std": 0.013330182362396414,
+    "top_3_accuracy": 0.7202898550724638,
+    "top_3_accuracy_std": 0.013330182362396414,
+    "num_samples": 345,
+    "per_category": {
+      "grasp": {
+        "num_samples": 199,
+        "accuracy": 0.5025125628140703,
+        "avg_steps": 2.0
+      },
+      "cut": {
+        "num_samples": 45,
+        "accuracy": 0.4,
+        "avg_steps": 2.0
+      },
+      "pound": {
+        "num_samples": 37,
+        "accuracy": 0.2702702702702703,
+        "avg_steps": 2.0
+      },
+      "scoop": {
+        "num_samples": 48,
+        "accuracy": 0.5,
+        "avg_steps": 2.0
+      },
+      "wgrasp": {
+        "num_samples": 8,
+        "accuracy": 0.125,
+        "avg_steps": 2.0
+      },
+      "contain": {
+        "num_samples": 8,
+        "accuracy": 0.625,
+        "avg_steps": 2.0
+      }
+    }
+  },
+  "3": {
+    "num_trials": 20,
+    "accuracy": 0.47260869565217395,
+    "accuracy_std": 0.008572803722417543,
+    "avg_steps": 3.0,
+    "avg_steps_std": 0.0,
+    "early_stop_rate": 0.0,
+    "early_stop_rate_std": 0.0,
+    "top_1_accuracy": 0.47260869565217395,
+    "top_1_accuracy_std": 0.008572803722417543,
+    "top_2_accuracy": 0.748840579710145,
+    "top_2_accuracy_std": 0.012030731495427032,
+    "top_3_accuracy": 0.8963768115942028,
+    "top_3_accuracy_std": 0.01276267794509377,
+    "num_samples": 345,
+    "per_category": {
+      "grasp": {
+        "num_samples": 199,
+        "accuracy": 0.5226130653266332,
+        "avg_steps": 3.0
+      },
+      "cut": {
+        "num_samples": 45,
+        "accuracy": 0.4,
+        "avg_steps": 3.0
+      },
+      "pound": {
+        "num_samples": 37,
+        "accuracy": 0.32432432432432434,
+        "avg_steps": 3.0
+      },
+      "scoop": {
+        "num_samples": 48,
+        "accuracy": 0.5,
+        "avg_steps": 3.0
+      },
+      "wgrasp": {
+        "num_samples": 8,
+        "accuracy": 0.125,
+        "avg_steps": 3.0
+      },
+      "contain": {
+        "num_samples": 8,
+        "accuracy": 0.5,
+        "avg_steps": 3.0
+      }
+    }
+  },
+  "4": {
+    "num_trials": 20,
+    "accuracy": 0.4842028985507246,
+    "accuracy_std": 0.003104968881975154,
+    "avg_steps": 4.0,
+    "avg_steps_std": 0.0,
+    "early_stop_rate": 0.0,
+    "early_stop_rate_std": 0.0,
+    "top_1_accuracy": 0.4842028985507246,
+    "top_1_accuracy_std": 0.003104968881975154,
+    "top_2_accuracy": 0.7402898550724639,
+    "top_2_accuracy_std": 0.006442350948084901,
+    "top_3_accuracy": 0.9008695652173913,
+    "top_3_accuracy_std": 0.006189610580887722,
+    "num_samples": 345,
+    "per_category": {
+      "grasp": {
+        "num_samples": 199,
+        "accuracy": 0.5376884422110553,
+        "avg_steps": 4.0
+      },
+      "cut": {
+        "num_samples": 45,
+        "accuracy": 0.4,
+        "avg_steps": 4.0
+      },
+      "pound": {
+        "num_samples": 37,
+        "accuracy": 0.35135135135135137,
+        "avg_steps": 4.0
+      },
+      "scoop": {
+        "num_samples": 48,
+        "accuracy": 0.5416666666666666,
+        "avg_steps": 4.0
+      },
+      "wgrasp": {
+        "num_samples": 8,
+        "accuracy": 0.0,
+        "avg_steps": 4.0
+      },
+      "contain": {
+        "num_samples": 8,
+        "accuracy": 0.375,
+        "avg_steps": 4.0
+      }
+    }
+  },
+  "5": {
+    "num_trials": 20,
+    "accuracy": 0.481159420289855,
+    "accuracy_std": 1.1102230246251565e-16,
+    "avg_steps": 5.0,
+    "avg_steps_std": 0.0,
+    "early_stop_rate": 0.0,
+    "early_stop_rate_std": 0.0,
+    "top_1_accuracy": 0.481159420289855,
+    "top_1_accuracy_std": 1.1102230246251565e-16,
+    "top_2_accuracy": 0.7362318840579711,
+    "top_2_accuracy_std": 1.1102230246251565e-16,
+    "top_3_accuracy": 0.8956521739130434,
+    "top_3_accuracy_std": 1.1102230246251565e-16,
+    "num_samples": 345,
+    "per_category": {
+      "grasp": {
+        "num_samples": 199,
+        "accuracy": 0.5326633165829145,
+        "avg_steps": 5.0
+      },
+      "cut": {
+        "num_samples": 45,
+        "accuracy": 0.4,
+        "avg_steps": 5.0
+      },
+      "pound": {
+        "num_samples": 37,
+        "accuracy": 0.35135135135135137,
+        "avg_steps": 5.0
+      },
+      "scoop": {
+        "num_samples": 48,
+        "accuracy": 0.5416666666666666,
+        "avg_steps": 5.0
+      },
+      "wgrasp": {
+        "num_samples": 8,
+        "accuracy": 0.0,
+        "avg_steps": 5.0
+      },
+      "contain": {
+        "num_samples": 8,
+        "accuracy": 0.375,
+        "avg_steps": 5.0
+      }
+    }
+  }
+}

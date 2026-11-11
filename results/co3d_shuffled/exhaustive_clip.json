@@ -1,0 +1,945 @@
+{
+  "num_trials": 1,
+  "trials": [
+    {
+      "accuracy": 0.36,
+      "avg_steps": null,
+      "num_samples": 50,
+      "results": [
+        {
+          "sample_id": "remote::remote_008",
+          "category": "remote",
+          "query": "find the view where the remote is most upright",
+          "final_index": 0,
+          "final_image_path": "E:/CO3D-subset-remote/remote/remote_008/view_03.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "teddybear::teddybear_010",
+          "category": "teddybear",
+          "query": "find the view where the face is most visible",
+          "final_index": 4,
+          "final_image_path": "E:/CO3D-subset-teddybear/teddybear/teddybear_010/view_02.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "handbag::handbag_001",
+          "category": "handbag",
+          "query": "find the view where the handbag is most front-facing",
+          "final_index": 3,
+          "final_image_path": "E:/CO3D-subset-handbag/handbag/handbag_001/view_01.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "cup::cup_007",
+          "category": "cup",
+          "query": "find the view where the printed design is front-facing",
+          "final_index": 2,
+          "final_image_path": "E:/CO3D-subset-cup/cup/cup_007/view_01.jpg",
+          "correct": true,
+          "steps": 5
+        },
+        {
+          "sample_id": "book::book_008",
+          "category": "book",
+          "query": "find the view where the book is most front-facing",
+          "final_index": 1,
+          "final_image_path": "E:/CO3D-subset-book/book/book_008/view_05.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "cup::cup_003",
+          "category": "cup",
+          "query": "find the view where the printed design is front-facing",
+          "final_index": 4,
+          "final_image_path": "E:/CO3D-subset-cup/cup/cup_003/view_05.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "teddybear::teddybear_001",
+          "category": "teddybear",
+          "query": "find the view where the face is most visible",
+          "final_index": 3,
+          "final_image_path": "E:/CO3D-subset-teddybear/teddybear/teddybear_001/view_05.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "handbag::handbag_003",
+          "category": "handbag",
+          "query": "find the view where the handbag is most front-facing",
+          "final_index": 3,
+          "final_image_path": "E:/CO3D-subset-handbag/handbag/handbag_003/view_01.jpg",
+          "correct": true,
+          "steps": 5
+        },
+        {
+          "sample_id": "book::book_001",
+          "category": "book",
+          "query": "find the view where the book is most front-facing",
+          "final_index": 2,
+          "final_image_path": "E:/CO3D-subset-book/book/book_001/view_03.jpg",
+          "correct": true,
+          "steps": 5
+        },
+        {
+          "sample_id": "handbag::handbag_007",
+          "category": "handbag",
+          "query": "find the view where the handbag is most front-facing",
+          "final_index": 1,
+          "final_image_path": "E:/CO3D-subset-handbag/handbag/handbag_007/view_01.jpg",
+          "correct": true,
+          "steps": 5
+        },
+        {
+          "sample_id": "book::book_004",
+          "category": "book",
+          "query": "find the view where the book is most front-facing",
+          "final_index": 1,
+          "final_image_path": "E:/CO3D-subset-book/book/book_004/view_05.jpg",
+          "correct": true,
+          "steps": 5
+        },
+        {
+          "sample_id": "cup::cup_001",
+          "category": "cup",
+          "query": "find the view where the printed design is front-facing",
+          "final_index": 3,
+          "final_image_path": "E:/CO3D-subset-cup/cup/cup_001/view_05.jpg",
+          "correct": true,
+          "steps": 5
+        },
+        {
+          "sample_id": "remote::remote_007",
+          "category": "remote",
+          "query": "find the view where the remote is most upright",
+          "final_index": 0,
+          "final_image_path": "E:/CO3D-subset-remote/remote/remote_007/view_01.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "handbag::handbag_006",
+          "category": "handbag",
+          "query": "find the view where the handbag is most front-facing",
+          "final_index": 0,
+          "final_image_path": "E:/CO3D-subset-handbag/handbag/handbag_006/view_05.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "teddybear::teddybear_008",
+          "category": "teddybear",
+          "query": "find the view where the face is most visible",
+          "final_index": 0,
+          "final_image_path": "E:/CO3D-subset-teddybear/teddybear/teddybear_008/view_04.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "remote::remote_005",
+          "category": "remote",
+          "query": "find the view where the remote is most upright",
+          "final_index": 3,
+          "final_image_path": "E:/CO3D-subset-remote/remote/remote_005/view_05.jpg",
+          "correct": true,
+          "steps": 5
+        },
+        {
+          "sample_id": "handbag::handbag_004",
+          "category": "handbag",
+          "query": "find the view where the handbag is most front-facing",
+          "final_index": 3,
+          "final_image_path": "E:/CO3D-subset-handbag/handbag/handbag_004/view_01.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "remote::remote_009",
+          "category": "remote",
+          "query": "find the view where the remote is most upright",
+          "final_index": 2,
+          "final_image_path": "E:/CO3D-subset-remote/remote/remote_009/view_03.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "book::book_007",
+          "category": "book",
+          "query": "find the view where the book is most front-facing",
+          "final_index": 4,
+          "final_image_path": "E:/CO3D-subset-book/book/book_007/view_03.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "handbag::handbag_008",
+          "category": "handbag",
+          "query": "find the view where the handbag is most front-facing",
+          "final_index": 1,
+          "final_image_path": "E:/CO3D-subset-handbag/handbag/handbag_008/view_01.jpg",
+          "correct": true,
+          "steps": 5
+        },
+        {
+          "sample_id": "book::book_006",
+          "category": "book",
+          "query": "find the view where the book is most front-facing",
+          "final_index": 4,
+          "final_image_path": "E:/CO3D-subset-book/book/book_006/view_05.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "remote::remote_010",
+          "category": "remote",
+          "query": "find the view where the remote is most upright",
+          "final_index": 3,
+          "final_image_path": "E:/CO3D-subset-remote/remote/remote_010/view_05.jpg",
+          "correct": true,
+          "steps": 5
+        },
+        {
+          "sample_id": "book::book_005",
+          "category": "book",
+          "query": "find the view where the book is most front-facing",
+          "final_index": 4,
+          "final_image_path": "E:/CO3D-subset-book/book/book_005/view_04.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "teddybear::teddybear_007",
+          "category": "teddybear",
+          "query": "find the view where the face is most visible",
+          "final_index": 0,
+          "final_image_path": "E:/CO3D-subset-teddybear/teddybear/teddybear_007/view_04.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "remote::remote_006",
+          "category": "remote",
+          "query": "find the view where the remote is most upright",
+          "final_index": 1,
+          "final_image_path": "E:/CO3D-subset-remote/remote/remote_006/view_05.jpg",
+          "correct": true,
+          "steps": 5
+        },
+        {
+          "sample_id": "teddybear::teddybear_003",
+          "category": "teddybear",
+          "query": "find the view where the face is most visible",
+          "final_index": 4,
+          "final_image_path": "E:/CO3D-subset-teddybear/teddybear/teddybear_003/view_02.jpg",
+          "correct": true,
+          "steps": 5
+        },
+        {
+          "sample_id": "cup::cup_002",
+          "category": "cup",
+          "query": "find the view where the printed design is front-facing",
+          "final_index": 4,
+          "final_image_path": "E:/CO3D-subset-cup/cup/cup_002/view_02.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "teddybear::teddybear_005",
+          "category": "teddybear",
+          "query": "find the view where the face is most visible",
+          "final_index": 1,
+          "final_image_path": "E:/CO3D-subset-teddybear/teddybear/teddybear_005/view_05.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "cup::cup_009",
+          "category": "cup",
+          "query": "find the view where the printed design is front-facing",
+          "final_index": 2,
+          "final_image_path": "E:/CO3D-subset-cup/cup/cup_009/view_01.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "teddybear::teddybear_009",
+          "category": "teddybear",
+          "query": "find the view where the face is most visible",
+          "final_index": 1,
+          "final_image_path": "E:/CO3D-subset-teddybear/teddybear/teddybear_009/view_03.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "book::book_009",
+          "category": "book",
+          "query": "find the view where the book is most front-facing",
+          "final_index": 0,
+          "final_image_path": "E:/CO3D-subset-book/book/book_009/view_03.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "handbag::handbag_009",
+          "category": "handbag",
+          "query": "find the view where the handbag is most front-facing",
+          "final_index": 4,
+          "final_image_path": "E:/CO3D-subset-handbag/handbag/handbag_009/view_04.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "book::book_002",
+          "category": "book",
+          "query": "find the view where the book is most front-facing",
+          "final_index": 0,
+          "final_image_path": "E:/CO3D-subset-book/book/book_002/view_02.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "cup::cup_010",
+          "category": "cup",
+          "query": "find the view where the printed design is front-facing",
+          "final_index": 2,
+          "final_image_path": "E:/CO3D-subset-cup/cup/cup_010/view_02.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "handbag::handbag_002",
+          "category": "handbag",
+          "query": "find the view where the handbag is most front-facing",
+          "final_index": 2,
+          "final_image_path": "E:/CO3D-subset-handbag/handbag/handbag_002/view_01.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "remote::remote_003",
+          "category": "remote",
+          "query": "find the view where the remote is most upright",
+          "final_index": 4,
+          "final_image_path": "E:/CO3D-subset-remote/remote/remote_003/view_01.jpg",
+          "correct": true,
+          "steps": 5
+        },
+        {
+          "sample_id": "cup::cup_004",
+          "category": "cup",
+          "query": "find the view where the printed design is front-facing",
+          "final_index": 0,
+          "final_image_path": "E:/CO3D-subset-cup/cup/cup_004/view_02.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "remote::remote_004",
+          "category": "remote",
+          "query": "find the view where the remote is most upright",
+          "final_index": 2,
+          "final_image_path": "E:/CO3D-subset-remote/remote/remote_004/view_03.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "handbag::handbag_010",
+          "category": "handbag",
+          "query": "find the view where the handbag is most front-facing",
+          "final_index": 0,
+          "final_image_path": "E:/CO3D-subset-handbag/handbag/handbag_010/view_01.jpg",
+          "correct": true,
+          "steps": 5
+        },
+        {
+          "sample_id": "handbag::handbag_005",
+          "category": "handbag",
+          "query": "find the view where the handbag is most front-facing",
+          "final_index": 4,
+          "final_image_path": "E:/CO3D-subset-handbag/handbag/handbag_005/view_05.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "teddybear::teddybear_006",
+          "category": "teddybear",
+          "query": "find the view where the face is most visible",
+          "final_index": 3,
+          "final_image_path": "E:/CO3D-subset-teddybear/teddybear/teddybear_006/view_05.jpg",
+          "correct": true,
+          "steps": 5
+        },
+        {
+          "sample_id": "remote::remote_002",
+          "category": "remote",
+          "query": "find the view where the remote is most upright",
+          "final_index": 2,
+          "final_image_path": "E:/CO3D-subset-remote/remote/remote_002/view_01.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "book::book_003",
+          "category": "book",
+          "query": "find the view where the book is most front-facing",
+          "final_index": 2,
+          "final_image_path": "E:/CO3D-subset-book/book/book_003/view_04.jpg",
+          "correct": true,
+          "steps": 5
+        },
+        {
+          "sample_id": "teddybear::teddybear_002",
+          "category": "teddybear",
+          "query": "find the view where the face is most visible",
+          "final_index": 3,
+          "final_image_path": "E:/CO3D-subset-teddybear/teddybear/teddybear_002/view_04.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "book::book_010",
+          "category": "book",
+          "query": "find the view where the book is most front-facing",
+          "final_index": 1,
+          "final_image_path": "E:/CO3D-subset-book/book/book_010/view_05.jpg",
+          "correct": true,
+          "steps": 5
+        },
+        {
+          "sample_id": "cup::cup_006",
+          "category": "cup",
+          "query": "find the view where the printed design is front-facing",
+          "final_index": 3,
+          "final_image_path": "E:/CO3D-subset-cup/cup/cup_006/view_04.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "teddybear::teddybear_004",
+          "category": "teddybear",
+          "query": "find the view where the face is most visible",
+          "final_index": 4,
+          "final_image_path": "E:/CO3D-subset-teddybear/teddybear/teddybear_004/view_04.jpg",
+          "correct": false,
+          "steps": 5
+        },
+        {
+          "sample_id": "cup::cup_008",
+          "category": "cup",
+          "query": "find the view where the printed design is front-facing",
+          "final_index": 2,
+          "final_image_path": "E:/CO3D-subset-cup/cup/cup_008/view_02.jpg",
+          "correct": true,
+          "steps": 5
+        },
+        {
+          "sample_id": "cup::cup_005",
+          "category": "cup",
+          "query": "find the view where the printed design is front-facing",
+          "final_index": 4,
+          "final_image_path": "E:/CO3D-subset-cup/cup/cup_005/view_02.jpg",
+          "correct": true,
+          "steps": 5
+        },
+        {
+          "sample_id": "remote::remote_001",
+          "category": "remote",
+          "query": "find the view where the remote is most upright",
+          "final_index": 0,
+          "final_image_path": "E:/CO3D-subset-remote/remote/remote_001/view_05.jpg",
+          "correct": false,
+          "steps": 5
+        }
+      ],
+      "trial_idx": 0
+    }
+  ],
+  "accuracy": 0.36,
+  "accuracy_std": 0.0,
+  "num_samples": 50,
+  "results": [
+    {
+      "sample_id": "remote::remote_008",
+      "category": "remote",
+      "query": "find the view where the remote is most upright",
+      "final_index": 0,
+      "final_image_path": "E:/CO3D-subset-remote/remote/remote_008/view_03.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "teddybear::teddybear_010",
+      "category": "teddybear",
+      "query": "find the view where the face is most visible",
+      "final_index": 4,
+      "final_image_path": "E:/CO3D-subset-teddybear/teddybear/teddybear_010/view_02.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "handbag::handbag_001",
+      "category": "handbag",
+      "query": "find the view where the handbag is most front-facing",
+      "final_index": 3,
+      "final_image_path": "E:/CO3D-subset-handbag/handbag/handbag_001/view_01.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "cup::cup_007",
+      "category": "cup",
+      "query": "find the view where the printed design is front-facing",
+      "final_index": 2,
+      "final_image_path": "E:/CO3D-subset-cup/cup/cup_007/view_01.jpg",
+      "correct": true,
+      "steps": 5
+    },
+    {
+      "sample_id": "book::book_008",
+      "category": "book",
+      "query": "find the view where the book is most front-facing",
+      "final_index": 1,
+      "final_image_path": "E:/CO3D-subset-book/book/book_008/view_05.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "cup::cup_003",
+      "category": "cup",
+      "query": "find the view where the printed design is front-facing",
+      "final_index": 4,
+      "final_image_path": "E:/CO3D-subset-cup/cup/cup_003/view_05.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "teddybear::teddybear_001",
+      "category": "teddybear",
+      "query": "find the view where the face is most visible",
+      "final_index": 3,
+      "final_image_path": "E:/CO3D-subset-teddybear/teddybear/teddybear_001/view_05.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "handbag::handbag_003",
+      "category": "handbag",
+      "query": "find the view where the handbag is most front-facing",
+      "final_index": 3,
+      "final_image_path": "E:/CO3D-subset-handbag/handbag/handbag_003/view_01.jpg",
+      "correct": true,
+      "steps": 5
+    },
+    {
+      "sample_id": "book::book_001",
+      "category": "book",
+      "query": "find the view where the book is most front-facing",
+      "final_index": 2,
+      "final_image_path": "E:/CO3D-subset-book/book/book_001/view_03.jpg",
+      "correct": true,
+      "steps": 5
+    },
+    {
+      "sample_id": "handbag::handbag_007",
+      "category": "handbag",
+      "query": "find the view where the handbag is most front-facing",
+      "final_index": 1,
+      "final_image_path": "E:/CO3D-subset-handbag/handbag/handbag_007/view_01.jpg",
+      "correct": true,
+      "steps": 5
+    },
+    {
+      "sample_id": "book::book_004",
+      "category": "book",
+      "query": "find the view where the book is most front-facing",
+      "final_index": 1,
+      "final_image_path": "E:/CO3D-subset-book/book/book_004/view_05.jpg",
+      "correct": true,
+      "steps": 5
+    },
+    {
+      "sample_id": "cup::cup_001",
+      "category": "cup",
+      "query": "find the view where the printed design is front-facing",
+      "final_index": 3,
+      "final_image_path": "E:/CO3D-subset-cup/cup/cup_001/view_05.jpg",
+      "correct": true,
+      "steps": 5
+    },
+    {
+      "sample_id": "remote::remote_007",
+      "category": "remote",
+      "query": "find the view where the remote is most upright",
+      "final_index": 0,
+      "final_image_path": "E:/CO3D-subset-remote/remote/remote_007/view_01.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "handbag::handbag_006",
+      "category": "handbag",
+      "query": "find the view where the handbag is most front-facing",
+      "final_index": 0,
+      "final_image_path": "E:/CO3D-subset-handbag/handbag/handbag_006/view_05.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "teddybear::teddybear_008",
+      "category": "teddybear",
+      "query": "find the view where the face is most visible",
+      "final_index": 0,
+      "final_image_path": "E:/CO3D-subset-teddybear/teddybear/teddybear_008/view_04.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "remote::remote_005",
+      "category": "remote",
+      "query": "find the view where the remote is most upright",
+      "final_index": 3,
+      "final_image_path": "E:/CO3D-subset-remote/remote/remote_005/view_05.jpg",
+      "correct": true,
+      "steps": 5
+    },
+    {
+      "sample_id": "handbag::handbag_004",
+      "category": "handbag",
+      "query": "find the view where the handbag is most front-facing",
+      "final_index": 3,
+      "final_image_path": "E:/CO3D-subset-handbag/handbag/handbag_004/view_01.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "remote::remote_009",
+      "category": "remote",
+      "query": "find the view where the remote is most upright",
+      "final_index": 2,
+      "final_image_path": "E:/CO3D-subset-remote/remote/remote_009/view_03.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "book::book_007",
+      "category": "book",
+      "query": "find the view where the book is most front-facing",
+      "final_index": 4,
+      "final_image_path": "E:/CO3D-subset-book/book/book_007/view_03.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "handbag::handbag_008",
+      "category": "handbag",
+      "query": "find the view where the handbag is most front-facing",
+      "final_index": 1,
+      "final_image_path": "E:/CO3D-subset-handbag/handbag/handbag_008/view_01.jpg",
+      "correct": true,
+      "steps": 5
+    },
+    {
+      "sample_id": "book::book_006",
+      "category": "book",
+      "query": "find the view where the book is most front-facing",
+      "final_index": 4,
+      "final_image_path": "E:/CO3D-subset-book/book/book_006/view_05.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "remote::remote_010",
+      "category": "remote",
+      "query": "find the view where the remote is most upright",
+      "final_index": 3,
+      "final_image_path": "E:/CO3D-subset-remote/remote/remote_010/view_05.jpg",
+      "correct": true,
+      "steps": 5
+    },
+    {
+      "sample_id": "book::book_005",
+      "category": "book",
+      "query": "find the view where the book is most front-facing",
+      "final_index": 4,
+      "final_image_path": "E:/CO3D-subset-book/book/book_005/view_04.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "teddybear::teddybear_007",
+      "category": "teddybear",
+      "query": "find the view where the face is most visible",
+      "final_index": 0,
+      "final_image_path": "E:/CO3D-subset-teddybear/teddybear/teddybear_007/view_04.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "remote::remote_006",
+      "category": "remote",
+      "query": "find the view where the remote is most upright",
+      "final_index": 1,
+      "final_image_path": "E:/CO3D-subset-remote/remote/remote_006/view_05.jpg",
+      "correct": true,
+      "steps": 5
+    },
+    {
+      "sample_id": "teddybear::teddybear_003",
+      "category": "teddybear",
+      "query": "find the view where the face is most visible",
+      "final_index": 4,
+      "final_image_path": "E:/CO3D-subset-teddybear/teddybear/teddybear_003/view_02.jpg",
+      "correct": true,
+      "steps": 5
+    },
+    {
+      "sample_id": "cup::cup_002",
+      "category": "cup",
+      "query": "find the view where the printed design is front-facing",
+      "final_index": 4,
+      "final_image_path": "E:/CO3D-subset-cup/cup/cup_002/view_02.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "teddybear::teddybear_005",
+      "category": "teddybear",
+      "query": "find the view where the face is most visible",
+      "final_index": 1,
+      "final_image_path": "E:/CO3D-subset-teddybear/teddybear/teddybear_005/view_05.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "cup::cup_009",
+      "category": "cup",
+      "query": "find the view where the printed design is front-facing",
+      "final_index": 2,
+      "final_image_path": "E:/CO3D-subset-cup/cup/cup_009/view_01.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "teddybear::teddybear_009",
+      "category": "teddybear",
+      "query": "find the view where the face is most visible",
+      "final_index": 1,
+      "final_image_path": "E:/CO3D-subset-teddybear/teddybear/teddybear_009/view_03.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "book::book_009",
+      "category": "book",
+      "query": "find the view where the book is most front-facing",
+      "final_index": 0,
+      "final_image_path": "E:/CO3D-subset-book/book/book_009/view_03.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "handbag::handbag_009",
+      "category": "handbag",
+      "query": "find the view where the handbag is most front-facing",
+      "final_index": 4,
+      "final_image_path": "E:/CO3D-subset-handbag/handbag/handbag_009/view_04.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "book::book_002",
+      "category": "book",
+      "query": "find the view where the book is most front-facing",
+      "final_index": 0,
+      "final_image_path": "E:/CO3D-subset-book/book/book_002/view_02.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "cup::cup_010",
+      "category": "cup",
+      "query": "find the view where the printed design is front-facing",
+      "final_index": 2,
+      "final_image_path": "E:/CO3D-subset-cup/cup/cup_010/view_02.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "handbag::handbag_002",
+      "category": "handbag",
+      "query": "find the view where the handbag is most front-facing",
+      "final_index": 2,
+      "final_image_path": "E:/CO3D-subset-handbag/handbag/handbag_002/view_01.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "remote::remote_003",
+      "category": "remote",
+      "query": "find the view where the remote is most upright",
+      "final_index": 4,
+      "final_image_path": "E:/CO3D-subset-remote/remote/remote_003/view_01.jpg",
+      "correct": true,
+      "steps": 5
+    },
+    {
+      "sample_id": "cup::cup_004",
+      "category": "cup",
+      "query": "find the view where the printed design is front-facing",
+      "final_index": 0,
+      "final_image_path": "E:/CO3D-subset-cup/cup/cup_004/view_02.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "remote::remote_004",
+      "category": "remote",
+      "query": "find the view where the remote is most upright",
+      "final_index": 2,
+      "final_image_path": "E:/CO3D-subset-remote/remote/remote_004/view_03.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "handbag::handbag_010",
+      "category": "handbag",
+      "query": "find the view where the handbag is most front-facing",
+      "final_index": 0,
+      "final_image_path": "E:/CO3D-subset-handbag/handbag/handbag_010/view_01.jpg",
+      "correct": true,
+      "steps": 5
+    },
+    {
+      "sample_id": "handbag::handbag_005",
+      "category": "handbag",
+      "query": "find the view where the handbag is most front-facing",
+      "final_index": 4,
+      "final_image_path": "E:/CO3D-subset-handbag/handbag/handbag_005/view_05.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "teddybear::teddybear_006",
+      "category": "teddybear",
+      "query": "find the view where the face is most visible",
+      "final_index": 3,
+      "final_image_path": "E:/CO3D-subset-teddybear/teddybear/teddybear_006/view_05.jpg",
+      "correct": true,
+      "steps": 5
+    },
+    {
+      "sample_id": "remote::remote_002",
+      "category": "remote",
+      "query": "find the view where the remote is most upright",
+      "final_index": 2,
+      "final_image_path": "E:/CO3D-subset-remote/remote/remote_002/view_01.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "book::book_003",
+      "category": "book",
+      "query": "find the view where the book is most front-facing",
+      "final_index": 2,
+      "final_image_path": "E:/CO3D-subset-book/book/book_003/view_04.jpg",
+      "correct": true,
+      "steps": 5
+    },
+    {
+      "sample_id": "teddybear::teddybear_002",
+      "category": "teddybear",
+      "query": "find the view where the face is most visible",
+      "final_index": 3,
+      "final_image_path": "E:/CO3D-subset-teddybear/teddybear/teddybear_002/view_04.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "book::book_010",
+      "category": "book",
+      "query": "find the view where the book is most front-facing",
+      "final_index": 1,
+      "final_image_path": "E:/CO3D-subset-book/book/book_010/view_05.jpg",
+      "correct": true,
+      "steps": 5
+    },
+    {
+      "sample_id": "cup::cup_006",
+      "category": "cup",
+      "query": "find the view where the printed design is front-facing",
+      "final_index": 3,
+      "final_image_path": "E:/CO3D-subset-cup/cup/cup_006/view_04.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "teddybear::teddybear_004",
+      "category": "teddybear",
+      "query": "find the view where the face is most visible",
+      "final_index": 4,
+      "final_image_path": "E:/CO3D-subset-teddybear/teddybear/teddybear_004/view_04.jpg",
+      "correct": false,
+      "steps": 5
+    },
+    {
+      "sample_id": "cup::cup_008",
+      "category": "cup",
+      "query": "find the view where the printed design is front-facing",
+      "final_index": 2,
+      "final_image_path": "E:/CO3D-subset-cup/cup/cup_008/view_02.jpg",
+      "correct": true,
+      "steps": 5
+    },
+    {
+      "sample_id": "cup::cup_005",
+      "category": "cup",
+      "query": "find the view where the printed design is front-facing",
+      "final_index": 4,
+      "final_image_path": "E:/CO3D-subset-cup/cup/cup_005/view_02.jpg",
+      "correct": true,
+      "steps": 5
+    },
+    {
+      "sample_id": "remote::remote_001",
+      "category": "remote",
+      "query": "find the view where the remote is most upright",
+      "final_index": 0,
+      "final_image_path": "E:/CO3D-subset-remote/remote/remote_001/view_05.jpg",
+      "correct": false,
+      "steps": 5
+    }
+  ],
+  "per_category": {
+    "remote": {
+      "num_samples": 10,
+      "accuracy": 0.4,
+      "avg_steps": 5.0
+    },
+    "teddybear": {
+      "num_samples": 10,
+      "accuracy": 0.2,
+      "avg_steps": 5.0
+    },
+    "handbag": {
+      "num_samples": 10,
+      "accuracy": 0.4,
+      "avg_steps": 5.0
+    },
+    "cup": {
+      "num_samples": 10,
+      "accuracy": 0.4,
+      "avg_steps": 5.0
+    },
+    "book": {
+      "num_samples": 10,
+      "accuracy": 0.4,
+      "avg_steps": 5.0
+    }
+  }
+}

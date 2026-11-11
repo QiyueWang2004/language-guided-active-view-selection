@@ -1,0 +1,3471 @@
+{
+  "labels_json": "E:\\CO3D-combined\\annotations_all_5sets_shuffled.json",
+  "baseline": "random+clip",
+  "configs": {
+    "random+clip": {
+      "label": "Baseline: Random selection + CLIP rerank",
+      "selector": "random",
+      "reranker": "clip"
+    },
+    "random+learned": {
+      "label": "Random selection + Learned rerank",
+      "selector": "random",
+      "reranker": "learned"
+    },
+    "clip_rel+clip": {
+      "label": "CLIP-relevance selection + CLIP rerank",
+      "selector": "clip_rel",
+      "reranker": "clip"
+    },
+    "clip_rel_nov+clip": {
+      "label": "CLIP-relevance+novelty selection + CLIP rerank",
+      "selector": "clip_rel_nov",
+      "reranker": "clip"
+    },
+    "clip_rel_nov+learned": {
+      "label": "CLIP-relevance+novelty selection + Learned rerank",
+      "selector": "clip_rel_nov",
+      "reranker": "learned"
+    },
+    "trained+clip": {
+      "label": "Trained selection + CLIP rerank",
+      "selector": "trained",
+      "reranker": "clip"
+    },
+    "trained+learned": {
+      "label": "Trained selection + Learned rerank (full pipeline)",
+      "selector": "trained",
+      "reranker": "learned"
+    }
+  },
+  "baseline_label": "Random selection + CLIP rerank",
+  "components": {
+    "learned_rerank": {
+      "label": "Learned rerank vs baseline [Random selection + Learned rerank]",
+      "method": "random+learned",
+      "baseline": "random+clip"
+    },
+    "clip_rel_selection": {
+      "label": "CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank]",
+      "method": "clip_rel+clip",
+      "baseline": "random+clip"
+    },
+    "clip_rel_nov_selection": {
+      "label": "CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank]",
+      "method": "clip_rel_nov+clip",
+      "baseline": "random+clip"
+    },
+    "trained_selection": {
+      "label": "Trained selection vs baseline [Trained selection + CLIP rerank]",
+      "method": "trained+clip",
+      "baseline": "random+clip"
+    },
+    "clip_rel_nov_selection_learned_rerank": {
+      "label": "CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank]",
+      "method": "clip_rel_nov+learned",
+      "baseline": "random+clip"
+    },
+    "full_pipeline": {
+      "label": "Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank]",
+      "method": "trained+learned",
+      "baseline": "random+clip"
+    }
+  },
+  "budgets": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "categories": [
+    "book",
+    "cup",
+    "handbag",
+    "remote",
+    "teddybear"
+  ],
+  "num_trials": 10,
+  "num_eval_samples": 50,
+  "w_novelty": 0.5,
+  "model_info": {
+    "reranker": {
+      "model_name": "reranker",
+      "feat_dim": 512,
+      "hidden_dim": 256,
+      "train_objects": 75,
+      "val_objects": 25,
+      "train_views": 375,
+      "best_val_accuracy": 0.8,
+      "epochs_ran": 21,
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 1.0227659742037456,
+          "val_accuracy": 0.52
+        },
+        {
+          "epoch": 2,
+          "train_loss": 1.012923131386439,
+          "val_accuracy": 0.52
+        },
+        {
+          "epoch": 3,
+          "train_loss": 1.0083776116371155,
+          "val_accuracy": 0.56
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.9801300168037415,
+          "val_accuracy": 0.56
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.9514006773630778,
+          "val_accuracy": 0.6
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.9082050919532776,
+          "val_accuracy": 0.56
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.8774007062117258,
+          "val_accuracy": 0.6
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.8513380289077759,
+          "val_accuracy": 0.6
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.8180887897809347,
+          "val_accuracy": 0.64
+        },
+        {
+          "epoch": 10,
+          "train_loss": 0.8033626874287924,
+          "val_accuracy": 0.64
+        },
+        {
+          "epoch": 11,
+          "train_loss": 0.7757764259974161,
+          "val_accuracy": 0.8
+        },
+        {
+          "epoch": 12,
+          "train_loss": 0.7515870928764343,
+          "val_accuracy": 0.72
+        },
+        {
+          "epoch": 13,
+          "train_loss": 0.7247594594955444,
+          "val_accuracy": 0.72
+        },
+        {
+          "epoch": 14,
+          "train_loss": 0.692280133565267,
+          "val_accuracy": 0.68
+        },
+        {
+          "epoch": 15,
+          "train_loss": 0.659615715344747,
+          "val_accuracy": 0.68
+        },
+        {
+          "epoch": 16,
+          "train_loss": 0.6509618957837423,
+          "val_accuracy": 0.64
+        },
+        {
+          "epoch": 17,
+          "train_loss": 0.6276242931683859,
+          "val_accuracy": 0.64
+        },
+        {
+          "epoch": 18,
+          "train_loss": 0.5654913932085037,
+          "val_accuracy": 0.64
+        },
+        {
+          "epoch": 19,
+          "train_loss": 0.5338954329490662,
+          "val_accuracy": 0.6
+        },
+        {
+          "epoch": 20,
+          "train_loss": 0.5313712457815806,
+          "val_accuracy": 0.6
+        },
+        {
+          "epoch": 21,
+          "train_loss": 0.4919278472661972,
+          "val_accuracy": 0.6
+        }
+      ]
+    },
+    "selector": {
+      "model_name": "active_selector",
+      "feat_dim": 512,
+      "hidden_dim": 256,
+      "train_objects": 75,
+      "val_objects": 25,
+      "train_views": 375,
+      "best_val_accuracy": 0.76,
+      "epochs_ran": 20,
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 1.019812176624934,
+          "val_accuracy": 0.48
+        },
+        {
+          "epoch": 2,
+          "train_loss": 1.0077319145202637,
+          "val_accuracy": 0.52
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.9900729159514109,
+          "val_accuracy": 0.56
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.9691226879755656,
+          "val_accuracy": 0.6
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.9349688589572906,
+          "val_accuracy": 0.56
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.8947535455226898,
+          "val_accuracy": 0.56
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.8645598789056143,
+          "val_accuracy": 0.6
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.8535020450750986,
+          "val_accuracy": 0.6
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.8061516384283701,
+          "val_accuracy": 0.64
+        },
+        {
+          "epoch": 10,
+          "train_loss": 0.7860790093739828,
+          "val_accuracy": 0.76
+        },
+        {
+          "epoch": 11,
+          "train_loss": 0.7569127281506857,
+          "val_accuracy": 0.72
+        },
+        {
+          "epoch": 12,
+          "train_loss": 0.7365727722644806,
+          "val_accuracy": 0.72
+        },
+        {
+          "epoch": 13,
+          "train_loss": 0.7294753591219584,
+          "val_accuracy": 0.72
+        },
+        {
+          "epoch": 14,
+          "train_loss": 0.6879381040732065,
+          "val_accuracy": 0.68
+        },
+        {
+          "epoch": 15,
+          "train_loss": 0.6838720440864563,
+          "val_accuracy": 0.68
+        },
+        {
+          "epoch": 16,
+          "train_loss": 0.6301711400349935,
+          "val_accuracy": 0.68
+        },
+        {
+          "epoch": 17,
+          "train_loss": 0.6084977239370346,
+          "val_accuracy": 0.68
+        },
+        {
+          "epoch": 18,
+          "train_loss": 0.595493902762731,
+          "val_accuracy": 0.64
+        },
+        {
+          "epoch": 19,
+          "train_loss": 0.5664696047703425,
+          "val_accuracy": 0.68
+        },
+        {
+          "epoch": 20,
+          "train_loss": 0.522929439942042,
+          "val_accuracy": 0.68
+        }
+      ]
+    },
+    "loaded_from": "e:\\CO3D-data\\outputs_shuffled"
+  },
+  "config_summary": {
+    "random+clip": {
+      "1": {
+        "book": {
+          "accuracy_mean": 0.32999999999999996,
+          "accuracy_std": 0.11874342087037916,
+          "gt_coverage_mean": 0.32999999999999996,
+          "gt_coverage_std": 0.11874342087037916,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.38,
+          "accuracy_std": 0.13999999999999999,
+          "gt_coverage_mean": 0.38,
+          "gt_coverage_std": 0.13999999999999999,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.26,
+          "accuracy_std": 0.1019803902718557,
+          "gt_coverage_mean": 0.26,
+          "gt_coverage_std": 0.1019803902718557,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.18000000000000002,
+          "accuracy_std": 0.10770329614269009,
+          "gt_coverage_mean": 0.18000000000000002,
+          "gt_coverage_std": 0.10770329614269009,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.38,
+          "accuracy_std": 0.12489995996796797,
+          "gt_coverage_mean": 0.38,
+          "gt_coverage_std": 0.12489995996796797,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.30599999999999994,
+          "accuracy_std": 0.0482078831727758,
+          "gt_coverage_mean": 0.30599999999999994,
+          "gt_coverage_std": 0.0482078831727758,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 50
+        }
+      },
+      "2": {
+        "book": {
+          "accuracy_mean": 0.29,
+          "accuracy_std": 0.11357816691600549,
+          "gt_coverage_mean": 0.62,
+          "gt_coverage_std": 0.132664991614216,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.34,
+          "accuracy_std": 0.12806248474865697,
+          "gt_coverage_mean": 0.64,
+          "gt_coverage_std": 0.12,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.32999999999999996,
+          "accuracy_std": 0.07810249675906655,
+          "gt_coverage_mean": 0.45,
+          "gt_coverage_std": 0.11180339887498948,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.31000000000000005,
+          "accuracy_std": 0.12206555615733701,
+          "gt_coverage_mean": 0.45000000000000007,
+          "gt_coverage_std": 0.14317821063276354,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.21000000000000002,
+          "accuracy_std": 0.06999999999999999,
+          "gt_coverage_mean": 0.67,
+          "gt_coverage_std": 0.16155494421403513,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.296,
+          "accuracy_std": 0.0463033476111609,
+          "gt_coverage_mean": 0.5660000000000001,
+          "gt_coverage_std": 0.05730619512757761,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 50
+        }
+      },
+      "3": {
+        "book": {
+          "accuracy_mean": 0.31000000000000005,
+          "accuracy_std": 0.08306623862918076,
+          "gt_coverage_mean": 0.78,
+          "gt_coverage_std": 0.13266499161421602,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.33999999999999997,
+          "accuracy_std": 0.09165151389911681,
+          "gt_coverage_mean": 0.8200000000000001,
+          "gt_coverage_std": 0.0871779788708135,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.42000000000000004,
+          "accuracy_std": 0.07483314773547882,
+          "gt_coverage_mean": 0.65,
+          "gt_coverage_std": 0.15000000000000002,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.29,
+          "accuracy_std": 0.13747727084867523,
+          "gt_coverage_mean": 0.6399999999999999,
+          "gt_coverage_std": 0.1562049935181331,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.19000000000000003,
+          "accuracy_std": 0.06999999999999999,
+          "gt_coverage_mean": 0.8299999999999998,
+          "gt_coverage_std": 0.0640312423743285,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.31000000000000005,
+          "accuracy_std": 0.03714835124201342,
+          "gt_coverage_mean": 0.744,
+          "gt_coverage_std": 0.049638694583963444,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 50
+        }
+      },
+      "4": {
+        "book": {
+          "accuracy_mean": 0.36,
+          "accuracy_std": 0.10198039027185571,
+          "gt_coverage_mean": 0.9099999999999999,
+          "gt_coverage_std": 0.08306623862918072,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.36,
+          "accuracy_std": 0.06633249580710801,
+          "gt_coverage_mean": 0.93,
+          "gt_coverage_std": 0.06403124237432847,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.08944271909999159,
+          "gt_coverage_mean": 0.8299999999999998,
+          "gt_coverage_std": 0.11874342087037917,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.33999999999999997,
+          "accuracy_std": 0.09165151389911681,
+          "gt_coverage_mean": 0.7899999999999999,
+          "gt_coverage_std": 0.12206555615733705,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.23000000000000004,
+          "accuracy_std": 0.09,
+          "gt_coverage_mean": 0.96,
+          "gt_coverage_std": 0.06633249580710798,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.33799999999999997,
+          "accuracy_std": 0.038418745424597084,
+          "gt_coverage_mean": 0.884,
+          "gt_coverage_std": 0.04882622246293481,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 50
+        }
+      },
+      "5": {
+        "book": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.2,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.36,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 50
+        }
+      }
+    },
+    "random+learned": {
+      "1": {
+        "book": {
+          "accuracy_mean": 0.32999999999999996,
+          "accuracy_std": 0.11874342087037916,
+          "gt_coverage_mean": 0.32999999999999996,
+          "gt_coverage_std": 0.11874342087037916,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.38,
+          "accuracy_std": 0.13999999999999999,
+          "gt_coverage_mean": 0.38,
+          "gt_coverage_std": 0.13999999999999999,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.26,
+          "accuracy_std": 0.1019803902718557,
+          "gt_coverage_mean": 0.26,
+          "gt_coverage_std": 0.1019803902718557,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.18000000000000002,
+          "accuracy_std": 0.10770329614269009,
+          "gt_coverage_mean": 0.18000000000000002,
+          "gt_coverage_std": 0.10770329614269009,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.38,
+          "accuracy_std": 0.12489995996796797,
+          "gt_coverage_mean": 0.38,
+          "gt_coverage_std": 0.12489995996796797,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.30599999999999994,
+          "accuracy_std": 0.0482078831727758,
+          "gt_coverage_mean": 0.30599999999999994,
+          "gt_coverage_std": 0.0482078831727758,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 50
+        }
+      },
+      "2": {
+        "book": {
+          "accuracy_mean": 0.53,
+          "accuracy_std": 0.13453624047073706,
+          "gt_coverage_mean": 0.62,
+          "gt_coverage_std": 0.132664991614216,
+          "delta_vs_baseline_mean": 0.24,
+          "delta_vs_baseline_std": 0.10198039027185568,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.45999999999999996,
+          "accuracy_std": 0.15620499351813308,
+          "gt_coverage_mean": 0.64,
+          "gt_coverage_std": 0.12,
+          "delta_vs_baseline_mean": 0.12,
+          "delta_vs_baseline_std": 0.10770329614269007,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.29999999999999993,
+          "accuracy_std": 0.1341640786499874,
+          "gt_coverage_mean": 0.45,
+          "gt_coverage_std": 0.11180339887498948,
+          "delta_vs_baseline_mean": -0.030000000000000016,
+          "delta_vs_baseline_std": 0.10999999999999999,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.32,
+          "accuracy_std": 0.11661903789690602,
+          "gt_coverage_mean": 0.45000000000000007,
+          "gt_coverage_std": 0.14317821063276354,
+          "delta_vs_baseline_mean": 0.009999999999999995,
+          "delta_vs_baseline_std": 0.06999999999999999,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.5599999999999999,
+          "accuracy_std": 0.16852299546352714,
+          "gt_coverage_mean": 0.67,
+          "gt_coverage_std": 0.16155494421403513,
+          "delta_vs_baseline_mean": 0.35,
+          "delta_vs_baseline_std": 0.14317821063276354,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.43400000000000005,
+          "accuracy_std": 0.060033324079214544,
+          "gt_coverage_mean": 0.5660000000000001,
+          "gt_coverage_std": 0.05730619512757761,
+          "delta_vs_baseline_mean": 0.138,
+          "delta_vs_baseline_std": 0.060959002616512686,
+          "num_samples": 50
+        }
+      },
+      "3": {
+        "book": {
+          "accuracy_mean": 0.62,
+          "accuracy_std": 0.132664991614216,
+          "gt_coverage_mean": 0.78,
+          "gt_coverage_std": 0.13266499161421602,
+          "delta_vs_baseline_mean": 0.31,
+          "delta_vs_baseline_std": 0.13000000000000003,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.51,
+          "accuracy_std": 0.09433981132056603,
+          "gt_coverage_mean": 0.8200000000000001,
+          "gt_coverage_std": 0.0871779788708135,
+          "delta_vs_baseline_mean": 0.17,
+          "delta_vs_baseline_std": 0.1268857754044952,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.25999999999999995,
+          "accuracy_std": 0.10198039027185568,
+          "gt_coverage_mean": 0.65,
+          "gt_coverage_std": 0.15000000000000002,
+          "delta_vs_baseline_mean": -0.16000000000000003,
+          "delta_vs_baseline_std": 0.11135528725660045,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.36,
+          "accuracy_std": 0.12,
+          "gt_coverage_mean": 0.6399999999999999,
+          "gt_coverage_std": 0.1562049935181331,
+          "delta_vs_baseline_mean": 0.06999999999999999,
+          "delta_vs_baseline_std": 0.10049875621120889,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.6699999999999999,
+          "accuracy_std": 0.07810249675906655,
+          "gt_coverage_mean": 0.8299999999999998,
+          "gt_coverage_std": 0.0640312423743285,
+          "delta_vs_baseline_mean": 0.47999999999999987,
+          "delta_vs_baseline_std": 0.1077032961426901,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.484,
+          "accuracy_std": 0.042708313008125234,
+          "gt_coverage_mean": 0.744,
+          "gt_coverage_std": 0.049638694583963444,
+          "delta_vs_baseline_mean": 0.174,
+          "delta_vs_baseline_std": 0.05219195340279955,
+          "num_samples": 50
+        }
+      },
+      "4": {
+        "book": {
+          "accuracy_mean": 0.6499999999999999,
+          "accuracy_std": 0.08062257748298547,
+          "gt_coverage_mean": 0.9099999999999999,
+          "gt_coverage_std": 0.08306623862918072,
+          "delta_vs_baseline_mean": 0.2899999999999999,
+          "delta_vs_baseline_std": 0.157797338380595,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.51,
+          "accuracy_std": 0.122065556157337,
+          "gt_coverage_mean": 0.93,
+          "gt_coverage_std": 0.06403124237432847,
+          "delta_vs_baseline_mean": 0.15,
+          "delta_vs_baseline_std": 0.08062257748298547,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.22000000000000003,
+          "accuracy_std": 0.09797958971132713,
+          "gt_coverage_mean": 0.8299999999999998,
+          "gt_coverage_std": 0.11874342087037917,
+          "delta_vs_baseline_mean": -0.18,
+          "delta_vs_baseline_std": 0.09797958971132713,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.31,
+          "accuracy_std": 0.08306623862918076,
+          "gt_coverage_mean": 0.7899999999999999,
+          "gt_coverage_std": 0.12206555615733705,
+          "delta_vs_baseline_mean": -0.03,
+          "delta_vs_baseline_std": 0.07810249675906655,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.75,
+          "accuracy_std": 0.05000000000000005,
+          "gt_coverage_mean": 0.96,
+          "gt_coverage_std": 0.06633249580710798,
+          "delta_vs_baseline_mean": 0.5199999999999999,
+          "delta_vs_baseline_std": 0.11661903789690606,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.4880000000000001,
+          "accuracy_std": 0.032496153618543855,
+          "gt_coverage_mean": 0.884,
+          "gt_coverage_std": 0.04882622246293481,
+          "delta_vs_baseline_mean": 0.15,
+          "delta_vs_baseline_std": 0.03376388603226826,
+          "num_samples": 50
+        }
+      },
+      "5": {
+        "book": {
+          "accuracy_mean": 0.7,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.29999999999999993,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.5,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.09999999999999998,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.29999999999999993,
+          "accuracy_std": 5.551115123125783e-17,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": -0.10000000000000005,
+          "delta_vs_baseline_std": 1.3877787807814457e-17,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.29999999999999993,
+          "accuracy_std": 5.551115123125783e-17,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": -0.10000000000000005,
+          "delta_vs_baseline_std": 1.3877787807814457e-17,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.8,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.6,
+          "delta_vs_baseline_std": 1.1102230246251565e-16,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.5199999999999999,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.16000000000000006,
+          "delta_vs_baseline_std": 2.7755575615628914e-17,
+          "num_samples": 50
+        }
+      }
+    },
+    "clip_rel+clip": {
+      "1": {
+        "book": {
+          "accuracy_mean": 0.32999999999999996,
+          "accuracy_std": 0.11874342087037916,
+          "gt_coverage_mean": 0.32999999999999996,
+          "gt_coverage_std": 0.11874342087037916,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.38,
+          "accuracy_std": 0.13999999999999999,
+          "gt_coverage_mean": 0.38,
+          "gt_coverage_std": 0.13999999999999999,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.26,
+          "accuracy_std": 0.1019803902718557,
+          "gt_coverage_mean": 0.26,
+          "gt_coverage_std": 0.1019803902718557,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.18000000000000002,
+          "accuracy_std": 0.10770329614269009,
+          "gt_coverage_mean": 0.18000000000000002,
+          "gt_coverage_std": 0.10770329614269009,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.38,
+          "accuracy_std": 0.12489995996796797,
+          "gt_coverage_mean": 0.38,
+          "gt_coverage_std": 0.12489995996796797,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.30599999999999994,
+          "accuracy_std": 0.0482078831727758,
+          "gt_coverage_mean": 0.30599999999999994,
+          "gt_coverage_std": 0.0482078831727758,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 50
+        }
+      },
+      "2": {
+        "book": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.6399999999999999,
+          "gt_coverage_std": 0.11135528725660043,
+          "delta_vs_baseline_mean": 0.11000000000000003,
+          "delta_vs_baseline_std": 0.11357816691600549,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.7,
+          "gt_coverage_std": 0.10954451150103325,
+          "delta_vs_baseline_mean": 0.06000000000000003,
+          "delta_vs_baseline_std": 0.12806248474865697,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.59,
+          "gt_coverage_std": 0.08306623862918074,
+          "delta_vs_baseline_mean": 0.07000000000000002,
+          "delta_vs_baseline_std": 0.07810249675906655,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.5800000000000001,
+          "gt_coverage_std": 0.132664991614216,
+          "delta_vs_baseline_mean": 0.09000000000000001,
+          "delta_vs_baseline_std": 0.12206555615733704,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.2,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.52,
+          "gt_coverage_std": 0.13266499161421597,
+          "delta_vs_baseline_mean": -0.009999999999999992,
+          "delta_vs_baseline_std": 0.06999999999999999,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.36,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.6060000000000001,
+          "gt_coverage_std": 0.04820788317277579,
+          "delta_vs_baseline_mean": 0.06399999999999997,
+          "delta_vs_baseline_std": 0.0463033476111609,
+          "num_samples": 50
+        }
+      },
+      "3": {
+        "book": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.7,
+          "gt_coverage_std": 0.0894427190999916,
+          "delta_vs_baseline_mean": 0.09000000000000001,
+          "delta_vs_baseline_std": 0.08306623862918075,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.77,
+          "gt_coverage_std": 0.07810249675906658,
+          "delta_vs_baseline_mean": 0.06000000000000001,
+          "delta_vs_baseline_std": 0.09165151389911681,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.8699999999999999,
+          "gt_coverage_std": 0.11000000000000001,
+          "delta_vs_baseline_mean": -0.01999999999999999,
+          "delta_vs_baseline_std": 0.0748331477354788,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.79,
+          "gt_coverage_std": 0.09433981132056606,
+          "delta_vs_baseline_mean": 0.11000000000000003,
+          "delta_vs_baseline_std": 0.1374772708486752,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.2,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.63,
+          "gt_coverage_std": 0.1268857754044952,
+          "delta_vs_baseline_mean": 0.010000000000000005,
+          "delta_vs_baseline_std": 0.06999999999999999,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.36,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.752,
+          "gt_coverage_std": 0.04118252056394802,
+          "delta_vs_baseline_mean": 0.049999999999999975,
+          "delta_vs_baseline_std": 0.03714835124201342,
+          "num_samples": 50
+        }
+      },
+      "4": {
+        "book": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.8500000000000002,
+          "gt_coverage_std": 0.04999999999999999,
+          "delta_vs_baseline_mean": 0.040000000000000015,
+          "delta_vs_baseline_std": 0.10198039027185571,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.9100000000000001,
+          "gt_coverage_std": 0.029999999999999995,
+          "delta_vs_baseline_mean": 0.04000000000000001,
+          "delta_vs_baseline_std": 0.06633249580710801,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.9400000000000001,
+          "gt_coverage_std": 0.04898979485566355,
+          "delta_vs_baseline_mean": 1.6653345369377347e-17,
+          "delta_vs_baseline_std": 0.08944271909999159,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.9800000000000001,
+          "gt_coverage_std": 0.039999999999999994,
+          "delta_vs_baseline_mean": 0.06000000000000001,
+          "delta_vs_baseline_std": 0.09165151389911681,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.2,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.85,
+          "gt_coverage_std": 0.04999999999999999,
+          "delta_vs_baseline_mean": -0.029999999999999992,
+          "delta_vs_baseline_std": 0.09,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.36,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.906,
+          "gt_coverage_std": 0.012806248474865679,
+          "delta_vs_baseline_mean": 0.02199999999999998,
+          "delta_vs_baseline_std": 0.038418745424597084,
+          "num_samples": 50
+        }
+      },
+      "5": {
+        "book": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.2,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.36,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 50
+        }
+      }
+    },
+    "clip_rel_nov+clip": {
+      "1": {
+        "book": {
+          "accuracy_mean": 0.32999999999999996,
+          "accuracy_std": 0.11874342087037916,
+          "gt_coverage_mean": 0.32999999999999996,
+          "gt_coverage_std": 0.11874342087037916,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.38,
+          "accuracy_std": 0.13999999999999999,
+          "gt_coverage_mean": 0.38,
+          "gt_coverage_std": 0.13999999999999999,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.26,
+          "accuracy_std": 0.1019803902718557,
+          "gt_coverage_mean": 0.26,
+          "gt_coverage_std": 0.1019803902718557,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.18000000000000002,
+          "accuracy_std": 0.10770329614269009,
+          "gt_coverage_mean": 0.18000000000000002,
+          "gt_coverage_std": 0.10770329614269009,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.38,
+          "accuracy_std": 0.12489995996796797,
+          "gt_coverage_mean": 0.38,
+          "gt_coverage_std": 0.12489995996796797,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.30599999999999994,
+          "accuracy_std": 0.0482078831727758,
+          "gt_coverage_mean": 0.30599999999999994,
+          "gt_coverage_std": 0.0482078831727758,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 50
+        }
+      },
+      "2": {
+        "book": {
+          "accuracy_mean": 0.35,
+          "accuracy_std": 0.0670820393249937,
+          "gt_coverage_mean": 0.7499999999999999,
+          "gt_coverage_std": 0.15000000000000002,
+          "delta_vs_baseline_mean": 0.06000000000000001,
+          "delta_vs_baseline_std": 0.12000000000000002,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.41,
+          "accuracy_std": 0.1044030650891055,
+          "gt_coverage_mean": 0.8,
+          "gt_coverage_std": 0.10954451150103324,
+          "delta_vs_baseline_mean": 0.06999999999999999,
+          "delta_vs_baseline_std": 0.1268857754044952,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.45,
+          "accuracy_std": 0.0670820393249937,
+          "gt_coverage_mean": 0.61,
+          "gt_coverage_std": 0.1044030650891055,
+          "delta_vs_baseline_mean": 0.12,
+          "delta_vs_baseline_std": 0.12489995996796797,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.3,
+          "accuracy_std": 0.1,
+          "gt_coverage_mean": 0.4699999999999999,
+          "gt_coverage_std": 0.11874342087037916,
+          "delta_vs_baseline_mean": -0.010000000000000004,
+          "delta_vs_baseline_std": 0.11357816691600547,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.23000000000000004,
+          "accuracy_std": 0.07810249675906654,
+          "gt_coverage_mean": 0.6799999999999999,
+          "gt_coverage_std": 0.07483314773547885,
+          "delta_vs_baseline_mean": 0.019999999999999993,
+          "delta_vs_baseline_std": 0.07483314773547882,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.348,
+          "accuracy_std": 0.038157568056677825,
+          "gt_coverage_mean": 0.662,
+          "gt_coverage_std": 0.058275209137333854,
+          "delta_vs_baseline_mean": 0.052000000000000005,
+          "delta_vs_baseline_std": 0.03709447398198282,
+          "num_samples": 50
+        }
+      },
+      "3": {
+        "book": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.96,
+          "gt_coverage_std": 0.04898979485566355,
+          "delta_vs_baseline_mean": 0.09000000000000001,
+          "delta_vs_baseline_std": 0.08306623862918075,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.30999999999999994,
+          "accuracy_std": 0.06999999999999999,
+          "gt_coverage_mean": 0.95,
+          "gt_coverage_std": 0.04999999999999999,
+          "delta_vs_baseline_mean": -0.030000000000000016,
+          "delta_vs_baseline_std": 0.07810249675906655,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.43000000000000005,
+          "accuracy_std": 0.04582575694955839,
+          "gt_coverage_mean": 0.89,
+          "gt_coverage_std": 0.08306623862918076,
+          "delta_vs_baseline_mean": 0.010000000000000004,
+          "delta_vs_baseline_std": 0.09433981132056603,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.38,
+          "accuracy_std": 0.040000000000000015,
+          "gt_coverage_mean": 0.86,
+          "gt_coverage_std": 0.08,
+          "delta_vs_baseline_mean": 0.09000000000000001,
+          "delta_vs_baseline_std": 0.157797338380595,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.26000000000000006,
+          "accuracy_std": 0.09165151389911681,
+          "gt_coverage_mean": 0.8300000000000001,
+          "gt_coverage_std": 0.07810249675906657,
+          "delta_vs_baseline_mean": 0.06999999999999999,
+          "delta_vs_baseline_std": 0.10999999999999999,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.356,
+          "accuracy_std": 0.024979991993593596,
+          "gt_coverage_mean": 0.898,
+          "gt_coverage_std": 0.02749545416973503,
+          "delta_vs_baseline_mean": 0.04599999999999999,
+          "delta_vs_baseline_std": 0.04903060268852504,
+          "num_samples": 50
+        }
+      },
+      "4": {
+        "book": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.040000000000000015,
+          "delta_vs_baseline_std": 0.10198039027185571,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.04000000000000001,
+          "delta_vs_baseline_std": 0.06633249580710801,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.9400000000000001,
+          "gt_coverage_std": 0.04898979485566355,
+          "delta_vs_baseline_mean": 1.6653345369377347e-17,
+          "delta_vs_baseline_std": 0.08944271909999159,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.95,
+          "gt_coverage_std": 0.06708203932499368,
+          "delta_vs_baseline_mean": 0.06000000000000001,
+          "delta_vs_baseline_std": 0.09165151389911681,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.2,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.9400000000000001,
+          "gt_coverage_std": 0.04898979485566356,
+          "delta_vs_baseline_mean": -0.029999999999999992,
+          "delta_vs_baseline_std": 0.09,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.36,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.9659999999999999,
+          "gt_coverage_std": 0.0200997512422418,
+          "delta_vs_baseline_mean": 0.02199999999999998,
+          "delta_vs_baseline_std": 0.038418745424597084,
+          "num_samples": 50
+        }
+      },
+      "5": {
+        "book": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.2,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.36,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 50
+        }
+      }
+    },
+    "clip_rel_nov+learned": {
+      "1": {
+        "book": {
+          "accuracy_mean": 0.32999999999999996,
+          "accuracy_std": 0.11874342087037916,
+          "gt_coverage_mean": 0.32999999999999996,
+          "gt_coverage_std": 0.11874342087037916,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.38,
+          "accuracy_std": 0.13999999999999999,
+          "gt_coverage_mean": 0.38,
+          "gt_coverage_std": 0.13999999999999999,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.26,
+          "accuracy_std": 0.1019803902718557,
+          "gt_coverage_mean": 0.26,
+          "gt_coverage_std": 0.1019803902718557,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.18000000000000002,
+          "accuracy_std": 0.10770329614269009,
+          "gt_coverage_mean": 0.18000000000000002,
+          "gt_coverage_std": 0.10770329614269009,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.38,
+          "accuracy_std": 0.12489995996796797,
+          "gt_coverage_mean": 0.38,
+          "gt_coverage_std": 0.12489995996796797,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.30599999999999994,
+          "accuracy_std": 0.0482078831727758,
+          "gt_coverage_mean": 0.30599999999999994,
+          "gt_coverage_std": 0.0482078831727758,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 50
+        }
+      },
+      "2": {
+        "book": {
+          "accuracy_mean": 0.6799999999999999,
+          "accuracy_std": 0.14,
+          "gt_coverage_mean": 0.7499999999999999,
+          "gt_coverage_std": 0.15000000000000002,
+          "delta_vs_baseline_mean": 0.39,
+          "delta_vs_baseline_std": 0.17578395831246948,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.57,
+          "accuracy_std": 0.04582575694955839,
+          "gt_coverage_mean": 0.8,
+          "gt_coverage_std": 0.10954451150103324,
+          "delta_vs_baseline_mean": 0.22999999999999998,
+          "delta_vs_baseline_std": 0.11000000000000001,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.44000000000000006,
+          "accuracy_std": 0.066332495807108,
+          "gt_coverage_mean": 0.61,
+          "gt_coverage_std": 0.1044030650891055,
+          "delta_vs_baseline_mean": 0.11000000000000001,
+          "delta_vs_baseline_std": 0.12206555615733702,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.32,
+          "accuracy_std": 0.10770329614269009,
+          "gt_coverage_mean": 0.4699999999999999,
+          "gt_coverage_std": 0.11874342087037916,
+          "delta_vs_baseline_mean": 0.009999999999999976,
+          "delta_vs_baseline_std": 0.17578395831246946,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.6499999999999998,
+          "accuracy_std": 0.0806225774829855,
+          "gt_coverage_mean": 0.6799999999999999,
+          "gt_coverage_std": 0.07483314773547885,
+          "delta_vs_baseline_mean": 0.44000000000000006,
+          "delta_vs_baseline_std": 0.11135528725660045,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.532,
+          "accuracy_std": 0.04489988864128729,
+          "gt_coverage_mean": 0.662,
+          "gt_coverage_std": 0.058275209137333854,
+          "delta_vs_baseline_mean": 0.23599999999999993,
+          "delta_vs_baseline_std": 0.05425863986500214,
+          "num_samples": 50
+        }
+      },
+      "3": {
+        "book": {
+          "accuracy_mean": 0.8,
+          "accuracy_std": 0.0632455532033676,
+          "gt_coverage_mean": 0.96,
+          "gt_coverage_std": 0.04898979485566355,
+          "delta_vs_baseline_mean": 0.49000000000000005,
+          "delta_vs_baseline_std": 0.09433981132056608,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.57,
+          "accuracy_std": 0.07810249675906653,
+          "gt_coverage_mean": 0.95,
+          "gt_coverage_std": 0.04999999999999999,
+          "delta_vs_baseline_mean": 0.22999999999999998,
+          "delta_vs_baseline_std": 0.1004987562112089,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.45000000000000007,
+          "accuracy_std": 0.06708203932499368,
+          "gt_coverage_mean": 0.89,
+          "gt_coverage_std": 0.08306623862918076,
+          "delta_vs_baseline_mean": 0.029999999999999992,
+          "delta_vs_baseline_std": 0.1004987562112089,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.37,
+          "accuracy_std": 0.04582575694955841,
+          "gt_coverage_mean": 0.86,
+          "gt_coverage_std": 0.08,
+          "delta_vs_baseline_mean": 0.08,
+          "delta_vs_baseline_std": 0.16,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.7,
+          "accuracy_std": 0.1341640786499874,
+          "gt_coverage_mean": 0.8300000000000001,
+          "gt_coverage_std": 0.07810249675906657,
+          "delta_vs_baseline_mean": 0.51,
+          "delta_vs_baseline_std": 0.1445683229480096,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.5780000000000001,
+          "accuracy_std": 0.04044749683231337,
+          "gt_coverage_mean": 0.898,
+          "gt_coverage_std": 0.02749545416973503,
+          "delta_vs_baseline_mean": 0.26799999999999996,
+          "delta_vs_baseline_std": 0.06273754856543248,
+          "num_samples": 50
+        }
+      },
+      "4": {
+        "book": {
+          "accuracy_mean": 0.8,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.44000000000000006,
+          "delta_vs_baseline_std": 0.10198039027185571,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.5,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.13999999999999999,
+          "delta_vs_baseline_std": 0.06633249580710801,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.32999999999999996,
+          "accuracy_std": 0.04582575694955841,
+          "gt_coverage_mean": 0.9400000000000001,
+          "gt_coverage_std": 0.04898979485566355,
+          "delta_vs_baseline_mean": -0.07,
+          "delta_vs_baseline_std": 0.1004987562112089,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.39,
+          "accuracy_std": 0.05385164807134505,
+          "gt_coverage_mean": 0.95,
+          "gt_coverage_std": 0.06708203932499368,
+          "delta_vs_baseline_mean": 0.05,
+          "delta_vs_baseline_std": 0.10246950765959599,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.77,
+          "accuracy_std": 0.11000000000000003,
+          "gt_coverage_mean": 0.9400000000000001,
+          "gt_coverage_std": 0.04898979485566356,
+          "delta_vs_baseline_mean": 0.54,
+          "delta_vs_baseline_std": 0.11135528725660043,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.558,
+          "accuracy_std": 0.030265491900843093,
+          "gt_coverage_mean": 0.9659999999999999,
+          "gt_coverage_std": 0.0200997512422418,
+          "delta_vs_baseline_mean": 0.21999999999999997,
+          "delta_vs_baseline_std": 0.05440588203494176,
+          "num_samples": 50
+        }
+      },
+      "5": {
+        "book": {
+          "accuracy_mean": 0.7,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.29999999999999993,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.5,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.09999999999999998,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.29999999999999993,
+          "accuracy_std": 5.551115123125783e-17,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": -0.10000000000000005,
+          "delta_vs_baseline_std": 1.3877787807814457e-17,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.29999999999999993,
+          "accuracy_std": 5.551115123125783e-17,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": -0.10000000000000005,
+          "delta_vs_baseline_std": 1.3877787807814457e-17,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.8,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.6,
+          "delta_vs_baseline_std": 1.1102230246251565e-16,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.5199999999999999,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.16000000000000006,
+          "delta_vs_baseline_std": 2.7755575615628914e-17,
+          "num_samples": 50
+        }
+      }
+    },
+    "trained+clip": {
+      "1": {
+        "book": {
+          "accuracy_mean": 0.32999999999999996,
+          "accuracy_std": 0.11874342087037916,
+          "gt_coverage_mean": 0.32999999999999996,
+          "gt_coverage_std": 0.11874342087037916,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.38,
+          "accuracy_std": 0.13999999999999999,
+          "gt_coverage_mean": 0.38,
+          "gt_coverage_std": 0.13999999999999999,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.26,
+          "accuracy_std": 0.1019803902718557,
+          "gt_coverage_mean": 0.26,
+          "gt_coverage_std": 0.1019803902718557,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.18000000000000002,
+          "accuracy_std": 0.10770329614269009,
+          "gt_coverage_mean": 0.18000000000000002,
+          "gt_coverage_std": 0.10770329614269009,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.38,
+          "accuracy_std": 0.12489995996796797,
+          "gt_coverage_mean": 0.38,
+          "gt_coverage_std": 0.12489995996796797,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.30599999999999994,
+          "accuracy_std": 0.0482078831727758,
+          "gt_coverage_mean": 0.30599999999999994,
+          "gt_coverage_std": 0.0482078831727758,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 50
+        }
+      },
+      "2": {
+        "book": {
+          "accuracy_mean": 0.36,
+          "accuracy_std": 0.142828568570857,
+          "gt_coverage_mean": 0.79,
+          "gt_coverage_std": 0.053851648071345064,
+          "delta_vs_baseline_mean": 0.06999999999999999,
+          "delta_vs_baseline_std": 0.1676305461424021,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.44000000000000006,
+          "accuracy_std": 0.04898979485566354,
+          "gt_coverage_mean": 0.73,
+          "gt_coverage_std": 0.09000000000000002,
+          "delta_vs_baseline_mean": 0.10000000000000002,
+          "delta_vs_baseline_std": 0.14832396974191325,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.42000000000000004,
+          "accuracy_std": 0.039999999999999994,
+          "gt_coverage_mean": 0.5200000000000001,
+          "gt_coverage_std": 0.08717797887081345,
+          "delta_vs_baseline_mean": 0.09000000000000001,
+          "delta_vs_baseline_std": 0.09433981132056604,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.36,
+          "accuracy_std": 0.06633249580710801,
+          "gt_coverage_mean": 0.51,
+          "gt_coverage_std": 0.12999999999999998,
+          "delta_vs_baseline_mean": 0.04999999999999999,
+          "delta_vs_baseline_std": 0.09219544457292887,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.35,
+          "accuracy_std": 0.09219544457292887,
+          "gt_coverage_mean": 0.89,
+          "gt_coverage_std": 0.06999999999999999,
+          "delta_vs_baseline_mean": 0.13999999999999999,
+          "delta_vs_baseline_std": 0.11135528725660045,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.386,
+          "accuracy_std": 0.04004996878900157,
+          "gt_coverage_mean": 0.688,
+          "gt_coverage_std": 0.041182520563948,
+          "delta_vs_baseline_mean": 0.09,
+          "delta_vs_baseline_std": 0.04312771730569565,
+          "num_samples": 50
+        }
+      },
+      "3": {
+        "book": {
+          "accuracy_mean": 0.31999999999999995,
+          "accuracy_std": 0.06000000000000001,
+          "gt_coverage_mean": 0.8700000000000001,
+          "gt_coverage_std": 0.045825756949558386,
+          "delta_vs_baseline_mean": 0.009999999999999992,
+          "delta_vs_baseline_std": 0.13000000000000003,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.33999999999999997,
+          "accuracy_std": 0.04898979485566358,
+          "gt_coverage_mean": 0.9000000000000001,
+          "gt_coverage_std": 0.07745966692414832,
+          "delta_vs_baseline_mean": -5.551115123125783e-18,
+          "delta_vs_baseline_std": 0.10000000000000002,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.6299999999999999,
+          "gt_coverage_std": 0.08999999999999998,
+          "delta_vs_baseline_mean": -0.01999999999999999,
+          "delta_vs_baseline_std": 0.0748331477354788,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.43000000000000005,
+          "accuracy_std": 0.04582575694955839,
+          "gt_coverage_mean": 0.8699999999999999,
+          "gt_coverage_std": 0.09,
+          "delta_vs_baseline_mean": 0.14,
+          "delta_vs_baseline_std": 0.1562049935181331,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.22999999999999998,
+          "accuracy_std": 0.07810249675906654,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.039999999999999994,
+          "delta_vs_baseline_std": 0.07999999999999999,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.344,
+          "accuracy_std": 0.02497999199359359,
+          "gt_coverage_mean": 0.8539999999999999,
+          "gt_coverage_std": 0.04294182110716777,
+          "delta_vs_baseline_mean": 0.033999999999999996,
+          "delta_vs_baseline_std": 0.043863424398922615,
+          "num_samples": 50
+        }
+      },
+      "4": {
+        "book": {
+          "accuracy_mean": 0.4600000000000001,
+          "accuracy_std": 0.04898979485566355,
+          "gt_coverage_mean": 0.9700000000000001,
+          "gt_coverage_std": 0.04582575694955839,
+          "delta_vs_baseline_mean": 0.1,
+          "delta_vs_baseline_std": 0.1264911064067352,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.38,
+          "accuracy_std": 0.040000000000000015,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.02,
+          "delta_vs_baseline_std": 0.06000000000000001,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.95,
+          "gt_coverage_std": 0.06708203932499367,
+          "delta_vs_baseline_mean": 1.6653345369377347e-17,
+          "delta_vs_baseline_std": 0.08944271909999159,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.9200000000000002,
+          "gt_coverage_std": 0.039999999999999994,
+          "delta_vs_baseline_mean": 0.06000000000000001,
+          "delta_vs_baseline_std": 0.09165151389911681,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.2,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": -0.029999999999999992,
+          "delta_vs_baseline_std": 0.09,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.368,
+          "accuracy_std": 0.015999999999999993,
+          "gt_coverage_mean": 0.968,
+          "gt_coverage_std": 0.016000000000000014,
+          "delta_vs_baseline_mean": 0.03,
+          "delta_vs_baseline_std": 0.040249223594996206,
+          "num_samples": 50
+        }
+      },
+      "5": {
+        "book": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.2,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.36,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 50
+        }
+      }
+    },
+    "trained+learned": {
+      "1": {
+        "book": {
+          "accuracy_mean": 0.32999999999999996,
+          "accuracy_std": 0.11874342087037916,
+          "gt_coverage_mean": 0.32999999999999996,
+          "gt_coverage_std": 0.11874342087037916,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.38,
+          "accuracy_std": 0.13999999999999999,
+          "gt_coverage_mean": 0.38,
+          "gt_coverage_std": 0.13999999999999999,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.26,
+          "accuracy_std": 0.1019803902718557,
+          "gt_coverage_mean": 0.26,
+          "gt_coverage_std": 0.1019803902718557,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.18000000000000002,
+          "accuracy_std": 0.10770329614269009,
+          "gt_coverage_mean": 0.18000000000000002,
+          "gt_coverage_std": 0.10770329614269009,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.38,
+          "accuracy_std": 0.12489995996796797,
+          "gt_coverage_mean": 0.38,
+          "gt_coverage_std": 0.12489995996796797,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.30599999999999994,
+          "accuracy_std": 0.0482078831727758,
+          "gt_coverage_mean": 0.30599999999999994,
+          "gt_coverage_std": 0.0482078831727758,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 50
+        }
+      },
+      "2": {
+        "book": {
+          "accuracy_mean": 0.7,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.79,
+          "gt_coverage_std": 0.053851648071345064,
+          "delta_vs_baseline_mean": 0.41,
+          "delta_vs_baseline_std": 0.11357816691600549,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.5,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.73,
+          "gt_coverage_std": 0.09000000000000002,
+          "delta_vs_baseline_mean": 0.16,
+          "delta_vs_baseline_std": 0.12806248474865697,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.37,
+          "accuracy_std": 0.04582575694955841,
+          "gt_coverage_mean": 0.5200000000000001,
+          "gt_coverage_std": 0.08717797887081345,
+          "delta_vs_baseline_mean": 0.04,
+          "delta_vs_baseline_std": 0.11135528725660046,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.29999999999999993,
+          "accuracy_std": 5.551115123125783e-17,
+          "gt_coverage_mean": 0.51,
+          "gt_coverage_std": 0.12999999999999998,
+          "delta_vs_baseline_mean": -0.01000000000000002,
+          "delta_vs_baseline_std": 0.12206555615733702,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.8,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.89,
+          "gt_coverage_std": 0.06999999999999999,
+          "delta_vs_baseline_mean": 0.5900000000000001,
+          "delta_vs_baseline_std": 0.07000000000000003,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.534,
+          "accuracy_std": 0.009165151389911688,
+          "gt_coverage_mean": 0.688,
+          "gt_coverage_std": 0.041182520563948,
+          "delta_vs_baseline_mean": 0.238,
+          "delta_vs_baseline_std": 0.04770744176750626,
+          "num_samples": 50
+        }
+      },
+      "3": {
+        "book": {
+          "accuracy_mean": 0.7,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.8700000000000001,
+          "gt_coverage_std": 0.045825756949558386,
+          "delta_vs_baseline_mean": 0.38999999999999996,
+          "delta_vs_baseline_std": 0.08306623862918076,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.5,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.9000000000000001,
+          "gt_coverage_std": 0.07745966692414832,
+          "delta_vs_baseline_mean": 0.16,
+          "delta_vs_baseline_std": 0.09165151389911681,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.29999999999999993,
+          "accuracy_std": 5.551115123125783e-17,
+          "gt_coverage_mean": 0.6299999999999999,
+          "gt_coverage_std": 0.08999999999999998,
+          "delta_vs_baseline_mean": -0.12000000000000004,
+          "delta_vs_baseline_std": 0.07483314773547882,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.29999999999999993,
+          "accuracy_std": 5.551115123125783e-17,
+          "gt_coverage_mean": 0.8699999999999999,
+          "gt_coverage_std": 0.09,
+          "delta_vs_baseline_mean": 0.009999999999999978,
+          "delta_vs_baseline_std": 0.13747727084867523,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.8,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.6100000000000001,
+          "delta_vs_baseline_std": 0.07000000000000002,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.5199999999999999,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 0.8539999999999999,
+          "gt_coverage_std": 0.04294182110716777,
+          "delta_vs_baseline_mean": 0.21000000000000002,
+          "delta_vs_baseline_std": 0.037148351242013426,
+          "num_samples": 50
+        }
+      },
+      "4": {
+        "book": {
+          "accuracy_mean": 0.7,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.9700000000000001,
+          "gt_coverage_std": 0.04582575694955839,
+          "delta_vs_baseline_mean": 0.33999999999999997,
+          "delta_vs_baseline_std": 0.10198039027185571,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.5,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.13999999999999999,
+          "delta_vs_baseline_std": 0.06633249580710801,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.29999999999999993,
+          "accuracy_std": 5.551115123125783e-17,
+          "gt_coverage_mean": 0.95,
+          "gt_coverage_std": 0.06708203932499367,
+          "delta_vs_baseline_mean": -0.10000000000000002,
+          "delta_vs_baseline_std": 0.08944271909999157,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.29999999999999993,
+          "accuracy_std": 5.551115123125783e-17,
+          "gt_coverage_mean": 0.9200000000000002,
+          "gt_coverage_std": 0.039999999999999994,
+          "delta_vs_baseline_mean": -0.04000000000000002,
+          "delta_vs_baseline_std": 0.09165151389911681,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.8,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.5700000000000001,
+          "delta_vs_baseline_std": 0.09000000000000002,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.5199999999999999,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 0.968,
+          "gt_coverage_std": 0.016000000000000014,
+          "delta_vs_baseline_mean": 0.182,
+          "delta_vs_baseline_std": 0.038418745424597084,
+          "num_samples": 50
+        }
+      },
+      "5": {
+        "book": {
+          "accuracy_mean": 0.7,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.29999999999999993,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "cup": {
+          "accuracy_mean": 0.5,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.09999999999999998,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 10
+        },
+        "handbag": {
+          "accuracy_mean": 0.29999999999999993,
+          "accuracy_std": 5.551115123125783e-17,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": -0.10000000000000005,
+          "delta_vs_baseline_std": 1.3877787807814457e-17,
+          "num_samples": 10
+        },
+        "remote": {
+          "accuracy_mean": 0.29999999999999993,
+          "accuracy_std": 5.551115123125783e-17,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": -0.10000000000000005,
+          "delta_vs_baseline_std": 1.3877787807814457e-17,
+          "num_samples": 10
+        },
+        "teddybear": {
+          "accuracy_mean": 0.8,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.6,
+          "delta_vs_baseline_std": 1.1102230246251565e-16,
+          "num_samples": 10
+        },
+        "overall": {
+          "accuracy_mean": 0.5199999999999999,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.16000000000000006,
+          "delta_vs_baseline_std": 2.7755575615628914e-17,
+          "num_samples": 50
+        }
+      }
+    }
+  },
+  "component_summary": {
+    "learned_rerank": {
+      "label": "Learned rerank vs baseline [Random selection + Learned rerank]",
+      "method": "random+learned",
+      "baseline": "random+clip",
+      "1": {
+        "book": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cup": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "handbag": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "remote": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "teddybear": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      },
+      "2": {
+        "book": {
+          "accuracy_gain_mean": 0.24,
+          "accuracy_gain_std": 0.10198039027185568,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cup": {
+          "accuracy_gain_mean": 0.12,
+          "accuracy_gain_std": 0.10770329614269007,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "handbag": {
+          "accuracy_gain_mean": -0.030000000000000016,
+          "accuracy_gain_std": 0.10999999999999999,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "remote": {
+          "accuracy_gain_mean": 0.009999999999999995,
+          "accuracy_gain_std": 0.06999999999999999,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "teddybear": {
+          "accuracy_gain_mean": 0.35,
+          "accuracy_gain_std": 0.14317821063276354,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.138,
+          "accuracy_gain_std": 0.060959002616512686,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      },
+      "3": {
+        "book": {
+          "accuracy_gain_mean": 0.31,
+          "accuracy_gain_std": 0.13000000000000003,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cup": {
+          "accuracy_gain_mean": 0.17,
+          "accuracy_gain_std": 0.1268857754044952,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "handbag": {
+          "accuracy_gain_mean": -0.16000000000000003,
+          "accuracy_gain_std": 0.11135528725660045,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "remote": {
+          "accuracy_gain_mean": 0.06999999999999999,
+          "accuracy_gain_std": 0.10049875621120889,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "teddybear": {
+          "accuracy_gain_mean": 0.47999999999999987,
+          "accuracy_gain_std": 0.1077032961426901,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.174,
+          "accuracy_gain_std": 0.05219195340279955,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      },
+      "4": {
+        "book": {
+          "accuracy_gain_mean": 0.2899999999999999,
+          "accuracy_gain_std": 0.157797338380595,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cup": {
+          "accuracy_gain_mean": 0.15,
+          "accuracy_gain_std": 0.08062257748298547,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "handbag": {
+          "accuracy_gain_mean": -0.18,
+          "accuracy_gain_std": 0.09797958971132713,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "remote": {
+          "accuracy_gain_mean": -0.03,
+          "accuracy_gain_std": 0.07810249675906655,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "teddybear": {
+          "accuracy_gain_mean": 0.5199999999999999,
+          "accuracy_gain_std": 0.11661903789690606,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.15,
+          "accuracy_gain_std": 0.03376388603226826,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      },
+      "5": {
+        "book": {
+          "accuracy_gain_mean": 0.29999999999999993,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cup": {
+          "accuracy_gain_mean": 0.09999999999999998,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "handbag": {
+          "accuracy_gain_mean": -0.10000000000000005,
+          "accuracy_gain_std": 1.3877787807814457e-17,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "remote": {
+          "accuracy_gain_mean": -0.10000000000000005,
+          "accuracy_gain_std": 1.3877787807814457e-17,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "teddybear": {
+          "accuracy_gain_mean": 0.6,
+          "accuracy_gain_std": 1.1102230246251565e-16,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.16000000000000006,
+          "accuracy_gain_std": 2.7755575615628914e-17,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      }
+    },
+    "clip_rel_selection": {
+      "label": "CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank]",
+      "method": "clip_rel+clip",
+      "baseline": "random+clip",
+      "1": {
+        "book": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cup": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "handbag": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "remote": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "teddybear": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      },
+      "2": {
+        "book": {
+          "accuracy_gain_mean": 0.11000000000000003,
+          "accuracy_gain_std": 0.11357816691600549,
+          "gt_coverage_gain_mean": 0.019999999999999983,
+          "gt_coverage_gain_std": 0.13266499161421602
+        },
+        "cup": {
+          "accuracy_gain_mean": 0.06000000000000003,
+          "accuracy_gain_std": 0.12806248474865697,
+          "gt_coverage_gain_mean": 0.06000000000000002,
+          "gt_coverage_gain_std": 0.1019803902718557
+        },
+        "handbag": {
+          "accuracy_gain_mean": 0.07000000000000002,
+          "accuracy_gain_std": 0.07810249675906655,
+          "gt_coverage_gain_mean": 0.13999999999999996,
+          "gt_coverage_gain_std": 0.12806248474865697
+        },
+        "remote": {
+          "accuracy_gain_mean": 0.09000000000000001,
+          "accuracy_gain_std": 0.12206555615733704,
+          "gt_coverage_gain_mean": 0.12999999999999998,
+          "gt_coverage_gain_std": 0.1615549442140351
+        },
+        "teddybear": {
+          "accuracy_gain_mean": -0.009999999999999992,
+          "accuracy_gain_std": 0.06999999999999999,
+          "gt_coverage_gain_mean": -0.15,
+          "gt_coverage_gain_std": 0.1284523257866513
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.06399999999999997,
+          "accuracy_gain_std": 0.0463033476111609,
+          "gt_coverage_gain_mean": 0.039999999999999994,
+          "gt_coverage_gain_std": 0.052153619241621194
+        }
+      },
+      "3": {
+        "book": {
+          "accuracy_gain_mean": 0.09000000000000001,
+          "accuracy_gain_std": 0.08306623862918075,
+          "gt_coverage_gain_mean": -0.08000000000000004,
+          "gt_coverage_gain_std": 0.1469693845669907
+        },
+        "cup": {
+          "accuracy_gain_mean": 0.06000000000000001,
+          "accuracy_gain_std": 0.09165151389911681,
+          "gt_coverage_gain_mean": -0.05000000000000001,
+          "gt_coverage_gain_std": 0.05000000000000001
+        },
+        "handbag": {
+          "accuracy_gain_mean": -0.01999999999999999,
+          "accuracy_gain_std": 0.0748331477354788,
+          "gt_coverage_gain_mean": 0.22000000000000003,
+          "gt_coverage_gain_std": 0.13999999999999999
+        },
+        "remote": {
+          "accuracy_gain_mean": 0.11000000000000003,
+          "accuracy_gain_std": 0.1374772708486752,
+          "gt_coverage_gain_mean": 0.15,
+          "gt_coverage_gain_std": 0.13601470508735447
+        },
+        "teddybear": {
+          "accuracy_gain_mean": 0.010000000000000005,
+          "accuracy_gain_std": 0.06999999999999999,
+          "gt_coverage_gain_mean": -0.20000000000000004,
+          "gt_coverage_gain_std": 0.0894427190999916
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.049999999999999975,
+          "accuracy_gain_std": 0.03714835124201342,
+          "gt_coverage_gain_mean": 0.008000000000000007,
+          "gt_coverage_gain_std": 0.036
+        }
+      },
+      "4": {
+        "book": {
+          "accuracy_gain_mean": 0.040000000000000015,
+          "accuracy_gain_std": 0.10198039027185571,
+          "gt_coverage_gain_mean": -0.059999999999999984,
+          "gt_coverage_gain_std": 0.09165151389911678
+        },
+        "cup": {
+          "accuracy_gain_mean": 0.04000000000000001,
+          "accuracy_gain_std": 0.06633249580710801,
+          "gt_coverage_gain_mean": -0.019999999999999997,
+          "gt_coverage_gain_std": 0.059999999999999984
+        },
+        "handbag": {
+          "accuracy_gain_mean": 1.6653345369377347e-17,
+          "accuracy_gain_std": 0.08944271909999159,
+          "gt_coverage_gain_mean": 0.11000000000000001,
+          "gt_coverage_gain_std": 0.1044030650891055
+        },
+        "remote": {
+          "accuracy_gain_mean": 0.06000000000000001,
+          "accuracy_gain_std": 0.09165151389911681,
+          "gt_coverage_gain_mean": 0.19,
+          "gt_coverage_gain_std": 0.13
+        },
+        "teddybear": {
+          "accuracy_gain_mean": -0.029999999999999992,
+          "accuracy_gain_std": 0.09,
+          "gt_coverage_gain_mean": -0.10999999999999996,
+          "gt_coverage_gain_std": 0.06999999999999998
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.02199999999999998,
+          "accuracy_gain_std": 0.038418745424597084,
+          "gt_coverage_gain_mean": 0.02200000000000003,
+          "gt_coverage_gain_std": 0.04422668877499199
+        }
+      },
+      "5": {
+        "book": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cup": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "handbag": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "remote": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "teddybear": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      }
+    },
+    "clip_rel_nov_selection": {
+      "label": "CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank]",
+      "method": "clip_rel_nov+clip",
+      "baseline": "random+clip",
+      "1": {
+        "book": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cup": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "handbag": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "remote": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "teddybear": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      },
+      "2": {
+        "book": {
+          "accuracy_gain_mean": 0.06000000000000001,
+          "accuracy_gain_std": 0.12000000000000002,
+          "gt_coverage_gain_mean": 0.13000000000000003,
+          "gt_coverage_gain_std": 0.16155494421403513
+        },
+        "cup": {
+          "accuracy_gain_mean": 0.06999999999999999,
+          "accuracy_gain_std": 0.1268857754044952,
+          "gt_coverage_gain_mean": 0.16000000000000006,
+          "gt_coverage_gain_std": 0.06633249580710801
+        },
+        "handbag": {
+          "accuracy_gain_mean": 0.12,
+          "accuracy_gain_std": 0.12489995996796797,
+          "gt_coverage_gain_mean": 0.15999999999999998,
+          "gt_coverage_gain_std": 0.142828568570857
+        },
+        "remote": {
+          "accuracy_gain_mean": -0.010000000000000004,
+          "accuracy_gain_std": 0.11357816691600547,
+          "gt_coverage_gain_mean": 0.019999999999999997,
+          "gt_coverage_gain_std": 0.17204650534085253
+        },
+        "teddybear": {
+          "accuracy_gain_mean": 0.019999999999999993,
+          "accuracy_gain_std": 0.07483314773547882,
+          "gt_coverage_gain_mean": 0.009999999999999986,
+          "gt_coverage_gain_std": 0.157797338380595
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.052000000000000005,
+          "accuracy_gain_std": 0.03709447398198282,
+          "gt_coverage_gain_mean": 0.096,
+          "gt_coverage_gain_std": 0.062481997407253236
+        }
+      },
+      "3": {
+        "book": {
+          "accuracy_gain_mean": 0.09000000000000001,
+          "accuracy_gain_std": 0.08306623862918075,
+          "gt_coverage_gain_mean": 0.18,
+          "gt_coverage_gain_std": 0.1661324772583615
+        },
+        "cup": {
+          "accuracy_gain_mean": -0.030000000000000016,
+          "accuracy_gain_std": 0.07810249675906655,
+          "gt_coverage_gain_mean": 0.13,
+          "gt_coverage_gain_std": 0.09000000000000001
+        },
+        "handbag": {
+          "accuracy_gain_mean": 0.010000000000000004,
+          "accuracy_gain_std": 0.09433981132056603,
+          "gt_coverage_gain_mean": 0.24,
+          "gt_coverage_gain_std": 0.16852299546352717
+        },
+        "remote": {
+          "accuracy_gain_mean": 0.09000000000000001,
+          "accuracy_gain_std": 0.157797338380595,
+          "gt_coverage_gain_mean": 0.22000000000000003,
+          "gt_coverage_gain_std": 0.12489995996796796
+        },
+        "teddybear": {
+          "accuracy_gain_mean": 0.06999999999999999,
+          "accuracy_gain_std": 0.10999999999999999,
+          "gt_coverage_gain_mean": -1.1102230246251566e-17,
+          "gt_coverage_gain_std": 0.10000000000000003
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.04599999999999999,
+          "accuracy_gain_std": 0.04903060268852504,
+          "gt_coverage_gain_mean": 0.154,
+          "gt_coverage_gain_std": 0.04476605857119881
+        }
+      },
+      "4": {
+        "book": {
+          "accuracy_gain_mean": 0.040000000000000015,
+          "accuracy_gain_std": 0.10198039027185571,
+          "gt_coverage_gain_mean": 0.08999999999999998,
+          "gt_coverage_gain_std": 0.08306623862918072
+        },
+        "cup": {
+          "accuracy_gain_mean": 0.04000000000000001,
+          "accuracy_gain_std": 0.06633249580710801,
+          "gt_coverage_gain_mean": 0.06999999999999998,
+          "gt_coverage_gain_std": 0.06403124237432847
+        },
+        "handbag": {
+          "accuracy_gain_mean": 1.6653345369377347e-17,
+          "accuracy_gain_std": 0.08944271909999159,
+          "gt_coverage_gain_mean": 0.11000000000000001,
+          "gt_coverage_gain_std": 0.1044030650891055
+        },
+        "remote": {
+          "accuracy_gain_mean": 0.06000000000000001,
+          "accuracy_gain_std": 0.09165151389911681,
+          "gt_coverage_gain_mean": 0.16,
+          "gt_coverage_gain_std": 0.14282856857085702
+        },
+        "teddybear": {
+          "accuracy_gain_mean": -0.029999999999999992,
+          "accuracy_gain_std": 0.09,
+          "gt_coverage_gain_mean": -0.019999999999999997,
+          "gt_coverage_gain_std": 0.0748331477354788
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.02199999999999998,
+          "accuracy_gain_std": 0.038418745424597084,
+          "gt_coverage_gain_mean": 0.08199999999999999,
+          "gt_coverage_gain_std": 0.049355850717012276
+        }
+      },
+      "5": {
+        "book": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cup": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "handbag": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "remote": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "teddybear": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      }
+    },
+    "trained_selection": {
+      "label": "Trained selection vs baseline [Trained selection + CLIP rerank]",
+      "method": "trained+clip",
+      "baseline": "random+clip",
+      "1": {
+        "book": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cup": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "handbag": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "remote": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "teddybear": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      },
+      "2": {
+        "book": {
+          "accuracy_gain_mean": 0.06999999999999999,
+          "accuracy_gain_std": 0.1676305461424021,
+          "gt_coverage_gain_mean": 0.17000000000000004,
+          "gt_coverage_gain_std": 0.13453624047073712
+        },
+        "cup": {
+          "accuracy_gain_mean": 0.10000000000000002,
+          "accuracy_gain_std": 0.14832396974191325,
+          "gt_coverage_gain_mean": 0.09,
+          "gt_coverage_gain_std": 0.11357816691600547
+        },
+        "handbag": {
+          "accuracy_gain_mean": 0.09000000000000001,
+          "accuracy_gain_std": 0.09433981132056604,
+          "gt_coverage_gain_mean": 0.06999999999999999,
+          "gt_coverage_gain_std": 0.10999999999999999
+        },
+        "remote": {
+          "accuracy_gain_mean": 0.04999999999999999,
+          "accuracy_gain_std": 0.09219544457292887,
+          "gt_coverage_gain_mean": 0.059999999999999984,
+          "gt_coverage_gain_std": 0.18
+        },
+        "teddybear": {
+          "accuracy_gain_mean": 0.13999999999999999,
+          "accuracy_gain_std": 0.11135528725660045,
+          "gt_coverage_gain_mean": 0.22000000000000003,
+          "gt_coverage_gain_std": 0.1661324772583615
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.09,
+          "accuracy_gain_std": 0.04312771730569565,
+          "gt_coverage_gain_mean": 0.12200000000000003,
+          "gt_coverage_gain_std": 0.05095095681142798
+        }
+      },
+      "3": {
+        "book": {
+          "accuracy_gain_mean": 0.009999999999999992,
+          "accuracy_gain_std": 0.13000000000000003,
+          "gt_coverage_gain_mean": 0.09000000000000001,
+          "gt_coverage_gain_std": 0.15132745950421556
+        },
+        "cup": {
+          "accuracy_gain_mean": -5.551115123125783e-18,
+          "accuracy_gain_std": 0.10000000000000002,
+          "gt_coverage_gain_mean": 0.08000000000000002,
+          "gt_coverage_gain_std": 0.1077032961426901
+        },
+        "handbag": {
+          "accuracy_gain_mean": -0.01999999999999999,
+          "accuracy_gain_std": 0.0748331477354788,
+          "gt_coverage_gain_mean": -0.020000000000000028,
+          "gt_coverage_gain_std": 0.14
+        },
+        "remote": {
+          "accuracy_gain_mean": 0.14,
+          "accuracy_gain_std": 0.1562049935181331,
+          "gt_coverage_gain_mean": 0.23000000000000004,
+          "gt_coverage_gain_std": 0.16155494421403513
+        },
+        "teddybear": {
+          "accuracy_gain_mean": 0.039999999999999994,
+          "accuracy_gain_std": 0.07999999999999999,
+          "gt_coverage_gain_mean": 0.16999999999999998,
+          "gt_coverage_gain_std": 0.0640312423743285
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.033999999999999996,
+          "accuracy_gain_std": 0.043863424398922615,
+          "gt_coverage_gain_mean": 0.11000000000000001,
+          "gt_coverage_gain_std": 0.05458937625582473
+        }
+      },
+      "4": {
+        "book": {
+          "accuracy_gain_mean": 0.1,
+          "accuracy_gain_std": 0.1264911064067352,
+          "gt_coverage_gain_mean": 0.059999999999999984,
+          "gt_coverage_gain_std": 0.10198039027185568
+        },
+        "cup": {
+          "accuracy_gain_mean": 0.02,
+          "accuracy_gain_std": 0.06000000000000001,
+          "gt_coverage_gain_mean": 0.06999999999999998,
+          "gt_coverage_gain_std": 0.06403124237432847
+        },
+        "handbag": {
+          "accuracy_gain_mean": 1.6653345369377347e-17,
+          "accuracy_gain_std": 0.08944271909999159,
+          "gt_coverage_gain_mean": 0.12000000000000002,
+          "gt_coverage_gain_std": 0.12489995996796796
+        },
+        "remote": {
+          "accuracy_gain_mean": 0.06000000000000001,
+          "accuracy_gain_std": 0.09165151389911681,
+          "gt_coverage_gain_mean": 0.13000000000000003,
+          "gt_coverage_gain_std": 0.14177446878757827
+        },
+        "teddybear": {
+          "accuracy_gain_mean": -0.029999999999999992,
+          "accuracy_gain_std": 0.09,
+          "gt_coverage_gain_mean": 0.039999999999999994,
+          "gt_coverage_gain_std": 0.06633249580710798
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.03,
+          "accuracy_gain_std": 0.040249223594996206,
+          "gt_coverage_gain_mean": 0.08399999999999999,
+          "gt_coverage_gain_std": 0.05122499389946279
+        }
+      },
+      "5": {
+        "book": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cup": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "handbag": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "remote": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "teddybear": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      }
+    },
+    "clip_rel_nov_selection_learned_rerank": {
+      "label": "CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank]",
+      "method": "clip_rel_nov+learned",
+      "baseline": "random+clip",
+      "1": {
+        "book": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cup": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "handbag": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "remote": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "teddybear": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      },
+      "2": {
+        "book": {
+          "accuracy_gain_mean": 0.39,
+          "accuracy_gain_std": 0.17578395831246948,
+          "gt_coverage_gain_mean": 0.13000000000000003,
+          "gt_coverage_gain_std": 0.16155494421403513
+        },
+        "cup": {
+          "accuracy_gain_mean": 0.22999999999999998,
+          "accuracy_gain_std": 0.11000000000000001,
+          "gt_coverage_gain_mean": 0.16000000000000006,
+          "gt_coverage_gain_std": 0.06633249580710801
+        },
+        "handbag": {
+          "accuracy_gain_mean": 0.11000000000000001,
+          "accuracy_gain_std": 0.12206555615733702,
+          "gt_coverage_gain_mean": 0.15999999999999998,
+          "gt_coverage_gain_std": 0.142828568570857
+        },
+        "remote": {
+          "accuracy_gain_mean": 0.009999999999999976,
+          "accuracy_gain_std": 0.17578395831246946,
+          "gt_coverage_gain_mean": 0.019999999999999997,
+          "gt_coverage_gain_std": 0.17204650534085253
+        },
+        "teddybear": {
+          "accuracy_gain_mean": 0.44000000000000006,
+          "accuracy_gain_std": 0.11135528725660045,
+          "gt_coverage_gain_mean": 0.009999999999999986,
+          "gt_coverage_gain_std": 0.157797338380595
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.23599999999999993,
+          "accuracy_gain_std": 0.05425863986500214,
+          "gt_coverage_gain_mean": 0.096,
+          "gt_coverage_gain_std": 0.062481997407253236
+        }
+      },
+      "3": {
+        "book": {
+          "accuracy_gain_mean": 0.49000000000000005,
+          "accuracy_gain_std": 0.09433981132056608,
+          "gt_coverage_gain_mean": 0.18,
+          "gt_coverage_gain_std": 0.1661324772583615
+        },
+        "cup": {
+          "accuracy_gain_mean": 0.22999999999999998,
+          "accuracy_gain_std": 0.1004987562112089,
+          "gt_coverage_gain_mean": 0.13,
+          "gt_coverage_gain_std": 0.09000000000000001
+        },
+        "handbag": {
+          "accuracy_gain_mean": 0.029999999999999992,
+          "accuracy_gain_std": 0.1004987562112089,
+          "gt_coverage_gain_mean": 0.24,
+          "gt_coverage_gain_std": 0.16852299546352717
+        },
+        "remote": {
+          "accuracy_gain_mean": 0.08,
+          "accuracy_gain_std": 0.16,
+          "gt_coverage_gain_mean": 0.22000000000000003,
+          "gt_coverage_gain_std": 0.12489995996796796
+        },
+        "teddybear": {
+          "accuracy_gain_mean": 0.51,
+          "accuracy_gain_std": 0.1445683229480096,
+          "gt_coverage_gain_mean": -1.1102230246251566e-17,
+          "gt_coverage_gain_std": 0.10000000000000003
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.26799999999999996,
+          "accuracy_gain_std": 0.06273754856543248,
+          "gt_coverage_gain_mean": 0.154,
+          "gt_coverage_gain_std": 0.04476605857119881
+        }
+      },
+      "4": {
+        "book": {
+          "accuracy_gain_mean": 0.44000000000000006,
+          "accuracy_gain_std": 0.10198039027185571,
+          "gt_coverage_gain_mean": 0.08999999999999998,
+          "gt_coverage_gain_std": 0.08306623862918072
+        },
+        "cup": {
+          "accuracy_gain_mean": 0.13999999999999999,
+          "accuracy_gain_std": 0.06633249580710801,
+          "gt_coverage_gain_mean": 0.06999999999999998,
+          "gt_coverage_gain_std": 0.06403124237432847
+        },
+        "handbag": {
+          "accuracy_gain_mean": -0.07,
+          "accuracy_gain_std": 0.1004987562112089,
+          "gt_coverage_gain_mean": 0.11000000000000001,
+          "gt_coverage_gain_std": 0.1044030650891055
+        },
+        "remote": {
+          "accuracy_gain_mean": 0.05,
+          "accuracy_gain_std": 0.10246950765959599,
+          "gt_coverage_gain_mean": 0.16,
+          "gt_coverage_gain_std": 0.14282856857085702
+        },
+        "teddybear": {
+          "accuracy_gain_mean": 0.54,
+          "accuracy_gain_std": 0.11135528725660043,
+          "gt_coverage_gain_mean": -0.019999999999999997,
+          "gt_coverage_gain_std": 0.0748331477354788
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.21999999999999997,
+          "accuracy_gain_std": 0.05440588203494176,
+          "gt_coverage_gain_mean": 0.08199999999999999,
+          "gt_coverage_gain_std": 0.049355850717012276
+        }
+      },
+      "5": {
+        "book": {
+          "accuracy_gain_mean": 0.29999999999999993,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cup": {
+          "accuracy_gain_mean": 0.09999999999999998,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "handbag": {
+          "accuracy_gain_mean": -0.10000000000000005,
+          "accuracy_gain_std": 1.3877787807814457e-17,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "remote": {
+          "accuracy_gain_mean": -0.10000000000000005,
+          "accuracy_gain_std": 1.3877787807814457e-17,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "teddybear": {
+          "accuracy_gain_mean": 0.6,
+          "accuracy_gain_std": 1.1102230246251565e-16,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.16000000000000006,
+          "accuracy_gain_std": 2.7755575615628914e-17,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      }
+    },
+    "full_pipeline": {
+      "label": "Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank]",
+      "method": "trained+learned",
+      "baseline": "random+clip",
+      "1": {
+        "book": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cup": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "handbag": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "remote": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "teddybear": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      },
+      "2": {
+        "book": {
+          "accuracy_gain_mean": 0.41,
+          "accuracy_gain_std": 0.11357816691600549,
+          "gt_coverage_gain_mean": 0.17000000000000004,
+          "gt_coverage_gain_std": 0.13453624047073712
+        },
+        "cup": {
+          "accuracy_gain_mean": 0.16,
+          "accuracy_gain_std": 0.12806248474865697,
+          "gt_coverage_gain_mean": 0.09,
+          "gt_coverage_gain_std": 0.11357816691600547
+        },
+        "handbag": {
+          "accuracy_gain_mean": 0.04,
+          "accuracy_gain_std": 0.11135528725660046,
+          "gt_coverage_gain_mean": 0.06999999999999999,
+          "gt_coverage_gain_std": 0.10999999999999999
+        },
+        "remote": {
+          "accuracy_gain_mean": -0.01000000000000002,
+          "accuracy_gain_std": 0.12206555615733702,
+          "gt_coverage_gain_mean": 0.059999999999999984,
+          "gt_coverage_gain_std": 0.18
+        },
+        "teddybear": {
+          "accuracy_gain_mean": 0.5900000000000001,
+          "accuracy_gain_std": 0.07000000000000003,
+          "gt_coverage_gain_mean": 0.22000000000000003,
+          "gt_coverage_gain_std": 0.1661324772583615
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.238,
+          "accuracy_gain_std": 0.04770744176750626,
+          "gt_coverage_gain_mean": 0.12200000000000003,
+          "gt_coverage_gain_std": 0.05095095681142798
+        }
+      },
+      "3": {
+        "book": {
+          "accuracy_gain_mean": 0.38999999999999996,
+          "accuracy_gain_std": 0.08306623862918076,
+          "gt_coverage_gain_mean": 0.09000000000000001,
+          "gt_coverage_gain_std": 0.15132745950421556
+        },
+        "cup": {
+          "accuracy_gain_mean": 0.16,
+          "accuracy_gain_std": 0.09165151389911681,
+          "gt_coverage_gain_mean": 0.08000000000000002,
+          "gt_coverage_gain_std": 0.1077032961426901
+        },
+        "handbag": {
+          "accuracy_gain_mean": -0.12000000000000004,
+          "accuracy_gain_std": 0.07483314773547882,
+          "gt_coverage_gain_mean": -0.020000000000000028,
+          "gt_coverage_gain_std": 0.14
+        },
+        "remote": {
+          "accuracy_gain_mean": 0.009999999999999978,
+          "accuracy_gain_std": 0.13747727084867523,
+          "gt_coverage_gain_mean": 0.23000000000000004,
+          "gt_coverage_gain_std": 0.16155494421403513
+        },
+        "teddybear": {
+          "accuracy_gain_mean": 0.6100000000000001,
+          "accuracy_gain_std": 0.07000000000000002,
+          "gt_coverage_gain_mean": 0.16999999999999998,
+          "gt_coverage_gain_std": 0.0640312423743285
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.21000000000000002,
+          "accuracy_gain_std": 0.037148351242013426,
+          "gt_coverage_gain_mean": 0.11000000000000001,
+          "gt_coverage_gain_std": 0.05458937625582473
+        }
+      },
+      "4": {
+        "book": {
+          "accuracy_gain_mean": 0.33999999999999997,
+          "accuracy_gain_std": 0.10198039027185571,
+          "gt_coverage_gain_mean": 0.059999999999999984,
+          "gt_coverage_gain_std": 0.10198039027185568
+        },
+        "cup": {
+          "accuracy_gain_mean": 0.13999999999999999,
+          "accuracy_gain_std": 0.06633249580710801,
+          "gt_coverage_gain_mean": 0.06999999999999998,
+          "gt_coverage_gain_std": 0.06403124237432847
+        },
+        "handbag": {
+          "accuracy_gain_mean": -0.10000000000000002,
+          "accuracy_gain_std": 0.08944271909999157,
+          "gt_coverage_gain_mean": 0.12000000000000002,
+          "gt_coverage_gain_std": 0.12489995996796796
+        },
+        "remote": {
+          "accuracy_gain_mean": -0.04000000000000002,
+          "accuracy_gain_std": 0.09165151389911681,
+          "gt_coverage_gain_mean": 0.13000000000000003,
+          "gt_coverage_gain_std": 0.14177446878757827
+        },
+        "teddybear": {
+          "accuracy_gain_mean": 0.5700000000000001,
+          "accuracy_gain_std": 0.09000000000000002,
+          "gt_coverage_gain_mean": 0.039999999999999994,
+          "gt_coverage_gain_std": 0.06633249580710798
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.182,
+          "accuracy_gain_std": 0.038418745424597084,
+          "gt_coverage_gain_mean": 0.08399999999999999,
+          "gt_coverage_gain_std": 0.05122499389946279
+        }
+      },
+      "5": {
+        "book": {
+          "accuracy_gain_mean": 0.29999999999999993,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cup": {
+          "accuracy_gain_mean": 0.09999999999999998,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "handbag": {
+          "accuracy_gain_mean": -0.10000000000000005,
+          "accuracy_gain_std": 1.3877787807814457e-17,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "remote": {
+          "accuracy_gain_mean": -0.10000000000000005,
+          "accuracy_gain_std": 1.3877787807814457e-17,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "teddybear": {
+          "accuracy_gain_mean": 0.6,
+          "accuracy_gain_std": 1.1102230246251565e-16,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.16000000000000006,
+          "accuracy_gain_std": 2.7755575615628914e-17,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,3957 @@
+{
+  "labels_json": "E:\\UMD-subset\\annotations_umd.json",
+  "baseline": "random+clip",
+  "configs": {
+    "random+clip": {
+      "label": "Baseline: Random selection + CLIP rerank",
+      "selector": "random",
+      "reranker": "clip"
+    },
+    "random+learned": {
+      "label": "Random selection + Learned rerank",
+      "selector": "random",
+      "reranker": "learned"
+    },
+    "clip_rel+clip": {
+      "label": "CLIP-relevance selection + CLIP rerank",
+      "selector": "clip_rel",
+      "reranker": "clip"
+    },
+    "clip_rel_nov+clip": {
+      "label": "CLIP-relevance+novelty selection + CLIP rerank",
+      "selector": "clip_rel_nov",
+      "reranker": "clip"
+    },
+    "clip_rel_nov+learned": {
+      "label": "CLIP-relevance+novelty selection + Learned rerank",
+      "selector": "clip_rel_nov",
+      "reranker": "learned"
+    },
+    "trained+clip": {
+      "label": "Trained selection + CLIP rerank",
+      "selector": "trained",
+      "reranker": "clip"
+    },
+    "trained+learned": {
+      "label": "Trained selection + Learned rerank (full pipeline)",
+      "selector": "trained",
+      "reranker": "learned"
+    }
+  },
+  "baseline_label": "Random selection + CLIP rerank",
+  "components": {
+    "learned_rerank": {
+      "label": "Learned rerank vs baseline [Random selection + Learned rerank]",
+      "method": "random+learned",
+      "baseline": "random+clip"
+    },
+    "clip_rel_selection": {
+      "label": "CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank]",
+      "method": "clip_rel+clip",
+      "baseline": "random+clip"
+    },
+    "clip_rel_nov_selection": {
+      "label": "CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank]",
+      "method": "clip_rel_nov+clip",
+      "baseline": "random+clip"
+    },
+    "trained_selection": {
+      "label": "Trained selection vs baseline [Trained selection + CLIP rerank]",
+      "method": "trained+clip",
+      "baseline": "random+clip"
+    },
+    "clip_rel_nov_selection_learned_rerank": {
+      "label": "CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank]",
+      "method": "clip_rel_nov+learned",
+      "baseline": "random+clip"
+    },
+    "full_pipeline": {
+      "label": "Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank]",
+      "method": "trained+learned",
+      "baseline": "random+clip"
+    }
+  },
+  "budgets": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "categories": [
+    "contain",
+    "cut",
+    "grasp",
+    "pound",
+    "scoop",
+    "wgrasp"
+  ],
+  "num_trials": 10,
+  "num_eval_samples": 345,
+  "w_novelty": 0.5,
+  "model_info": {
+    "reranker": {
+      "model_name": "reranker",
+      "feat_dim": 512,
+      "hidden_dim": 256,
+      "train_objects": 603,
+      "val_objects": 78,
+      "train_views": 3015,
+      "best_val_accuracy": 0.7435897435897436,
+      "epochs_ran": 22,
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.7997663257022699,
+          "val_accuracy": 0.44871794871794873
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.7976260421176752,
+          "val_accuracy": 0.46153846153846156
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.7848852016031742,
+          "val_accuracy": 0.5
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.7659137956798077,
+          "val_accuracy": 0.5641025641025641
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.7394857928156853,
+          "val_accuracy": 0.7051282051282052
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.698812410235405,
+          "val_accuracy": 0.6794871794871795
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.6628522034734488,
+          "val_accuracy": 0.6923076923076923
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.6287051911155382,
+          "val_accuracy": 0.6666666666666666
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.6064858598013719,
+          "val_accuracy": 0.6923076923076923
+        },
+        {
+          "epoch": 10,
+          "train_loss": 0.5839101715634266,
+          "val_accuracy": 0.7051282051282052
+        },
+        {
+          "epoch": 11,
+          "train_loss": 0.565715583662192,
+          "val_accuracy": 0.717948717948718
+        },
+        {
+          "epoch": 12,
+          "train_loss": 0.5628570293386778,
+          "val_accuracy": 0.7435897435897436
+        },
+        {
+          "epoch": 13,
+          "train_loss": 0.5655189293126265,
+          "val_accuracy": 0.7051282051282052
+        },
+        {
+          "epoch": 14,
+          "train_loss": 0.5417763578395048,
+          "val_accuracy": 0.717948717948718
+        },
+        {
+          "epoch": 15,
+          "train_loss": 0.5233765263110399,
+          "val_accuracy": 0.6923076923076923
+        },
+        {
+          "epoch": 16,
+          "train_loss": 0.5072322301566601,
+          "val_accuracy": 0.6923076923076923
+        },
+        {
+          "epoch": 17,
+          "train_loss": 0.49950727075338364,
+          "val_accuracy": 0.7051282051282052
+        },
+        {
+          "epoch": 18,
+          "train_loss": 0.4889975388844808,
+          "val_accuracy": 0.6410256410256411
+        },
+        {
+          "epoch": 19,
+          "train_loss": 0.4951713103801012,
+          "val_accuracy": 0.717948717948718
+        },
+        {
+          "epoch": 20,
+          "train_loss": 0.48845490378638107,
+          "val_accuracy": 0.717948717948718
+        },
+        {
+          "epoch": 21,
+          "train_loss": 0.4791051112115383,
+          "val_accuracy": 0.7435897435897436
+        },
+        {
+          "epoch": 22,
+          "train_loss": 0.4598217289894819,
+          "val_accuracy": 0.6794871794871795
+        }
+      ]
+    },
+    "selector": {
+      "model_name": "active_selector",
+      "feat_dim": 512,
+      "hidden_dim": 256,
+      "train_objects": 603,
+      "val_objects": 78,
+      "train_views": 3015,
+      "best_val_accuracy": 0.7051282051282052,
+      "epochs_ran": 17,
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.7992448024451733,
+          "val_accuracy": 0.47435897435897434
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.7961942379673322,
+          "val_accuracy": 0.46153846153846156
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.791804376989603,
+          "val_accuracy": 0.47435897435897434
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.7821516481538614,
+          "val_accuracy": 0.5256410256410257
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.7689812829097112,
+          "val_accuracy": 0.5384615384615384
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.7461554706096649,
+          "val_accuracy": 0.6153846153846154
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.7009130523850521,
+          "val_accuracy": 0.7051282051282052
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.6632438562810421,
+          "val_accuracy": 0.6794871794871795
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.6380981728434563,
+          "val_accuracy": 0.6538461538461539
+        },
+        {
+          "epoch": 10,
+          "train_loss": 0.6121089992423853,
+          "val_accuracy": 0.7051282051282052
+        },
+        {
+          "epoch": 11,
+          "train_loss": 0.6013058132181565,
+          "val_accuracy": 0.6923076923076923
+        },
+        {
+          "epoch": 12,
+          "train_loss": 0.5841234816859165,
+          "val_accuracy": 0.6794871794871795
+        },
+        {
+          "epoch": 13,
+          "train_loss": 0.5739713131139675,
+          "val_accuracy": 0.6923076923076923
+        },
+        {
+          "epoch": 14,
+          "train_loss": 0.5473169187704722,
+          "val_accuracy": 0.6666666666666666
+        },
+        {
+          "epoch": 15,
+          "train_loss": 0.5351774630447229,
+          "val_accuracy": 0.6666666666666666
+        },
+        {
+          "epoch": 16,
+          "train_loss": 0.5273845965663592,
+          "val_accuracy": 0.6410256410256411
+        },
+        {
+          "epoch": 17,
+          "train_loss": 0.5210564453154802,
+          "val_accuracy": 0.6666666666666666
+        }
+      ]
+    },
+    "loaded_from": "e:\\CO3D-data\\outputs_umd"
+  },
+  "config_summary": {
+    "random+clip": {
+      "1": {
+        "contain": {
+          "accuracy_mean": 0.475,
+          "accuracy_std": 0.1920286436967152,
+          "gt_coverage_mean": 0.475,
+          "gt_coverage_std": 0.1920286436967152,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.52,
+          "accuracy_std": 0.06301087501670145,
+          "gt_coverage_mean": 0.52,
+          "gt_coverage_std": 0.06301087501670145,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.3919597989949749,
+          "accuracy_std": 0.03348408291247775,
+          "gt_coverage_mean": 0.3919597989949749,
+          "gt_coverage_std": 0.03348408291247775,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.427027027027027,
+          "accuracy_std": 0.07814503943135653,
+          "gt_coverage_mean": 0.427027027027027,
+          "gt_coverage_std": 0.07814503943135653,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.4979166666666667,
+          "accuracy_std": 0.05925609438886621,
+          "gt_coverage_mean": 0.4979166666666667,
+          "gt_coverage_std": 0.05925609438886621,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.6375,
+          "accuracy_std": 0.18915932438026944,
+          "gt_coverage_mean": 0.6375,
+          "gt_coverage_std": 0.18915932438026944,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.43478260869565216,
+          "accuracy_std": 0.029474142188721537,
+          "gt_coverage_mean": 0.43478260869565216,
+          "gt_coverage_std": 0.029474142188721537,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 345
+        }
+      },
+      "2": {
+        "contain": {
+          "accuracy_mean": 0.425,
+          "accuracy_std": 0.13919410907075055,
+          "gt_coverage_mean": 0.8125,
+          "gt_coverage_std": 0.08385254915624211,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.4488888888888889,
+          "accuracy_std": 0.05515410509329268,
+          "gt_coverage_mean": 0.8111111111111111,
+          "gt_coverage_std": 0.056437444885334635,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.449246231155779,
+          "accuracy_std": 0.024015684714268393,
+          "gt_coverage_mean": 0.6628140703517589,
+          "gt_coverage_std": 0.026727811350697874,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.4027027027027027,
+          "accuracy_std": 0.08058406224797608,
+          "gt_coverage_mean": 0.7324324324324325,
+          "gt_coverage_std": 0.05853083196677761,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.5104166666666666,
+          "accuracy_std": 0.039802027446964164,
+          "gt_coverage_mean": 0.7895833333333334,
+          "gt_coverage_std": 0.0377882440567022,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.16583123951777,
+          "gt_coverage_mean": 0.9375,
+          "gt_coverage_std": 0.08385254915624211,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.4510144927536232,
+          "accuracy_std": 0.017593032933905524,
+          "gt_coverage_mean": 0.7171014492753623,
+          "gt_coverage_std": 0.018704076295538167,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 345
+        }
+      },
+      "3": {
+        "contain": {
+          "accuracy_mean": 0.4375,
+          "accuracy_std": 0.08385254915624211,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.37333333333333335,
+          "accuracy_std": 0.08709296863229077,
+          "gt_coverage_mean": 0.9577777777777777,
+          "gt_coverage_std": 0.020964402515681328,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.48542713567839185,
+          "accuracy_std": 0.0181462010907214,
+          "gt_coverage_mean": 0.8351758793969848,
+          "gt_coverage_std": 0.028585854579553552,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.3702702702702703,
+          "accuracy_std": 0.07052966676053994,
+          "gt_coverage_mean": 0.8648648648648649,
+          "gt_coverage_std": 0.05538892305924108,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.5187499999999999,
+          "accuracy_std": 0.053073913345237485,
+          "gt_coverage_mean": 0.9375,
+          "gt_coverage_std": 0.022821773229381923,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.2875,
+          "accuracy_std": 0.15860721925561902,
+          "gt_coverage_mean": 0.9875,
+          "gt_coverage_std": 0.0375,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.4573913043478261,
+          "accuracy_std": 0.0160758546363618,
+          "gt_coverage_mean": 0.8759420289855072,
+          "gt_coverage_std": 0.01873100802481568,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 345
+        }
+      },
+      "4": {
+        "contain": {
+          "accuracy_mean": 0.3875,
+          "accuracy_std": 0.10383279828647593,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.3844444444444445,
+          "accuracy_std": 0.05072316538005923,
+          "gt_coverage_mean": 0.9977777777777778,
+          "gt_coverage_std": 0.006666666666666676,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.5150753768844221,
+          "accuracy_std": 0.02699105327034328,
+          "gt_coverage_mean": 0.9371859296482411,
+          "gt_coverage_std": 0.011731273899425888,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.3675675675675676,
+          "accuracy_std": 0.04391372110614033,
+          "gt_coverage_mean": 0.9702702702702704,
+          "gt_coverage_std": 0.018918918918918923,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.5312499999999999,
+          "accuracy_std": 0.03869619921043065,
+          "gt_coverage_mean": 0.9708333333333332,
+          "gt_coverage_std": 0.02124591463996993,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.125,
+          "accuracy_std": 0.125,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.472463768115942,
+          "accuracy_std": 0.024354726420405818,
+          "gt_coverage_mean": 0.956231884057971,
+          "gt_coverage_std": 0.007826086956521748,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 345
+        }
+      },
+      "5": {
+        "contain": {
+          "accuracy_mean": 0.375,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.5326633165829147,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.35135135135135137,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.5416666666666667,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.4811594202898551,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 345
+        }
+      }
+    },
+    "random+learned": {
+      "1": {
+        "contain": {
+          "accuracy_mean": 0.475,
+          "accuracy_std": 0.1920286436967152,
+          "gt_coverage_mean": 0.475,
+          "gt_coverage_std": 0.1920286436967152,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.52,
+          "accuracy_std": 0.06301087501670145,
+          "gt_coverage_mean": 0.52,
+          "gt_coverage_std": 0.06301087501670145,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.3919597989949749,
+          "accuracy_std": 0.03348408291247775,
+          "gt_coverage_mean": 0.3919597989949749,
+          "gt_coverage_std": 0.03348408291247775,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.427027027027027,
+          "accuracy_std": 0.07814503943135653,
+          "gt_coverage_mean": 0.427027027027027,
+          "gt_coverage_std": 0.07814503943135653,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.4979166666666667,
+          "accuracy_std": 0.05925609438886621,
+          "gt_coverage_mean": 0.4979166666666667,
+          "gt_coverage_std": 0.05925609438886621,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.6375,
+          "accuracy_std": 0.18915932438026944,
+          "gt_coverage_mean": 0.6375,
+          "gt_coverage_std": 0.18915932438026944,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.43478260869565216,
+          "accuracy_std": 0.029474142188721537,
+          "gt_coverage_mean": 0.43478260869565216,
+          "gt_coverage_std": 0.029474142188721537,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 345
+        }
+      },
+      "2": {
+        "contain": {
+          "accuracy_mean": 0.6125,
+          "accuracy_std": 0.0673145600891813,
+          "gt_coverage_mean": 0.8125,
+          "gt_coverage_std": 0.08385254915624211,
+          "delta_vs_baseline_mean": 0.1875,
+          "delta_vs_baseline_std": 0.1505199322349037,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.6022222222222222,
+          "accuracy_std": 0.06845743022555273,
+          "gt_coverage_mean": 0.8111111111111111,
+          "gt_coverage_std": 0.056437444885334635,
+          "delta_vs_baseline_mean": 0.15333333333333332,
+          "delta_vs_baseline_std": 0.07978365809340553,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.5472361809045225,
+          "accuracy_std": 0.015962191129918188,
+          "gt_coverage_mean": 0.6628140703517589,
+          "gt_coverage_std": 0.026727811350697874,
+          "delta_vs_baseline_mean": 0.09798994974874373,
+          "delta_vs_baseline_std": 0.019879437633017583,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.627027027027027,
+          "accuracy_std": 0.0713021943690428,
+          "gt_coverage_mean": 0.7324324324324325,
+          "gt_coverage_std": 0.05853083196677761,
+          "delta_vs_baseline_mean": 0.2243243243243243,
+          "delta_vs_baseline_std": 0.04530555301146002,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.6083333333333334,
+          "accuracy_std": 0.06373774391990981,
+          "gt_coverage_mean": 0.7895833333333334,
+          "gt_coverage_std": 0.0377882440567022,
+          "delta_vs_baseline_mean": 0.09791666666666668,
+          "delta_vs_baseline_std": 0.05822161921867548,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.4375,
+          "accuracy_std": 0.21830311495716226,
+          "gt_coverage_mean": 0.9375,
+          "gt_coverage_std": 0.08385254915624211,
+          "delta_vs_baseline_mean": 0.0375,
+          "delta_vs_baseline_std": 0.08003905296791061,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.5704347826086956,
+          "accuracy_std": 0.016841552517488634,
+          "gt_coverage_mean": 0.7171014492753623,
+          "gt_coverage_std": 0.018704076295538167,
+          "delta_vs_baseline_mean": 0.11942028985507247,
+          "delta_vs_baseline_std": 0.01998949524587439,
+          "num_samples": 345
+        }
+      },
+      "3": {
+        "contain": {
+          "accuracy_mean": 0.7125,
+          "accuracy_std": 0.1125,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.275,
+          "delta_vs_baseline_std": 0.16583123951776998,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.6911111111111111,
+          "accuracy_std": 0.043829073162924476,
+          "gt_coverage_mean": 0.9577777777777777,
+          "gt_coverage_std": 0.020964402515681328,
+          "delta_vs_baseline_mean": 0.31777777777777777,
+          "delta_vs_baseline_std": 0.1221413874103226,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.5994974874371859,
+          "accuracy_std": 0.027251752488354264,
+          "gt_coverage_mean": 0.8351758793969848,
+          "gt_coverage_std": 0.028585854579553552,
+          "delta_vs_baseline_mean": 0.11407035175879396,
+          "delta_vs_baseline_std": 0.027802163203262408,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.7864864864864864,
+          "accuracy_std": 0.06990549814258143,
+          "gt_coverage_mean": 0.8648648648648649,
+          "gt_coverage_std": 0.05538892305924108,
+          "delta_vs_baseline_mean": 0.41621621621621624,
+          "delta_vs_baseline_std": 0.07567567567567568,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.6895833333333334,
+          "accuracy_std": 0.03778824405670219,
+          "gt_coverage_mean": 0.9375,
+          "gt_coverage_std": 0.022821773229381923,
+          "delta_vs_baseline_mean": 0.17083333333333334,
+          "delta_vs_baseline_std": 0.07083333333333333,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.2875,
+          "accuracy_std": 0.20953818267800262,
+          "gt_coverage_mean": 0.9875,
+          "gt_coverage_std": 0.0375,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.11180339887498948,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.6394202898550725,
+          "accuracy_std": 0.020173579873977176,
+          "gt_coverage_mean": 0.8759420289855072,
+          "gt_coverage_std": 0.01873100802481568,
+          "delta_vs_baseline_mean": 0.18202898550724633,
+          "delta_vs_baseline_std": 0.025625549107594608,
+          "num_samples": 345
+        }
+      },
+      "4": {
+        "contain": {
+          "accuracy_mean": 0.575,
+          "accuracy_std": 0.06123724356957945,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.1875,
+          "delta_vs_baseline_std": 0.10077822185373188,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.7866666666666667,
+          "accuracy_std": 0.04239729784075312,
+          "gt_coverage_mean": 0.9977777777777778,
+          "gt_coverage_std": 0.006666666666666676,
+          "delta_vs_baseline_mean": 0.4022222222222222,
+          "delta_vs_baseline_std": 0.08282064512704097,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.6251256281407035,
+          "accuracy_std": 0.023159233410659147,
+          "gt_coverage_mean": 0.9371859296482411,
+          "gt_coverage_std": 0.011731273899425888,
+          "delta_vs_baseline_mean": 0.1100502512562814,
+          "delta_vs_baseline_std": 0.03862815083613593,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.9081081081081083,
+          "accuracy_std": 0.04391372110614033,
+          "gt_coverage_mean": 0.9702702702702704,
+          "gt_coverage_std": 0.018918918918918923,
+          "delta_vs_baseline_mean": 0.5405405405405406,
+          "delta_vs_baseline_std": 0.04681218398834801,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.69375,
+          "accuracy_std": 0.022916666666666675,
+          "gt_coverage_mean": 0.9708333333333332,
+          "gt_coverage_std": 0.02124591463996993,
+          "delta_vs_baseline_mean": 0.16249999999999998,
+          "delta_vs_baseline_std": 0.03818813079129867,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.175,
+          "accuracy_std": 0.15,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.05,
+          "delta_vs_baseline_std": 0.15,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.6744927536231884,
+          "accuracy_std": 0.015878661941799817,
+          "gt_coverage_mean": 0.956231884057971,
+          "gt_coverage_std": 0.007826086956521748,
+          "delta_vs_baseline_mean": 0.20202898550724635,
+          "delta_vs_baseline_std": 0.029871952453317172,
+          "num_samples": 345
+        }
+      },
+      "5": {
+        "contain": {
+          "accuracy_mean": 0.5,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.125,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.8444444444444444,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.4444444444444445,
+          "delta_vs_baseline_std": 5.551115123125783e-17,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.6381909547738693,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.10552763819095479,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.9729729729729731,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.6216216216216217,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.7291666666666667,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.1875,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.6956521739130433,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.21449275362318837,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 345
+        }
+      }
+    },
+    "clip_rel+clip": {
+      "1": {
+        "contain": {
+          "accuracy_mean": 0.475,
+          "accuracy_std": 0.1920286436967152,
+          "gt_coverage_mean": 0.475,
+          "gt_coverage_std": 0.1920286436967152,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.52,
+          "accuracy_std": 0.06301087501670145,
+          "gt_coverage_mean": 0.52,
+          "gt_coverage_std": 0.06301087501670145,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.3919597989949749,
+          "accuracy_std": 0.03348408291247775,
+          "gt_coverage_mean": 0.3919597989949749,
+          "gt_coverage_std": 0.03348408291247775,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.427027027027027,
+          "accuracy_std": 0.07814503943135653,
+          "gt_coverage_mean": 0.427027027027027,
+          "gt_coverage_std": 0.07814503943135653,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.4979166666666667,
+          "accuracy_std": 0.05925609438886621,
+          "gt_coverage_mean": 0.4979166666666667,
+          "gt_coverage_std": 0.05925609438886621,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.6375,
+          "accuracy_std": 0.18915932438026944,
+          "gt_coverage_mean": 0.6375,
+          "gt_coverage_std": 0.18915932438026944,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.43478260869565216,
+          "accuracy_std": 0.029474142188721537,
+          "gt_coverage_mean": 0.43478260869565216,
+          "gt_coverage_std": 0.029474142188721537,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 345
+        }
+      },
+      "2": {
+        "contain": {
+          "accuracy_mean": 0.375,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.7875,
+          "gt_coverage_std": 0.057282196186948006,
+          "delta_vs_baseline_mean": -0.05,
+          "delta_vs_baseline_std": 0.13919410907075055,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.7555555555555554,
+          "gt_coverage_std": 0.056218269514104524,
+          "delta_vs_baseline_mean": -0.04888888888888886,
+          "delta_vs_baseline_std": 0.05515410509329268,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.5326633165829147,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 0.7386934673366834,
+          "gt_coverage_std": 0.022918098996967597,
+          "delta_vs_baseline_mean": 0.08341708542713563,
+          "delta_vs_baseline_std": 0.024015684714268393,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.35135135135135137,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.6513513513513514,
+          "gt_coverage_std": 0.04902258688437041,
+          "delta_vs_baseline_mean": -0.05135135135135135,
+          "delta_vs_baseline_std": 0.08058406224797608,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.5416666666666667,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 0.7770833333333333,
+          "gt_coverage_std": 0.02093724087733518,
+          "delta_vs_baseline_mean": 0.031249999999999965,
+          "delta_vs_baseline_std": 0.039802027446964164,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.75,
+          "gt_coverage_std": 0.1479019945774904,
+          "delta_vs_baseline_mean": -0.4,
+          "delta_vs_baseline_std": 0.16583123951777,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.4811594202898551,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.7382608695652174,
+          "gt_coverage_std": 0.017199424578720902,
+          "delta_vs_baseline_mean": 0.030144927536231898,
+          "delta_vs_baseline_std": 0.017593032933905524,
+          "num_samples": 345
+        }
+      },
+      "3": {
+        "contain": {
+          "accuracy_mean": 0.375,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.95,
+          "gt_coverage_std": 0.06123724356957945,
+          "delta_vs_baseline_mean": -0.0625,
+          "delta_vs_baseline_std": 0.08385254915624211,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.9333333333333333,
+          "gt_coverage_std": 0.029814239699997223,
+          "delta_vs_baseline_mean": 0.026666666666666693,
+          "delta_vs_baseline_std": 0.08709296863229078,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.5326633165829147,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 0.8844221105527639,
+          "gt_coverage_std": 0.01271267401072716,
+          "delta_vs_baseline_mean": 0.04723618090452259,
+          "delta_vs_baseline_std": 0.0181462010907214,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.35135135135135137,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.8432432432432433,
+          "gt_coverage_std": 0.02356161591103066,
+          "delta_vs_baseline_mean": -0.01891891891891892,
+          "delta_vs_baseline_std": 0.07052966676053994,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.5416666666666667,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 0.8875,
+          "gt_coverage_std": 0.039747466725706074,
+          "delta_vs_baseline_mean": 0.02291666666666662,
+          "delta_vs_baseline_std": 0.05307391334523749,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.975,
+          "gt_coverage_std": 0.049999999999999996,
+          "delta_vs_baseline_mean": -0.2875,
+          "delta_vs_baseline_std": 0.15860721925561902,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.4811594202898551,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.8904347826086957,
+          "gt_coverage_std": 0.012753623188405802,
+          "delta_vs_baseline_mean": 0.023768115942029,
+          "delta_vs_baseline_std": 0.016075854636361804,
+          "num_samples": 345
+        }
+      },
+      "4": {
+        "contain": {
+          "accuracy_mean": 0.375,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": -0.0125,
+          "delta_vs_baseline_std": 0.10383279828647594,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.9955555555555555,
+          "gt_coverage_std": 0.008888888888888903,
+          "delta_vs_baseline_mean": 0.015555555555555572,
+          "delta_vs_baseline_std": 0.050723165380059235,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.5326633165829147,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 0.9447236180904521,
+          "gt_coverage_std": 0.007453465816176541,
+          "delta_vs_baseline_mean": 0.017587939698492445,
+          "delta_vs_baseline_std": 0.02699105327034328,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.35135135135135137,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.9540540540540541,
+          "gt_coverage_std": 0.017305741182250957,
+          "delta_vs_baseline_mean": -0.016216216216216217,
+          "delta_vs_baseline_std": 0.04391372110614033,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.5416666666666667,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 0.9541666666666668,
+          "gt_coverage_std": 0.0125,
+          "delta_vs_baseline_mean": 0.01041666666666663,
+          "delta_vs_baseline_std": 0.03869619921043065,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": -0.125,
+          "delta_vs_baseline_std": 0.125,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.4811594202898551,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 0.956231884057971,
+          "gt_coverage_std": 0.004573835895089708,
+          "delta_vs_baseline_mean": 0.008695652173913049,
+          "delta_vs_baseline_std": 0.024354726420405818,
+          "num_samples": 345
+        }
+      },
+      "5": {
+        "contain": {
+          "accuracy_mean": 0.375,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.5326633165829147,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.35135135135135137,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.5416666666666667,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.4811594202898551,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 345
+        }
+      }
+    },
+    "clip_rel_nov+clip": {
+      "1": {
+        "contain": {
+          "accuracy_mean": 0.475,
+          "accuracy_std": 0.1920286436967152,
+          "gt_coverage_mean": 0.475,
+          "gt_coverage_std": 0.1920286436967152,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.52,
+          "accuracy_std": 0.06301087501670145,
+          "gt_coverage_mean": 0.52,
+          "gt_coverage_std": 0.06301087501670145,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.3919597989949749,
+          "accuracy_std": 0.03348408291247775,
+          "gt_coverage_mean": 0.3919597989949749,
+          "gt_coverage_std": 0.03348408291247775,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.427027027027027,
+          "accuracy_std": 0.07814503943135653,
+          "gt_coverage_mean": 0.427027027027027,
+          "gt_coverage_std": 0.07814503943135653,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.4979166666666667,
+          "accuracy_std": 0.05925609438886621,
+          "gt_coverage_mean": 0.4979166666666667,
+          "gt_coverage_std": 0.05925609438886621,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.6375,
+          "accuracy_std": 0.18915932438026944,
+          "gt_coverage_mean": 0.6375,
+          "gt_coverage_std": 0.18915932438026944,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.43478260869565216,
+          "accuracy_std": 0.029474142188721537,
+          "gt_coverage_mean": 0.43478260869565216,
+          "gt_coverage_std": 0.029474142188721537,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 345
+        }
+      },
+      "2": {
+        "contain": {
+          "accuracy_mean": 0.45,
+          "accuracy_std": 0.082915619758885,
+          "gt_coverage_mean": 0.9,
+          "gt_coverage_std": 0.049999999999999996,
+          "delta_vs_baseline_mean": 0.025,
+          "delta_vs_baseline_std": 0.1457737973711325,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.37555555555555553,
+          "accuracy_std": 0.03212629398844658,
+          "gt_coverage_mean": 0.76,
+          "gt_coverage_std": 0.04309048762147849,
+          "delta_vs_baseline_mean": -0.07333333333333332,
+          "delta_vs_baseline_std": 0.06210306049992052,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.5015075376884421,
+          "accuracy_std": 0.014873013655224882,
+          "gt_coverage_mean": 0.700502512562814,
+          "gt_coverage_std": 0.024740771105710917,
+          "delta_vs_baseline_mean": 0.05226130653266331,
+          "delta_vs_baseline_std": 0.02564291622547354,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.32432432432432434,
+          "accuracy_std": 0.05405405405405406,
+          "gt_coverage_mean": 0.6945945945945946,
+          "gt_coverage_std": 0.05275465215119765,
+          "delta_vs_baseline_mean": -0.07837837837837838,
+          "delta_vs_baseline_std": 0.06990549814258142,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.4916666666666666,
+          "accuracy_std": 0.025,
+          "gt_coverage_mean": 0.7625,
+          "gt_coverage_std": 0.044876373392787536,
+          "delta_vs_baseline_mean": -0.018749999999999996,
+          "delta_vs_baseline_std": 0.04001952648395532,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.25,
+          "accuracy_std": 0.125,
+          "gt_coverage_mean": 0.8875,
+          "gt_coverage_std": 0.11792476415070755,
+          "delta_vs_baseline_mean": -0.15,
+          "delta_vs_baseline_std": 0.15612494995995996,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.45768115942028986,
+          "accuracy_std": 0.009825189134306262,
+          "gt_coverage_mean": 0.7252173913043479,
+          "gt_coverage_std": 0.014069172289288796,
+          "delta_vs_baseline_mean": 0.006666666666666665,
+          "delta_vs_baseline_std": 0.016501385886945254,
+          "num_samples": 345
+        }
+      },
+      "3": {
+        "contain": {
+          "accuracy_mean": 0.3875,
+          "accuracy_std": 0.0375,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": -0.05,
+          "delta_vs_baseline_std": 0.082915619758885,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.4066666666666666,
+          "accuracy_std": 0.0101835015443463,
+          "gt_coverage_mean": 0.9733333333333334,
+          "gt_coverage_std": 0.019372884193514083,
+          "delta_vs_baseline_mean": 0.03333333333333335,
+          "delta_vs_baseline_std": 0.09067647005823629,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.5175879396984924,
+          "accuracy_std": 0.008703772902356154,
+          "gt_coverage_mean": 0.864321608040201,
+          "gt_coverage_std": 0.01853174765285004,
+          "delta_vs_baseline_mean": 0.0321608040201005,
+          "delta_vs_baseline_std": 0.019488160230819424,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.33783783783783783,
+          "accuracy_std": 0.021789885806212297,
+          "gt_coverage_mean": 0.9054054054054055,
+          "gt_coverage_std": 0.03869681368453068,
+          "delta_vs_baseline_mean": -0.032432432432432434,
+          "delta_vs_baseline_std": 0.0835655396418395,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.5104166666666667,
+          "accuracy_std": 0.026760901205552343,
+          "gt_coverage_mean": 0.9125,
+          "gt_coverage_std": 0.032004773949452545,
+          "delta_vs_baseline_mean": -0.008333333333333349,
+          "delta_vs_baseline_std": 0.05286907308520633,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.0625,
+          "accuracy_std": 0.0625,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": -0.225,
+          "delta_vs_baseline_std": 0.1224744871391589,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.46927536231884054,
+          "accuracy_std": 0.006914121995290765,
+          "gt_coverage_mean": 0.8959420289855073,
+          "gt_coverage_std": 0.014167361634608635,
+          "delta_vs_baseline_mean": 0.0118840579710145,
+          "delta_vs_baseline_std": 0.016265493155476183,
+          "num_samples": 345
+        }
+      },
+      "4": {
+        "contain": {
+          "accuracy_mean": 0.375,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": -0.0125,
+          "delta_vs_baseline_std": 0.10383279828647594,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.015555555555555572,
+          "delta_vs_baseline_std": 0.050723165380059235,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.5361809045226131,
+          "accuracy_std": 0.003924748580857632,
+          "gt_coverage_mean": 0.9542713567839197,
+          "gt_coverage_std": 0.009911096946389942,
+          "delta_vs_baseline_mean": 0.02110552763819095,
+          "delta_vs_baseline_std": 0.028408631206236323,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.3648648648648649,
+          "accuracy_std": 0.013513513513513514,
+          "gt_coverage_mean": 0.9756756756756758,
+          "gt_coverage_std": 0.018918918918918916,
+          "delta_vs_baseline_mean": -0.002702702702702703,
+          "delta_vs_baseline_std": 0.0426479292920527,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.5479166666666666,
+          "accuracy_std": 0.009547032697824684,
+          "gt_coverage_mean": 0.9791666666666666,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.016666666666666642,
+          "delta_vs_baseline_std": 0.035843021946010946,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": -0.125,
+          "delta_vs_baseline_std": 0.125,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.48550724637681164,
+          "accuracy_std": 0.0023368863038546535,
+          "gt_coverage_mean": 0.9681159420289855,
+          "gt_coverage_std": 0.006609712609270375,
+          "delta_vs_baseline_mean": 0.013043478260869573,
+          "delta_vs_baseline_std": 0.02500997490563533,
+          "num_samples": 345
+        }
+      },
+      "5": {
+        "contain": {
+          "accuracy_mean": 0.375,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.5326633165829147,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.35135135135135137,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.5416666666666667,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.4811594202898551,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 345
+        }
+      }
+    },
+    "clip_rel_nov+learned": {
+      "1": {
+        "contain": {
+          "accuracy_mean": 0.475,
+          "accuracy_std": 0.1920286436967152,
+          "gt_coverage_mean": 0.475,
+          "gt_coverage_std": 0.1920286436967152,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.52,
+          "accuracy_std": 0.06301087501670145,
+          "gt_coverage_mean": 0.52,
+          "gt_coverage_std": 0.06301087501670145,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.3919597989949749,
+          "accuracy_std": 0.03348408291247775,
+          "gt_coverage_mean": 0.3919597989949749,
+          "gt_coverage_std": 0.03348408291247775,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.427027027027027,
+          "accuracy_std": 0.07814503943135653,
+          "gt_coverage_mean": 0.427027027027027,
+          "gt_coverage_std": 0.07814503943135653,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.4979166666666667,
+          "accuracy_std": 0.05925609438886621,
+          "gt_coverage_mean": 0.4979166666666667,
+          "gt_coverage_std": 0.05925609438886621,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.6375,
+          "accuracy_std": 0.18915932438026944,
+          "gt_coverage_mean": 0.6375,
+          "gt_coverage_std": 0.18915932438026944,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.43478260869565216,
+          "accuracy_std": 0.029474142188721537,
+          "gt_coverage_mean": 0.43478260869565216,
+          "gt_coverage_std": 0.029474142188721537,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 345
+        }
+      },
+      "2": {
+        "contain": {
+          "accuracy_mean": 0.6875,
+          "accuracy_std": 0.128086884574495,
+          "gt_coverage_mean": 0.9,
+          "gt_coverage_std": 0.049999999999999996,
+          "delta_vs_baseline_mean": 0.2625,
+          "delta_vs_baseline_std": 0.21972994789058684,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.45111111111111113,
+          "accuracy_std": 0.03725123247608935,
+          "gt_coverage_mean": 0.76,
+          "gt_coverage_std": 0.04309048762147849,
+          "delta_vs_baseline_mean": 0.0022222222222222144,
+          "delta_vs_baseline_std": 0.04914076530554662,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.5482412060301508,
+          "accuracy_std": 0.029253828297141467,
+          "gt_coverage_mean": 0.700502512562814,
+          "gt_coverage_std": 0.024740771105710917,
+          "delta_vs_baseline_mean": 0.09899497487437185,
+          "delta_vs_baseline_std": 0.025922051008098353,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.5945945945945946,
+          "accuracy_std": 0.057966515106830326,
+          "gt_coverage_mean": 0.6945945945945946,
+          "gt_coverage_std": 0.05275465215119765,
+          "delta_vs_baseline_mean": 0.19189189189189187,
+          "delta_vs_baseline_std": 0.0962784493543615,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.5875,
+          "accuracy_std": 0.04823265376162592,
+          "gt_coverage_mean": 0.7625,
+          "gt_coverage_std": 0.044876373392787536,
+          "delta_vs_baseline_mean": 0.07708333333333335,
+          "delta_vs_baseline_std": 0.06390775687574153,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.25,
+          "accuracy_std": 0.125,
+          "gt_coverage_mean": 0.8875,
+          "gt_coverage_std": 0.11792476415070755,
+          "delta_vs_baseline_mean": -0.15,
+          "delta_vs_baseline_std": 0.1920286436967152,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.54231884057971,
+          "accuracy_std": 0.016317064284101495,
+          "gt_coverage_mean": 0.7252173913043479,
+          "gt_coverage_std": 0.014069172289288796,
+          "delta_vs_baseline_mean": 0.09130434782608694,
+          "delta_vs_baseline_std": 0.014214724446654167,
+          "num_samples": 345
+        }
+      },
+      "3": {
+        "contain": {
+          "accuracy_mean": 0.6125,
+          "accuracy_std": 0.08750000000000001,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.175,
+          "delta_vs_baseline_std": 0.13919410907075055,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.5266666666666667,
+          "accuracy_std": 0.06049181150584977,
+          "gt_coverage_mean": 0.9733333333333334,
+          "gt_coverage_std": 0.019372884193514083,
+          "delta_vs_baseline_mean": 0.15333333333333332,
+          "delta_vs_baseline_std": 0.10585338101168493,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.6201005025125628,
+          "accuracy_std": 0.018006505394139633,
+          "gt_coverage_mean": 0.864321608040201,
+          "gt_coverage_std": 0.01853174765285004,
+          "delta_vs_baseline_mean": 0.13467336683417086,
+          "delta_vs_baseline_std": 0.019174657314913503,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.8108108108108109,
+          "accuracy_std": 0.04357977161242457,
+          "gt_coverage_mean": 0.9054054054054055,
+          "gt_coverage_std": 0.03869681368453068,
+          "delta_vs_baseline_mean": 0.44054054054054054,
+          "delta_vs_baseline_std": 0.06049467374486322,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.6666666666666667,
+          "accuracy_std": 0.041666666666666664,
+          "gt_coverage_mean": 0.9125,
+          "gt_coverage_std": 0.032004773949452545,
+          "delta_vs_baseline_mean": 0.14791666666666664,
+          "delta_vs_baseline_std": 0.04700214238616034,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.2,
+          "accuracy_std": 0.11456439237389601,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": -0.0875,
+          "delta_vs_baseline_std": 0.1375,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.624927536231884,
+          "accuracy_std": 0.014677088581069163,
+          "gt_coverage_mean": 0.8959420289855073,
+          "gt_coverage_std": 0.014167361634608635,
+          "delta_vs_baseline_mean": 0.167536231884058,
+          "delta_vs_baseline_std": 0.016539527672680725,
+          "num_samples": 345
+        }
+      },
+      "4": {
+        "contain": {
+          "accuracy_mean": 0.5,
+          "accuracy_std": 0.07905694150420949,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.1125,
+          "delta_vs_baseline_std": 0.11792476415070756,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.6866666666666668,
+          "accuracy_std": 0.03362832433427013,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.3022222222222222,
+          "delta_vs_baseline_std": 0.07646511348482335,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.6115577889447237,
+          "accuracy_std": 0.017269186208481998,
+          "gt_coverage_mean": 0.9542713567839197,
+          "gt_coverage_std": 0.009911096946389942,
+          "delta_vs_baseline_mean": 0.09648241206030153,
+          "delta_vs_baseline_std": 0.03361955514307081,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.918918918918919,
+          "accuracy_std": 0.020935045114634687,
+          "gt_coverage_mean": 0.9756756756756758,
+          "gt_coverage_std": 0.018918918918918916,
+          "delta_vs_baseline_mean": 0.5513513513513514,
+          "delta_vs_baseline_std": 0.050127667543220004,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.7000000000000001,
+          "accuracy_std": 0.019094065395649333,
+          "gt_coverage_mean": 0.9791666666666666,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.16875,
+          "delta_vs_baseline_std": 0.045117516307724426,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.05,
+          "accuracy_std": 0.082915619758885,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": -0.075,
+          "delta_vs_baseline_std": 0.13919410907075055,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.6510144927536232,
+          "accuracy_std": 0.009454786336405866,
+          "gt_coverage_mean": 0.9681159420289855,
+          "gt_coverage_std": 0.006609712609270375,
+          "delta_vs_baseline_mean": 0.17855072463768112,
+          "delta_vs_baseline_std": 0.030460996302422393,
+          "num_samples": 345
+        }
+      },
+      "5": {
+        "contain": {
+          "accuracy_mean": 0.5,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.125,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.8444444444444444,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.4444444444444445,
+          "delta_vs_baseline_std": 5.551115123125783e-17,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.6381909547738693,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.10552763819095479,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.9729729729729731,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.6216216216216217,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.7291666666666667,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.1875,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.6956521739130433,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.21449275362318837,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 345
+        }
+      }
+    },
+    "trained+clip": {
+      "1": {
+        "contain": {
+          "accuracy_mean": 0.475,
+          "accuracy_std": 0.1920286436967152,
+          "gt_coverage_mean": 0.475,
+          "gt_coverage_std": 0.1920286436967152,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.52,
+          "accuracy_std": 0.06301087501670145,
+          "gt_coverage_mean": 0.52,
+          "gt_coverage_std": 0.06301087501670145,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.3919597989949749,
+          "accuracy_std": 0.03348408291247775,
+          "gt_coverage_mean": 0.3919597989949749,
+          "gt_coverage_std": 0.03348408291247775,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.427027027027027,
+          "accuracy_std": 0.07814503943135653,
+          "gt_coverage_mean": 0.427027027027027,
+          "gt_coverage_std": 0.07814503943135653,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.4979166666666667,
+          "accuracy_std": 0.05925609438886621,
+          "gt_coverage_mean": 0.4979166666666667,
+          "gt_coverage_std": 0.05925609438886621,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.6375,
+          "accuracy_std": 0.18915932438026944,
+          "gt_coverage_mean": 0.6375,
+          "gt_coverage_std": 0.18915932438026944,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.43478260869565216,
+          "accuracy_std": 0.029474142188721537,
+          "gt_coverage_mean": 0.43478260869565216,
+          "gt_coverage_std": 0.029474142188721537,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 345
+        }
+      },
+      "2": {
+        "contain": {
+          "accuracy_mean": 0.275,
+          "accuracy_std": 0.12247448713915891,
+          "gt_coverage_mean": 0.7375,
+          "gt_coverage_std": 0.1525819451966713,
+          "delta_vs_baseline_mean": -0.15,
+          "delta_vs_baseline_std": 0.15612494995995996,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.40888888888888886,
+          "accuracy_std": 0.05086899174337598,
+          "gt_coverage_mean": 0.8466666666666667,
+          "gt_coverage_std": 0.028888888888888877,
+          "delta_vs_baseline_mean": -0.039999999999999994,
+          "delta_vs_baseline_std": 0.08877770824639189,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.5512562814070352,
+          "accuracy_std": 0.021909778247830792,
+          "gt_coverage_mean": 0.7768844221105529,
+          "gt_coverage_std": 0.019488160230819417,
+          "delta_vs_baseline_mean": 0.10201005025125628,
+          "delta_vs_baseline_std": 0.032336986016474716,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.6000000000000001,
+          "accuracy_std": 0.06598138170666866,
+          "gt_coverage_mean": 0.9702702702702704,
+          "gt_coverage_std": 0.01455449947874191,
+          "delta_vs_baseline_mean": 0.19729729729729728,
+          "delta_vs_baseline_std": 0.03209281645145384,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.5458333333333333,
+          "accuracy_std": 0.035843021946010946,
+          "gt_coverage_mean": 0.9,
+          "gt_coverage_std": 0.02041241452319315,
+          "delta_vs_baseline_mean": 0.035416666666666693,
+          "delta_vs_baseline_std": 0.05436661812791621,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.2,
+          "accuracy_std": 0.11456439237389601,
+          "gt_coverage_mean": 0.85,
+          "gt_coverage_std": 0.1224744871391589,
+          "delta_vs_baseline_mean": -0.2,
+          "delta_vs_baseline_std": 0.19525624189766638,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.5226086956521739,
+          "accuracy_std": 0.01655222206987737,
+          "gt_coverage_mean": 0.8246376811594203,
+          "gt_coverage_std": 0.01224616241987106,
+          "delta_vs_baseline_mean": 0.07159420289855072,
+          "delta_vs_baseline_std": 0.017870217555708227,
+          "num_samples": 345
+        }
+      },
+      "3": {
+        "contain": {
+          "accuracy_mean": 0.325,
+          "accuracy_std": 0.082915619758885,
+          "gt_coverage_mean": 0.95,
+          "gt_coverage_std": 0.06123724356957945,
+          "delta_vs_baseline_mean": -0.1125,
+          "delta_vs_baseline_std": 0.0875,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.37555555555555553,
+          "accuracy_std": 0.049140765305546626,
+          "gt_coverage_mean": 0.9644444444444445,
+          "gt_coverage_std": 0.02266230894930125,
+          "delta_vs_baseline_mean": 0.00222222222222222,
+          "delta_vs_baseline_std": 0.07853598687587685,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.5603015075376885,
+          "accuracy_std": 0.014433574488789024,
+          "gt_coverage_mean": 0.9201005025125628,
+          "gt_coverage_std": 0.012400967516837254,
+          "delta_vs_baseline_mean": 0.07487437185929648,
+          "delta_vs_baseline_std": 0.02456150635145718,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.545945945945946,
+          "accuracy_std": 0.046499055497527704,
+          "gt_coverage_mean": 0.9756756756756758,
+          "gt_coverage_std": 0.008108108108108091,
+          "delta_vs_baseline_mean": 0.17567567567567569,
+          "delta_vs_baseline_std": 0.07668249167087085,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.4999999999999999,
+          "accuracy_std": 0.03841476857205369,
+          "gt_coverage_mean": 0.9729166666666667,
+          "gt_coverage_std": 0.009547032697824634,
+          "delta_vs_baseline_mean": -0.018750000000000027,
+          "delta_vs_baseline_std": 0.053073913345237485,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": -0.2875,
+          "delta_vs_baseline_std": 0.15860721925561902,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.5078260869565219,
+          "accuracy_std": 0.012554439320410272,
+          "gt_coverage_mean": 0.9417391304347825,
+          "gt_coverage_std": 0.005414939620947643,
+          "delta_vs_baseline_mean": 0.050434782608695675,
+          "delta_vs_baseline_std": 0.015072463768115944,
+          "num_samples": 345
+        }
+      },
+      "4": {
+        "contain": {
+          "accuracy_mean": 0.425,
+          "accuracy_std": 0.06123724356957946,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0375,
+          "delta_vs_baseline_std": 0.12562344526401112,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.38,
+          "accuracy_std": 0.023200681130912344,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": -0.00444444444444444,
+          "delta_vs_baseline_std": 0.056916659888292,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.5396984924623116,
+          "accuracy_std": 0.015275059450824779,
+          "gt_coverage_mean": 0.9864321608040202,
+          "gt_coverage_std": 0.008423645534794069,
+          "delta_vs_baseline_mean": 0.02462311557788945,
+          "delta_vs_baseline_std": 0.028109278936576863,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.46486486486486484,
+          "accuracy_std": 0.043243243243243246,
+          "gt_coverage_mean": 0.991891891891892,
+          "gt_coverage_std": 0.01238533971609684,
+          "delta_vs_baseline_mean": 0.0972972972972973,
+          "delta_vs_baseline_std": 0.04221756581571164,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.5479166666666666,
+          "accuracy_std": 0.026434536542603176,
+          "gt_coverage_mean": 0.9833333333333332,
+          "gt_coverage_std": 0.008333333333333349,
+          "delta_vs_baseline_mean": 0.016666666666666663,
+          "delta_vs_baseline_std": 0.05574620066774856,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": -0.125,
+          "delta_vs_baseline_std": 0.125,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.49681159420289844,
+          "accuracy_std": 0.013730689022987828,
+          "gt_coverage_mean": 0.9889855072463769,
+          "gt_coverage_std": 0.0049868552272710935,
+          "delta_vs_baseline_mean": 0.024347826086956514,
+          "delta_vs_baseline_std": 0.024873551249768047,
+          "num_samples": 345
+        }
+      },
+      "5": {
+        "contain": {
+          "accuracy_mean": 0.375,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.4,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.5326633165829147,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.35135135135135137,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.5416666666666667,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.4811594202898551,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 345
+        }
+      }
+    },
+    "trained+learned": {
+      "1": {
+        "contain": {
+          "accuracy_mean": 0.475,
+          "accuracy_std": 0.1920286436967152,
+          "gt_coverage_mean": 0.475,
+          "gt_coverage_std": 0.1920286436967152,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.52,
+          "accuracy_std": 0.06301087501670145,
+          "gt_coverage_mean": 0.52,
+          "gt_coverage_std": 0.06301087501670145,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.3919597989949749,
+          "accuracy_std": 0.03348408291247775,
+          "gt_coverage_mean": 0.3919597989949749,
+          "gt_coverage_std": 0.03348408291247775,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.427027027027027,
+          "accuracy_std": 0.07814503943135653,
+          "gt_coverage_mean": 0.427027027027027,
+          "gt_coverage_std": 0.07814503943135653,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.4979166666666667,
+          "accuracy_std": 0.05925609438886621,
+          "gt_coverage_mean": 0.4979166666666667,
+          "gt_coverage_std": 0.05925609438886621,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.6375,
+          "accuracy_std": 0.18915932438026944,
+          "gt_coverage_mean": 0.6375,
+          "gt_coverage_std": 0.18915932438026944,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.43478260869565216,
+          "accuracy_std": 0.029474142188721537,
+          "gt_coverage_mean": 0.43478260869565216,
+          "gt_coverage_std": 0.029474142188721537,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 345
+        }
+      },
+      "2": {
+        "contain": {
+          "accuracy_mean": 0.3125,
+          "accuracy_std": 0.0625,
+          "gt_coverage_mean": 0.7375,
+          "gt_coverage_std": 0.1525819451966713,
+          "delta_vs_baseline_mean": -0.1125,
+          "delta_vs_baseline_std": 0.14197270864500686,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.6822222222222223,
+          "accuracy_std": 0.024444444444444442,
+          "gt_coverage_mean": 0.8466666666666667,
+          "gt_coverage_std": 0.028888888888888877,
+          "delta_vs_baseline_mean": 0.2333333333333333,
+          "delta_vs_baseline_std": 0.05465943944999485,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.6221105527638191,
+          "accuracy_std": 0.016636125987182778,
+          "gt_coverage_mean": 0.7768844221105529,
+          "gt_coverage_std": 0.019488160230819417,
+          "delta_vs_baseline_mean": 0.17286432160804022,
+          "delta_vs_baseline_std": 0.03468428929997469,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.9486486486486486,
+          "accuracy_std": 0.008108108108108126,
+          "gt_coverage_mean": 0.9702702702702704,
+          "gt_coverage_std": 0.01455449947874191,
+          "delta_vs_baseline_mean": 0.5459459459459459,
+          "delta_vs_baseline_std": 0.07625262691711289,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.7458333333333333,
+          "accuracy_std": 0.022438186696393768,
+          "gt_coverage_mean": 0.9,
+          "gt_coverage_std": 0.02041241452319315,
+          "delta_vs_baseline_mean": 0.23541666666666666,
+          "delta_vs_baseline_std": 0.04274642610142331,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.2375,
+          "accuracy_std": 0.10383279828647593,
+          "gt_coverage_mean": 0.85,
+          "gt_coverage_std": 0.1224744871391589,
+          "delta_vs_baseline_mean": -0.1625,
+          "delta_vs_baseline_std": 0.1681703005884214,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.6660869565217391,
+          "accuracy_std": 0.010353954260574928,
+          "gt_coverage_mean": 0.8246376811594203,
+          "gt_coverage_std": 0.01224616241987106,
+          "delta_vs_baseline_mean": 0.21507246376811592,
+          "delta_vs_baseline_std": 0.022481993541640946,
+          "num_samples": 345
+        }
+      },
+      "3": {
+        "contain": {
+          "accuracy_mean": 0.3875,
+          "accuracy_std": 0.06731456008918131,
+          "gt_coverage_mean": 0.95,
+          "gt_coverage_std": 0.06123724356957945,
+          "delta_vs_baseline_mean": -0.05,
+          "delta_vs_baseline_std": 0.1,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.7711111111111111,
+          "accuracy_std": 0.02000000000000003,
+          "gt_coverage_mean": 0.9644444444444445,
+          "gt_coverage_std": 0.02266230894930125,
+          "delta_vs_baseline_mean": 0.3977777777777778,
+          "delta_vs_baseline_std": 0.09132765594682009,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.6371859296482413,
+          "accuracy_std": 0.011634006937477612,
+          "gt_coverage_mean": 0.9201005025125628,
+          "gt_coverage_std": 0.012400967516837254,
+          "delta_vs_baseline_mean": 0.15175879396984926,
+          "delta_vs_baseline_std": 0.0187754187862004,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.9486486486486486,
+          "accuracy_std": 0.008108108108108126,
+          "gt_coverage_mean": 0.9756756756756758,
+          "gt_coverage_std": 0.008108108108108091,
+          "delta_vs_baseline_mean": 0.5783783783783785,
+          "delta_vs_baseline_std": 0.07171080627795459,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.7291666666666667,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 0.9729166666666667,
+          "gt_coverage_std": 0.009547032697824634,
+          "delta_vs_baseline_mean": 0.2104166666666666,
+          "delta_vs_baseline_std": 0.05307391334523749,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.075,
+          "accuracy_std": 0.06123724356957946,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": -0.2125,
+          "delta_vs_baseline_std": 0.17721808598447283,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.6820289855072464,
+          "accuracy_std": 0.0059473288488936845,
+          "gt_coverage_mean": 0.9417391304347825,
+          "gt_coverage_std": 0.005414939620947643,
+          "delta_vs_baseline_mean": 0.22463768115942032,
+          "delta_vs_baseline_std": 0.0149633733323366,
+          "num_samples": 345
+        }
+      },
+      "4": {
+        "contain": {
+          "accuracy_mean": 0.45,
+          "accuracy_std": 0.06123724356957946,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0625,
+          "delta_vs_baseline_std": 0.1152443057161611,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.8333333333333333,
+          "accuracy_std": 0.011111111111111127,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.4488888888888889,
+          "delta_vs_baseline_std": 0.04640136226182466,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.6417085427135679,
+          "accuracy_std": 0.004522613065326653,
+          "gt_coverage_mean": 0.9864321608040202,
+          "gt_coverage_std": 0.008423645534794069,
+          "delta_vs_baseline_mean": 0.1266331658291457,
+          "delta_vs_baseline_std": 0.026666329972706727,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.9648648648648649,
+          "accuracy_std": 0.01238533971609689,
+          "gt_coverage_mean": 0.991891891891892,
+          "gt_coverage_std": 0.01238533971609684,
+          "delta_vs_baseline_mean": 0.5972972972972972,
+          "delta_vs_baseline_std": 0.04432762018069387,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.7291666666666667,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 0.9833333333333332,
+          "gt_coverage_std": 0.008333333333333349,
+          "delta_vs_baseline_mean": 0.19791666666666663,
+          "delta_vs_baseline_std": 0.03869619921043065,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": -0.125,
+          "delta_vs_baseline_std": 0.125,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.6942028985507246,
+          "accuracy_std": 0.003723255819902923,
+          "gt_coverage_mean": 0.9889855072463769,
+          "gt_coverage_std": 0.0049868552272710935,
+          "delta_vs_baseline_mean": 0.2217391304347826,
+          "delta_vs_baseline_std": 0.024085892649904052,
+          "num_samples": 345
+        }
+      },
+      "5": {
+        "contain": {
+          "accuracy_mean": 0.5,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.125,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "cut": {
+          "accuracy_mean": 0.8444444444444444,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.4444444444444445,
+          "delta_vs_baseline_std": 5.551115123125783e-17,
+          "num_samples": 45
+        },
+        "grasp": {
+          "accuracy_mean": 0.6381909547738693,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.10552763819095479,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 199
+        },
+        "pound": {
+          "accuracy_mean": 0.9729729729729731,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.6216216216216217,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 37
+        },
+        "scoop": {
+          "accuracy_mean": 0.7291666666666667,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.1875,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 48
+        },
+        "wgrasp": {
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.0,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 8
+        },
+        "overall": {
+          "accuracy_mean": 0.6956521739130433,
+          "accuracy_std": 1.1102230246251565e-16,
+          "gt_coverage_mean": 1.0,
+          "gt_coverage_std": 0.0,
+          "delta_vs_baseline_mean": 0.21449275362318837,
+          "delta_vs_baseline_std": 0.0,
+          "num_samples": 345
+        }
+      }
+    }
+  },
+  "component_summary": {
+    "learned_rerank": {
+      "label": "Learned rerank vs baseline [Random selection + Learned rerank]",
+      "method": "random+learned",
+      "baseline": "random+clip",
+      "1": {
+        "contain": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cut": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "pound": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "scoop": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      },
+      "2": {
+        "contain": {
+          "accuracy_gain_mean": 0.1875,
+          "accuracy_gain_std": 0.1505199322349037,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cut": {
+          "accuracy_gain_mean": 0.15333333333333332,
+          "accuracy_gain_std": 0.07978365809340553,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.09798994974874373,
+          "accuracy_gain_std": 0.019879437633017583,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "pound": {
+          "accuracy_gain_mean": 0.2243243243243243,
+          "accuracy_gain_std": 0.04530555301146002,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "scoop": {
+          "accuracy_gain_mean": 0.09791666666666668,
+          "accuracy_gain_std": 0.05822161921867548,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": 0.0375,
+          "accuracy_gain_std": 0.08003905296791061,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.11942028985507247,
+          "accuracy_gain_std": 0.01998949524587439,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      },
+      "3": {
+        "contain": {
+          "accuracy_gain_mean": 0.275,
+          "accuracy_gain_std": 0.16583123951776998,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cut": {
+          "accuracy_gain_mean": 0.31777777777777777,
+          "accuracy_gain_std": 0.1221413874103226,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.11407035175879396,
+          "accuracy_gain_std": 0.027802163203262408,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "pound": {
+          "accuracy_gain_mean": 0.41621621621621624,
+          "accuracy_gain_std": 0.07567567567567568,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "scoop": {
+          "accuracy_gain_mean": 0.17083333333333334,
+          "accuracy_gain_std": 0.07083333333333333,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.11180339887498948,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.18202898550724633,
+          "accuracy_gain_std": 0.025625549107594608,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      },
+      "4": {
+        "contain": {
+          "accuracy_gain_mean": 0.1875,
+          "accuracy_gain_std": 0.10077822185373188,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cut": {
+          "accuracy_gain_mean": 0.4022222222222222,
+          "accuracy_gain_std": 0.08282064512704097,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.1100502512562814,
+          "accuracy_gain_std": 0.03862815083613593,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "pound": {
+          "accuracy_gain_mean": 0.5405405405405406,
+          "accuracy_gain_std": 0.04681218398834801,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "scoop": {
+          "accuracy_gain_mean": 0.16249999999999998,
+          "accuracy_gain_std": 0.03818813079129867,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": 0.05,
+          "accuracy_gain_std": 0.15,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.20202898550724635,
+          "accuracy_gain_std": 0.029871952453317172,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      },
+      "5": {
+        "contain": {
+          "accuracy_gain_mean": 0.125,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cut": {
+          "accuracy_gain_mean": 0.4444444444444445,
+          "accuracy_gain_std": 5.551115123125783e-17,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.10552763819095479,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "pound": {
+          "accuracy_gain_mean": 0.6216216216216217,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "scoop": {
+          "accuracy_gain_mean": 0.1875,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.21449275362318837,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      }
+    },
+    "clip_rel_selection": {
+      "label": "CLIP-relevance selection vs baseline [CLIP-relevance selection + CLIP rerank]",
+      "method": "clip_rel+clip",
+      "baseline": "random+clip",
+      "1": {
+        "contain": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cut": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "pound": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "scoop": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      },
+      "2": {
+        "contain": {
+          "accuracy_gain_mean": -0.05,
+          "accuracy_gain_std": 0.13919410907075055,
+          "gt_coverage_gain_mean": -0.025,
+          "gt_coverage_gain_std": 0.07500000000000001
+        },
+        "cut": {
+          "accuracy_gain_mean": -0.04888888888888886,
+          "accuracy_gain_std": 0.05515410509329268,
+          "gt_coverage_gain_mean": -0.05555555555555556,
+          "gt_coverage_gain_std": 0.05555555555555556
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.08341708542713563,
+          "accuracy_gain_std": 0.024015684714268393,
+          "gt_coverage_gain_mean": 0.0758793969849246,
+          "gt_coverage_gain_std": 0.022967627903570723
+        },
+        "pound": {
+          "accuracy_gain_mean": -0.05135135135135135,
+          "accuracy_gain_std": 0.08058406224797608,
+          "gt_coverage_gain_mean": -0.08108108108108107,
+          "gt_coverage_gain_std": 0.05796651510683031
+        },
+        "scoop": {
+          "accuracy_gain_mean": 0.031249999999999965,
+          "accuracy_gain_std": 0.039802027446964164,
+          "gt_coverage_gain_mean": -0.012499999999999989,
+          "gt_coverage_gain_std": 0.03974746672570606
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": -0.4,
+          "accuracy_gain_std": 0.16583123951777,
+          "gt_coverage_gain_mean": -0.1875,
+          "gt_coverage_gain_std": 0.128086884574495
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.030144927536231898,
+          "accuracy_gain_std": 0.017593032933905524,
+          "gt_coverage_gain_mean": 0.02115942028985507,
+          "gt_coverage_gain_std": 0.01957541333901801
+        }
+      },
+      "3": {
+        "contain": {
+          "accuracy_gain_mean": -0.0625,
+          "accuracy_gain_std": 0.08385254915624211,
+          "gt_coverage_gain_mean": -0.05,
+          "gt_coverage_gain_std": 0.06123724356957945
+        },
+        "cut": {
+          "accuracy_gain_mean": 0.026666666666666693,
+          "accuracy_gain_std": 0.08709296863229078,
+          "gt_coverage_gain_mean": -0.024444444444444446,
+          "gt_coverage_gain_std": 0.033628324334270154
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.04723618090452259,
+          "accuracy_gain_std": 0.0181462010907214,
+          "gt_coverage_gain_mean": 0.049246231155778884,
+          "gt_coverage_gain_std": 0.029712051254461285
+        },
+        "pound": {
+          "accuracy_gain_mean": -0.01891891891891892,
+          "accuracy_gain_std": 0.07052966676053994,
+          "gt_coverage_gain_mean": -0.021621621621621644,
+          "gt_coverage_gain_std": 0.06598138170666867
+        },
+        "scoop": {
+          "accuracy_gain_mean": 0.02291666666666662,
+          "accuracy_gain_std": 0.05307391334523749,
+          "gt_coverage_gain_mean": -0.05000000000000001,
+          "gt_coverage_gain_std": 0.0375
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": -0.2875,
+          "accuracy_gain_std": 0.15860721925561902,
+          "gt_coverage_gain_mean": -0.0125,
+          "gt_coverage_gain_std": 0.06731456008918131
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.023768115942029,
+          "accuracy_gain_std": 0.016075854636361804,
+          "gt_coverage_gain_mean": 0.014492753623188404,
+          "gt_coverage_gain_std": 0.020659164847774462
+        }
+      },
+      "4": {
+        "contain": {
+          "accuracy_gain_mean": -0.0125,
+          "accuracy_gain_std": 0.10383279828647594,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cut": {
+          "accuracy_gain_mean": 0.015555555555555572,
+          "accuracy_gain_std": 0.050723165380059235,
+          "gt_coverage_gain_mean": -0.0022222222222222253,
+          "gt_coverage_gain_std": 0.011967032904743359
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.017587939698492445,
+          "accuracy_gain_std": 0.02699105327034328,
+          "gt_coverage_gain_mean": 0.007537688442211055,
+          "gt_coverage_gain_std": 0.013152012390253673
+        },
+        "pound": {
+          "accuracy_gain_mean": -0.016216216216216217,
+          "accuracy_gain_std": 0.04391372110614033,
+          "gt_coverage_gain_mean": -0.016216216216216217,
+          "gt_coverage_gain_std": 0.024770679432193743
+        },
+        "scoop": {
+          "accuracy_gain_mean": 0.01041666666666663,
+          "accuracy_gain_std": 0.03869619921043065,
+          "gt_coverage_gain_mean": -0.016666666666666642,
+          "gt_coverage_gain_std": 0.020412414523193142
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": -0.125,
+          "accuracy_gain_std": 0.125,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.008695652173913049,
+          "accuracy_gain_std": 0.024354726420405818,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.005940261313599771
+        }
+      },
+      "5": {
+        "contain": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cut": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "pound": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "scoop": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      }
+    },
+    "clip_rel_nov_selection": {
+      "label": "CLIP-relevance+novelty selection vs baseline [CLIP-relevance+novelty selection + CLIP rerank]",
+      "method": "clip_rel_nov+clip",
+      "baseline": "random+clip",
+      "1": {
+        "contain": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cut": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "pound": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "scoop": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      },
+      "2": {
+        "contain": {
+          "accuracy_gain_mean": 0.025,
+          "accuracy_gain_std": 0.1457737973711325,
+          "gt_coverage_gain_mean": 0.0875,
+          "gt_coverage_gain_std": 0.11250000000000002
+        },
+        "cut": {
+          "accuracy_gain_mean": -0.07333333333333332,
+          "accuracy_gain_std": 0.06210306049992052,
+          "gt_coverage_gain_mean": -0.05111111111111112,
+          "gt_coverage_gain_std": 0.04974006507910975
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.05226130653266331,
+          "accuracy_gain_std": 0.02564291622547354,
+          "gt_coverage_gain_mean": 0.03768844221105527,
+          "gt_coverage_gain_std": 0.018969433254449105
+        },
+        "pound": {
+          "accuracy_gain_mean": -0.07837837837837838,
+          "accuracy_gain_std": 0.06990549814258142,
+          "gt_coverage_gain_mean": -0.03783783783783784,
+          "gt_coverage_gain_std": 0.05945945945945945
+        },
+        "scoop": {
+          "accuracy_gain_mean": -0.018749999999999996,
+          "accuracy_gain_std": 0.04001952648395532,
+          "gt_coverage_gain_mean": -0.027083333333333338,
+          "gt_coverage_gain_std": 0.046631311011665406
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": -0.15,
+          "accuracy_gain_std": 0.15612494995995996,
+          "gt_coverage_gain_mean": -0.05,
+          "gt_coverage_gain_std": 0.1
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.006666666666666665,
+          "accuracy_gain_std": 0.016501385886945254,
+          "gt_coverage_gain_mean": 0.0081159420289855,
+          "gt_coverage_gain_std": 0.01527181434471825
+        }
+      },
+      "3": {
+        "contain": {
+          "accuracy_gain_mean": -0.05,
+          "accuracy_gain_std": 0.082915619758885,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cut": {
+          "accuracy_gain_mean": 0.03333333333333335,
+          "accuracy_gain_std": 0.09067647005823629,
+          "gt_coverage_gain_mean": 0.015555555555555567,
+          "gt_coverage_gain_std": 0.022333056935824186
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.0321608040201005,
+          "accuracy_gain_std": 0.019488160230819424,
+          "gt_coverage_gain_mean": 0.029145728643216073,
+          "gt_coverage_gain_std": 0.0336945821391763
+        },
+        "pound": {
+          "accuracy_gain_mean": -0.032432432432432434,
+          "accuracy_gain_std": 0.0835655396418395,
+          "gt_coverage_gain_mean": 0.040540540540540515,
+          "gt_coverage_gain_std": 0.05952085282579794
+        },
+        "scoop": {
+          "accuracy_gain_mean": -0.008333333333333349,
+          "accuracy_gain_std": 0.05286907308520633,
+          "gt_coverage_gain_mean": -0.025,
+          "gt_coverage_gain_std": 0.03461093276215866
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": -0.225,
+          "accuracy_gain_std": 0.1224744871391589,
+          "gt_coverage_gain_mean": 0.0125,
+          "gt_coverage_gain_std": 0.037500000000000006
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.0118840579710145,
+          "accuracy_gain_std": 0.016265493155476183,
+          "gt_coverage_gain_mean": 0.019999999999999997,
+          "gt_coverage_gain_std": 0.02349257033965465
+        }
+      },
+      "4": {
+        "contain": {
+          "accuracy_gain_mean": -0.0125,
+          "accuracy_gain_std": 0.10383279828647594,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cut": {
+          "accuracy_gain_mean": 0.015555555555555572,
+          "accuracy_gain_std": 0.050723165380059235,
+          "gt_coverage_gain_mean": 0.0022222222222222253,
+          "gt_coverage_gain_std": 0.006666666666666676
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.02110552763819095,
+          "accuracy_gain_std": 0.028408631206236323,
+          "gt_coverage_gain_mean": 0.01708542713567839,
+          "gt_coverage_gain_std": 0.01608040201005024
+        },
+        "pound": {
+          "accuracy_gain_mean": -0.002702702702702703,
+          "accuracy_gain_std": 0.0426479292920527,
+          "gt_coverage_gain_mean": 0.005405405405405406,
+          "gt_coverage_gain_std": 0.026480970192250562
+        },
+        "scoop": {
+          "accuracy_gain_mean": 0.016666666666666642,
+          "accuracy_gain_std": 0.035843021946010946,
+          "gt_coverage_gain_mean": 0.008333333333333304,
+          "gt_coverage_gain_std": 0.02124591463996993
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": -0.125,
+          "accuracy_gain_std": 0.125,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.013043478260869573,
+          "accuracy_gain_std": 0.02500997490563533,
+          "gt_coverage_gain_mean": 0.011884057971014484,
+          "gt_coverage_gain_std": 0.009825189134306276
+        }
+      },
+      "5": {
+        "contain": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cut": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "pound": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "scoop": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      }
+    },
+    "trained_selection": {
+      "label": "Trained selection vs baseline [Trained selection + CLIP rerank]",
+      "method": "trained+clip",
+      "baseline": "random+clip",
+      "1": {
+        "contain": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cut": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "pound": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "scoop": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      },
+      "2": {
+        "contain": {
+          "accuracy_gain_mean": -0.15,
+          "accuracy_gain_std": 0.15612494995995996,
+          "gt_coverage_gain_mean": -0.075,
+          "gt_coverage_gain_std": 0.11456439237389601
+        },
+        "cut": {
+          "accuracy_gain_mean": -0.039999999999999994,
+          "accuracy_gain_std": 0.08877770824639189,
+          "gt_coverage_gain_mean": 0.03555555555555556,
+          "gt_coverage_gain_std": 0.06061414087549269
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.10201005025125628,
+          "accuracy_gain_std": 0.032336986016474716,
+          "gt_coverage_gain_mean": 0.11407035175879399,
+          "gt_coverage_gain_std": 0.022923607493380974
+        },
+        "pound": {
+          "accuracy_gain_mean": 0.19729729729729728,
+          "accuracy_gain_std": 0.03209281645145384,
+          "gt_coverage_gain_mean": 0.23783783783783785,
+          "gt_coverage_gain_std": 0.05896601143046334
+        },
+        "scoop": {
+          "accuracy_gain_mean": 0.035416666666666693,
+          "accuracy_gain_std": 0.05436661812791621,
+          "gt_coverage_gain_mean": 0.11041666666666668,
+          "gt_coverage_gain_std": 0.0466313110116654
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": -0.2,
+          "accuracy_gain_std": 0.19525624189766638,
+          "gt_coverage_gain_mean": -0.0875,
+          "gt_coverage_gain_std": 0.1125
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.07159420289855072,
+          "accuracy_gain_std": 0.017870217555708227,
+          "gt_coverage_gain_mean": 0.10753623188405795,
+          "gt_coverage_gain_std": 0.019932673909512092
+        }
+      },
+      "3": {
+        "contain": {
+          "accuracy_gain_mean": -0.1125,
+          "accuracy_gain_std": 0.0875,
+          "gt_coverage_gain_mean": -0.05,
+          "gt_coverage_gain_std": 0.06123724356957945
+        },
+        "cut": {
+          "accuracy_gain_mean": 0.00222222222222222,
+          "accuracy_gain_std": 0.07853598687587685,
+          "gt_coverage_gain_mean": 0.006666666666666677,
+          "gt_coverage_gain_std": 0.028196838978776673
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.07487437185929648,
+          "accuracy_gain_std": 0.02456150635145718,
+          "gt_coverage_gain_mean": 0.08492462311557789,
+          "gt_coverage_gain_std": 0.021490859075721708
+        },
+        "pound": {
+          "accuracy_gain_mean": 0.17567567567567569,
+          "accuracy_gain_std": 0.07668249167087085,
+          "gt_coverage_gain_mean": 0.11081081081081083,
+          "gt_coverage_gain_std": 0.05597923020867022
+        },
+        "scoop": {
+          "accuracy_gain_mean": -0.018750000000000027,
+          "accuracy_gain_std": 0.053073913345237485,
+          "gt_coverage_gain_mean": 0.03541666666666665,
+          "gt_coverage_gain_std": 0.022916666666666655
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": -0.2875,
+          "accuracy_gain_std": 0.15860721925561902,
+          "gt_coverage_gain_mean": 0.0125,
+          "gt_coverage_gain_std": 0.037500000000000006
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.050434782608695675,
+          "accuracy_gain_std": 0.015072463768115944,
+          "gt_coverage_gain_mean": 0.06579710144927534,
+          "gt_coverage_gain_std": 0.01566558738188021
+        }
+      },
+      "4": {
+        "contain": {
+          "accuracy_gain_mean": 0.0375,
+          "accuracy_gain_std": 0.12562344526401112,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cut": {
+          "accuracy_gain_mean": -0.00444444444444444,
+          "accuracy_gain_std": 0.056916659888292,
+          "gt_coverage_gain_mean": 0.0022222222222222253,
+          "gt_coverage_gain_std": 0.006666666666666676
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.02462311557788945,
+          "accuracy_gain_std": 0.028109278936576863,
+          "gt_coverage_gain_mean": 0.049246231155778884,
+          "gt_coverage_gain_std": 0.013446319759054923
+        },
+        "pound": {
+          "accuracy_gain_mean": 0.0972972972972973,
+          "accuracy_gain_std": 0.04221756581571164,
+          "gt_coverage_gain_mean": 0.021621621621621612,
+          "gt_coverage_gain_std": 0.020225175063642926
+        },
+        "scoop": {
+          "accuracy_gain_mean": 0.016666666666666663,
+          "accuracy_gain_std": 0.05574620066774856,
+          "gt_coverage_gain_mean": 0.012499999999999978,
+          "gt_coverage_gain_std": 0.021245914639969936
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": -0.125,
+          "accuracy_gain_std": 0.125,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.024347826086956514,
+          "accuracy_gain_std": 0.024873551249768047,
+          "gt_coverage_gain_mean": 0.03275362318840582,
+          "gt_coverage_gain_std": 0.00850515985572246
+        }
+      },
+      "5": {
+        "contain": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cut": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "pound": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "scoop": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      }
+    },
+    "clip_rel_nov_selection_learned_rerank": {
+      "label": "CLIP-relevance+novelty selection & learned rerank vs baseline [CLIP-relevance+novelty selection + Learned rerank]",
+      "method": "clip_rel_nov+learned",
+      "baseline": "random+clip",
+      "1": {
+        "contain": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cut": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "pound": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "scoop": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      },
+      "2": {
+        "contain": {
+          "accuracy_gain_mean": 0.2625,
+          "accuracy_gain_std": 0.21972994789058684,
+          "gt_coverage_gain_mean": 0.0875,
+          "gt_coverage_gain_std": 0.11250000000000002
+        },
+        "cut": {
+          "accuracy_gain_mean": 0.0022222222222222144,
+          "accuracy_gain_std": 0.04914076530554662,
+          "gt_coverage_gain_mean": -0.05111111111111112,
+          "gt_coverage_gain_std": 0.04974006507910975
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.09899497487437185,
+          "accuracy_gain_std": 0.025922051008098353,
+          "gt_coverage_gain_mean": 0.03768844221105527,
+          "gt_coverage_gain_std": 0.018969433254449105
+        },
+        "pound": {
+          "accuracy_gain_mean": 0.19189189189189187,
+          "accuracy_gain_std": 0.0962784493543615,
+          "gt_coverage_gain_mean": -0.03783783783783784,
+          "gt_coverage_gain_std": 0.05945945945945945
+        },
+        "scoop": {
+          "accuracy_gain_mean": 0.07708333333333335,
+          "accuracy_gain_std": 0.06390775687574153,
+          "gt_coverage_gain_mean": -0.027083333333333338,
+          "gt_coverage_gain_std": 0.046631311011665406
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": -0.15,
+          "accuracy_gain_std": 0.1920286436967152,
+          "gt_coverage_gain_mean": -0.05,
+          "gt_coverage_gain_std": 0.1
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.09130434782608694,
+          "accuracy_gain_std": 0.014214724446654167,
+          "gt_coverage_gain_mean": 0.0081159420289855,
+          "gt_coverage_gain_std": 0.01527181434471825
+        }
+      },
+      "3": {
+        "contain": {
+          "accuracy_gain_mean": 0.175,
+          "accuracy_gain_std": 0.13919410907075055,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cut": {
+          "accuracy_gain_mean": 0.15333333333333332,
+          "accuracy_gain_std": 0.10585338101168493,
+          "gt_coverage_gain_mean": 0.015555555555555567,
+          "gt_coverage_gain_std": 0.022333056935824186
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.13467336683417086,
+          "accuracy_gain_std": 0.019174657314913503,
+          "gt_coverage_gain_mean": 0.029145728643216073,
+          "gt_coverage_gain_std": 0.0336945821391763
+        },
+        "pound": {
+          "accuracy_gain_mean": 0.44054054054054054,
+          "accuracy_gain_std": 0.06049467374486322,
+          "gt_coverage_gain_mean": 0.040540540540540515,
+          "gt_coverage_gain_std": 0.05952085282579794
+        },
+        "scoop": {
+          "accuracy_gain_mean": 0.14791666666666664,
+          "accuracy_gain_std": 0.04700214238616034,
+          "gt_coverage_gain_mean": -0.025,
+          "gt_coverage_gain_std": 0.03461093276215866
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": -0.0875,
+          "accuracy_gain_std": 0.1375,
+          "gt_coverage_gain_mean": 0.0125,
+          "gt_coverage_gain_std": 0.037500000000000006
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.167536231884058,
+          "accuracy_gain_std": 0.016539527672680725,
+          "gt_coverage_gain_mean": 0.019999999999999997,
+          "gt_coverage_gain_std": 0.02349257033965465
+        }
+      },
+      "4": {
+        "contain": {
+          "accuracy_gain_mean": 0.1125,
+          "accuracy_gain_std": 0.11792476415070756,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cut": {
+          "accuracy_gain_mean": 0.3022222222222222,
+          "accuracy_gain_std": 0.07646511348482335,
+          "gt_coverage_gain_mean": 0.0022222222222222253,
+          "gt_coverage_gain_std": 0.006666666666666676
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.09648241206030153,
+          "accuracy_gain_std": 0.03361955514307081,
+          "gt_coverage_gain_mean": 0.01708542713567839,
+          "gt_coverage_gain_std": 0.01608040201005024
+        },
+        "pound": {
+          "accuracy_gain_mean": 0.5513513513513514,
+          "accuracy_gain_std": 0.050127667543220004,
+          "gt_coverage_gain_mean": 0.005405405405405406,
+          "gt_coverage_gain_std": 0.026480970192250562
+        },
+        "scoop": {
+          "accuracy_gain_mean": 0.16875,
+          "accuracy_gain_std": 0.045117516307724426,
+          "gt_coverage_gain_mean": 0.008333333333333304,
+          "gt_coverage_gain_std": 0.02124591463996993
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": -0.075,
+          "accuracy_gain_std": 0.13919410907075055,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.17855072463768112,
+          "accuracy_gain_std": 0.030460996302422393,
+          "gt_coverage_gain_mean": 0.011884057971014484,
+          "gt_coverage_gain_std": 0.009825189134306276
+        }
+      },
+      "5": {
+        "contain": {
+          "accuracy_gain_mean": 0.125,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cut": {
+          "accuracy_gain_mean": 0.4444444444444445,
+          "accuracy_gain_std": 5.551115123125783e-17,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.10552763819095479,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "pound": {
+          "accuracy_gain_mean": 0.6216216216216217,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "scoop": {
+          "accuracy_gain_mean": 0.1875,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.21449275362318837,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      }
+    },
+    "full_pipeline": {
+      "label": "Trained selection & learned rerank (full pipeline) vs baseline [Trained selection + Learned rerank]",
+      "method": "trained+learned",
+      "baseline": "random+clip",
+      "1": {
+        "contain": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cut": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "pound": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "scoop": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      },
+      "2": {
+        "contain": {
+          "accuracy_gain_mean": -0.1125,
+          "accuracy_gain_std": 0.14197270864500686,
+          "gt_coverage_gain_mean": -0.075,
+          "gt_coverage_gain_std": 0.11456439237389601
+        },
+        "cut": {
+          "accuracy_gain_mean": 0.2333333333333333,
+          "accuracy_gain_std": 0.05465943944999485,
+          "gt_coverage_gain_mean": 0.03555555555555556,
+          "gt_coverage_gain_std": 0.06061414087549269
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.17286432160804022,
+          "accuracy_gain_std": 0.03468428929997469,
+          "gt_coverage_gain_mean": 0.11407035175879399,
+          "gt_coverage_gain_std": 0.022923607493380974
+        },
+        "pound": {
+          "accuracy_gain_mean": 0.5459459459459459,
+          "accuracy_gain_std": 0.07625262691711289,
+          "gt_coverage_gain_mean": 0.23783783783783785,
+          "gt_coverage_gain_std": 0.05896601143046334
+        },
+        "scoop": {
+          "accuracy_gain_mean": 0.23541666666666666,
+          "accuracy_gain_std": 0.04274642610142331,
+          "gt_coverage_gain_mean": 0.11041666666666668,
+          "gt_coverage_gain_std": 0.0466313110116654
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": -0.1625,
+          "accuracy_gain_std": 0.1681703005884214,
+          "gt_coverage_gain_mean": -0.0875,
+          "gt_coverage_gain_std": 0.1125
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.21507246376811592,
+          "accuracy_gain_std": 0.022481993541640946,
+          "gt_coverage_gain_mean": 0.10753623188405795,
+          "gt_coverage_gain_std": 0.019932673909512092
+        }
+      },
+      "3": {
+        "contain": {
+          "accuracy_gain_mean": -0.05,
+          "accuracy_gain_std": 0.1,
+          "gt_coverage_gain_mean": -0.05,
+          "gt_coverage_gain_std": 0.06123724356957945
+        },
+        "cut": {
+          "accuracy_gain_mean": 0.3977777777777778,
+          "accuracy_gain_std": 0.09132765594682009,
+          "gt_coverage_gain_mean": 0.006666666666666677,
+          "gt_coverage_gain_std": 0.028196838978776673
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.15175879396984926,
+          "accuracy_gain_std": 0.0187754187862004,
+          "gt_coverage_gain_mean": 0.08492462311557789,
+          "gt_coverage_gain_std": 0.021490859075721708
+        },
+        "pound": {
+          "accuracy_gain_mean": 0.5783783783783785,
+          "accuracy_gain_std": 0.07171080627795459,
+          "gt_coverage_gain_mean": 0.11081081081081083,
+          "gt_coverage_gain_std": 0.05597923020867022
+        },
+        "scoop": {
+          "accuracy_gain_mean": 0.2104166666666666,
+          "accuracy_gain_std": 0.05307391334523749,
+          "gt_coverage_gain_mean": 0.03541666666666665,
+          "gt_coverage_gain_std": 0.022916666666666655
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": -0.2125,
+          "accuracy_gain_std": 0.17721808598447283,
+          "gt_coverage_gain_mean": 0.0125,
+          "gt_coverage_gain_std": 0.037500000000000006
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.22463768115942032,
+          "accuracy_gain_std": 0.0149633733323366,
+          "gt_coverage_gain_mean": 0.06579710144927534,
+          "gt_coverage_gain_std": 0.01566558738188021
+        }
+      },
+      "4": {
+        "contain": {
+          "accuracy_gain_mean": 0.0625,
+          "accuracy_gain_std": 0.1152443057161611,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cut": {
+          "accuracy_gain_mean": 0.4488888888888889,
+          "accuracy_gain_std": 0.04640136226182466,
+          "gt_coverage_gain_mean": 0.0022222222222222253,
+          "gt_coverage_gain_std": 0.006666666666666676
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.1266331658291457,
+          "accuracy_gain_std": 0.026666329972706727,
+          "gt_coverage_gain_mean": 0.049246231155778884,
+          "gt_coverage_gain_std": 0.013446319759054923
+        },
+        "pound": {
+          "accuracy_gain_mean": 0.5972972972972972,
+          "accuracy_gain_std": 0.04432762018069387,
+          "gt_coverage_gain_mean": 0.021621621621621612,
+          "gt_coverage_gain_std": 0.020225175063642926
+        },
+        "scoop": {
+          "accuracy_gain_mean": 0.19791666666666663,
+          "accuracy_gain_std": 0.03869619921043065,
+          "gt_coverage_gain_mean": 0.012499999999999978,
+          "gt_coverage_gain_std": 0.021245914639969936
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": -0.125,
+          "accuracy_gain_std": 0.125,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.2217391304347826,
+          "accuracy_gain_std": 0.024085892649904052,
+          "gt_coverage_gain_mean": 0.03275362318840582,
+          "gt_coverage_gain_std": 0.00850515985572246
+        }
+      },
+      "5": {
+        "contain": {
+          "accuracy_gain_mean": 0.125,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "cut": {
+          "accuracy_gain_mean": 0.4444444444444445,
+          "accuracy_gain_std": 5.551115123125783e-17,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "grasp": {
+          "accuracy_gain_mean": 0.10552763819095479,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "pound": {
+          "accuracy_gain_mean": 0.6216216216216217,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "scoop": {
+          "accuracy_gain_mean": 0.1875,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "wgrasp": {
+          "accuracy_gain_mean": 0.0,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        },
+        "overall": {
+          "accuracy_gain_mean": 0.21449275362318837,
+          "accuracy_gain_std": 0.0,
+          "gt_coverage_gain_mean": 0.0,
+          "gt_coverage_gain_std": 0.0
+        }
+      }
+    }
+  }
+}

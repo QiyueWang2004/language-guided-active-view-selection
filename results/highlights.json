@@ -1,0 +1,10 @@
+{
+  "co3d_shuffled": {
+    "note": "See results/co3d_shuffled/budget_sweep_summary_compact.json and plots.",
+    "headline": "Full pipeline ~53.4% @ budget 2; learned reranker is the main gain vs CLIP cosine."
+  },
+  "umd_20_trials": {
+    "note": "See results/umd/ plots (mean \u00b1 std across random starts).",
+    "headline": "Trained active + learned reranker ~66.9%\u00b11.1% @B2, ~68.0%\u00b10.8% @B3, ~69.6% @B5."
+  }
+}
