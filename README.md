@@ -2,6 +2,9 @@
 
 UNSW Thesis C project (COMP4952) — **Language-Guided Active View Selection for Vision-Language Perception**.
 
+**Thesis PDF:** [`thesis/Thesis_C_Qiyue_Wang.pdf`](thesis/Thesis_C_Qiyue_Wang.pdf)  
+(LaTeX sources and figures are in [`thesis/`](thesis/).)
+
 Given several photos of the same object and a short English instruction (e.g. *“find the view where the handle is most clearly visible”*), the system chooses which views to open under a budget, then returns the best observed view.
 
 ## Pipeline
@@ -36,6 +39,7 @@ merge_annotations.py       # merge per-category annotation JSONs
 shuffle_dataset.py         # shuffle candidate view order
 evaluate_dataset.py        # annotation QA
 export_results.py          # CSV / top-k plot export from output dirs
+thesis/                    # Thesis PDF + LaTeX sources
 annotations/               # CO3D label JSONs (paths may need remapping)
 results/                   # plots, compact metrics, .pt checkpoints
 requirements.txt

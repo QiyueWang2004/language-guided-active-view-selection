@@ -1,0 +1,217 @@
+\chapter{Methodology and Implementation}
+\label{chap:methodology}
+
+\section{Introduction}
+
+This chapter presents the methodology and implementation of the language-guided active view selection system. The aim of the system is to select the most relevant object views according to a natural language instruction while using a limited observation budget, then return a final predicted view from the observed set.
+
+The project treats active view selection as a two-stage problem. First, a selection policy chooses which views to observe under budget \(k\). Second, a reranker scores the observed views and returns the highest-scoring view as the final answer. The methodology covers dataset preparation for CO3D and UMD+GT, CLIP feature extraction, heuristic and trained selection policies, learned reranking, baselines, evaluation metrics, and training details.
+
+\section{System Overview}
+
+The overall system takes two inputs: a set of candidate object views and a natural language instruction. The candidate views are images of the same object captured from different viewpoints. The instruction describes the visual property or viewpoint that the system should find.
+
+For each test case, the system performs the following steps:
+
+\begin{enumerate}
+    \item Load all candidate views for one sample and the corresponding language instruction.
+    \item Encode the instruction and each image with a frozen CLIP model.
+    \item Start from a random initial observed view.
+    \item While the number of observed views is below the budget, use a selection policy to choose the next view.
+    \item After the budget is exhausted, score the observed views with a CLIP or learned reranker.
+    \item Return the top-ranked observed view as the final prediction.
+    \item Compare the prediction with the ground-truth correct views.
+\end{enumerate}
+
+This pipeline separates selection from final ranking. That separation is important because a method may collect useful views yet still fail if the final reranker is weak, or collect redundant views yet still succeed if the correct view happens to be among the observed set and is ranked highly.
+
+\section{Task Formulation}
+
+For each sample, the candidate view set is defined as
+\[
+V = \{v_1, v_2, \ldots, v_n\},
+\]
+where \(v_i\) represents the \(i\)-th image view and \(n=5\) in all experiments. The natural language instruction is represented as \(q\). Under observation budget \(k\), the selection policy produces an ordered observed set
+\[
+S_k = \{v_{s_1}, v_{s_2}, \ldots, v_{s_k}\}.
+\]
+A reranker then returns
+\[
+\hat{v} = \arg\max_{v \in S_k} \mathrm{Score}(q, v).
+\]
+The prediction is correct if \(\hat{v} \in G\), where \(G \subseteq V\) is the ground-truth set of acceptable views. Top-\(k\) ranking accuracy is also reported by checking whether any of the top-\(k\) ranked observed views belongs to \(G\).
+
+\section{Datasets}
+
+\subsection{CO3D Multi-View Instruction Dataset}
+
+The first dataset is derived from CO3D~\cite{reizenstein_common_2021}. Five categories are used: book, cup, handbag, remote, and teddybear. Each category contains 30 object instances, and each instance has five viewpoints sampled at approximately 20\% increments of the source sequence. Each sample has a category-specific instruction, for example:
+
+\begin{itemize}
+    \item cup: \textit{find the view where the printed design is front-facing}
+    \item book: \textit{find the view where the book is most front-facing}
+    \item teddybear: \textit{find the view where the teddy bear face is most visible}
+\end{itemize}
+
+Ground-truth views are instruction-dependent and may contain more than one acceptable viewpoint. Early versions of the annotation set were skewed toward first-view correctness. To remove that bias, view order is shuffled within each sample and sample order is shuffled across the dataset. The resulting annotation file therefore places ground-truth views more evenly across the five positions.
+
+The CO3D split follows object-instance numbers:
+\begin{itemize}
+    \item evaluation: objects 1--10 per category;
+    \item validation: objects 11--15 per category;
+    \item training: objects 16--30 per category.
+\end{itemize}
+This yields 50 evaluation samples, 25 validation samples, and 75 training samples.
+
+\subsection{UMD+GT Affordance View-Selection Dataset}
+
+The second dataset is derived from the UMD+GT RGB-D affordance keypoint dataset~\cite{myers_umd_affordance}. The source data contains 104 tools across categories such as mug, knife, spoon, hammer, and bowl, with turntable sequences of roughly 200--400 frames per tool. Each frame has an affordance mask with labels for grasp, cut, scoop, contain, pound, and wrap-grasp.
+
+Because the original annotations are pixel-level rather than view-selection labels, a conversion procedure is used:
+
+\begin{enumerate}
+    \item Sample five views at 20\% increments of each tool sequence. Multiple shifted start frames produce several five-view sets per tool.
+    \item For each affordance present on the tool, create one sample with an instruction such as ``find the view of the mug where the handle is most clearly visible for grasping''.
+    \item Measure the fraction of image area covered by that affordance in each of the five views.
+    \item Mark as ground truth every view whose affordance area is at least 80\% of the largest area among the five views.
+    \item Drop samples whose best affordance area is below 0.2\% of the image, or where more than three views pass the 80\% threshold (no clear best view).
+\end{enumerate}
+
+This produces 1{,}026 samples: 603 train, 78 validation, and 345 test. Splits follow the official UMD instance split for train/test, with 20\% of train tools held out for validation. Random-pick chance accuracy is approximately 0.43 because about two of the five views are ground truth on average. Results are grouped by affordance rather than by object category because several categories have few test instances.
+
+\section{Image and Text Encoding}
+
+A frozen OpenCLIP ViT-B/32 model pretrained on OpenAI CLIP weights encodes both images and text. Each candidate image \(v_i\) is mapped to an image feature
+\[
+z_i = f_I(v_i),
+\]
+and the instruction \(q\) is mapped to a text feature
+\[
+z_q = f_T(q).
+\]
+Features are L2-normalised, so cosine similarity reduces to an inner product:
+\[
+\mathrm{sim}(z_i, z_q) = z_i \cdot z_q.
+\]
+All CLIP parameters remain frozen. Feature caching is used so that each image and instruction is encoded once.
+
+\section{CLIP Reranking and Heuristic Active Policy}
+
+\subsection{CLIP Reranking}
+
+Given an observed set \(S_k\), the CLIP reranker returns the view with the highest similarity to the instruction:
+\[
+\hat{v}_{\mathrm{CLIP}} = \arg\max_{v \in S_k} \mathrm{sim}(f_I(v), f_T(q)).
+\]
+This is the default final-ranking method for the heuristic active policy and for several ablation configurations.
+
+\subsection{CLIP Relevance-Plus-Novelty Active Policy}
+
+The heuristic active policy selects the next view according to
+\[
+\mathrm{Score}(v) = w_r \cdot \mathrm{Rel}(q, v) + w_n \cdot \mathrm{Nov}(v, S),
+\]
+where
+\[
+\mathrm{Rel}(q, v) = \mathrm{sim}(f_I(v), f_T(q))
+\]
+and
+\[
+\mathrm{Nov}(v, S) = 1 - \max_{u \in S} \mathrm{sim}(f_I(v), f_I(u)).
+\]
+In the main experiments, \(w_r = 1.0\) and \(w_n = 0.5\). The policy begins from a random initial view and greedily selects the unseen view with the highest score until the budget is reached. Ablations also include a relevance-only variant with \(w_n = 0\).
+
+After selection, the observed views are reranked by CLIP similarity and the top-ranked view is returned.
+
+\section{Learned Reranker}
+
+The learned reranker is a two-hidden-layer MLP that takes the concatenation of CLIP text and image features:
+\[
+\mathrm{logit}(q, v) = \mathrm{MLP}([f_T(q); f_I(v)]).
+\]
+The architecture is
+\[
+1024 \rightarrow 256 \rightarrow \mathrm{ReLU} \rightarrow 256 \rightarrow \mathrm{ReLU} \rightarrow 1.
+\]
+Each (instruction, view) pair is a training example with label 1 if the view is ground truth and 0 otherwise. Training minimises binary cross-entropy with positive class weighting:
+\[
+\mathrm{pos\_weight} = \frac{\#\mathrm{negatives}}{\#\mathrm{positives}}.
+\]
+Only the MLP is trained; CLIP remains frozen. After each epoch, object-level validation accuracy is measured by scoring all five views of each validation sample and checking whether the top-scoring view is ground truth. Early stopping keeps the checkpoint with the best validation accuracy, with patience 10 and a maximum of 50 epochs. Default optimisation uses Adam with learning rate \(10^{-3}\) and batch size 64.
+
+At test time, the learned reranker replaces CLIP cosine similarity when ranking the observed views.
+
+\section{Trained Active View Selector}
+
+The trained active view selector uses the same CLIP+MLP architecture and the same training objective as the learned reranker. The difference is only in how the model is used at test time. During sequential selection, the trained selector scores every unseen view and greedily chooses the highest-scoring next view:
+\[
+v_{t+1} = \arg\max_{v \notin S_t} \mathrm{MLP}([f_T(q); f_I(v)]).
+\]
+After the budget is reached, either CLIP or the learned reranker can be used for final ranking. The main ``full pipeline'' configuration uses trained selection followed by learned reranking.
+
+This design is deliberately simple. It asks whether the same view-quality signal that is useful for final ranking is also useful for choosing the next view. A limitation, discussed later, is that the selector and reranker therefore learn overlapping objectives.
+
+\section{Baseline Methods}
+
+The following methods are compared:
+
+\begin{itemize}
+    \item \textbf{Random}: select remaining views uniformly at random; final ranking uses CLIP.
+    \item \textbf{Exhaustive CLIP}: score all candidate views with CLIP and take the global top-1 view. This ignores the budgeted sequential setting and provides an upper reference for pure CLIP ranking.
+    \item \textbf{Active policy}: CLIP relevance-plus-novelty selection with CLIP reranking.
+    \item \textbf{Learned reranker}: random selection of additional views, then learned MLP reranking of the observed set.
+    \item \textbf{Trained active + CLIP}: trained selector with CLIP final ranking.
+    \item \textbf{Trained active + learned reranker}: full pipeline.
+\end{itemize}
+
+An earlier fixed-order baseline was removed after dataset shuffling, because view indices no longer carry semantic meaning.
+
+\section{Evaluation Metric}
+
+The main metric is top-1 accuracy under different observation budgets. For each sample, the prediction is correct if the final top-ranked observed view belongs to the ground-truth set. Accuracy over \(N\) samples is
+\[
+\mathrm{Accuracy} = \frac{1}{N} \sum_{j=1}^{N} \mathbf{1}(\hat{v}_j \in G_j).
+\]
+Top-2 and Top-3 accuracy are also reported by checking whether any of the top-\(k\) ranked observed views is ground truth.
+
+Each stochastic method is evaluated over repeated trials with different random seeds; the final UMD+GT method comparison uses 20 trials, while CO3D runs and ablations use 10 trials. Every trial starts from a random initial view. For ablations, the same initial views are shared across configurations within a trial so that differences are attributable to selection and reranking rather than to different starting points. Means and standard deviations are reported across trials and shown as error bars on the UMD method-comparison plot.
+
+\section{Ablation Design}
+
+The ablation study measures the contribution of each component relative to a shared baseline:
+\begin{quote}
+Baseline = random selection + CLIP rerank.
+\end{quote}
+Every reported gain is
+\[
+\Delta = \mathrm{accuracy}(\mathrm{method}) - \mathrm{accuracy}(\mathrm{baseline}).
+\]
+The compared methods are:
+
+\begin{itemize}
+    \item learned rerank only;
+    \item CLIP-relevance selection;
+    \item CLIP-relevance+novelty selection;
+    \item trained selection;
+    \item CLIP-relevance+novelty selection with learned rerank;
+    \item trained selection with learned rerank (full pipeline).
+\end{itemize}
+
+On CO3D, gains are reported per object category. On UMD+GT, gains are reported per affordance. This makes each plotted value an explicit comparison against the same baseline.
+
+\section{Implementation Details}
+
+The experimental pipeline is implemented in Python with PyTorch and OpenCLIP. The main scripts are:
+
+\begin{itemize}
+    \item \texttt{active\_view\_selection.py}: training, budgeted evaluation, and method comparison plots;
+    \item \texttt{build\_umd\_annotations.py}: conversion of UMD+GT into the common annotation format;
+    \item \texttt{evaluate\_dataset.py}: schema, split, and ground-truth distribution checks;
+    \item \texttt{ablation\_study.py}: paired component ablations and gain plots.
+\end{itemize}
+
+All experiments are run on CPU. Features and models are cached so that repeated budget sweeps reuse the same CLIP embeddings and trained weights. Outputs include per-budget JSON summaries, method comparison plots, top-\(k\) plots, and ablation heatmaps or bar charts.
+
+\section{Summary}
+
+This chapter presented the methodology and implementation. The project formulates language-guided active view selection as sequential selection under a budget followed by observed-view reranking. CLIP provides frozen image--text features. A heuristic active policy combines relevance and novelty. A learned MLP reranker and a trained selector adapt those features to instruction-specific ground-truth views. The next chapter reports results on the shuffled CO3D dataset and the UMD+GT affordance view-selection dataset.

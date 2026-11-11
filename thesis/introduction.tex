@@ -1,0 +1,87 @@
+\chapter{Introduction}
+\label{chap:introduction}
+
+\section{Motivation}
+
+Robotic perception often requires more than recognising an object category from a single image. In many practical tasks, a robot must interpret an object according to a specific instruction. For example, it may need to find the view where a cup handle is clearly visible, where a printed design is front-facing, or where a grasping region of a tool is most exposed. These tasks require the system to connect visual information with natural language.
+
+A major challenge is that objects are three-dimensional, and different viewpoints reveal different visual details. A side view may expose a handle, while a frontal view may expose a printed pattern. In affordance-centred settings, different viewpoints may also change how clearly a graspable, cutting, scooping, or pounding region appears. Therefore, choosing the right view is an important part of perception.
+
+In real robotic systems, inspecting every possible view is often inefficient. A robot may have limited time, computation, camera movement range, or energy. This motivates active perception, where the system selects informative observations instead of passively using all available inputs. This thesis focuses on language-guided active view selection: given a natural language instruction and a set of candidate views, the system selects a limited number of views under an observation budget and then ranks the observed views to produce a final answer.
+
+Earlier experiments in this project showed that a CLIP-based relevance-plus-novelty policy can outperform non-semantic baselines such as random selection, but that much of the useful signal comes from image--text similarity rather than from the selection policy itself. This thesis therefore extends the pipeline in three ways. First, it builds larger and better-balanced evaluation datasets, including a shuffled CO3D subset and an affordance-derived UMD+GT subset. Second, it trains a learned MLP reranker on frozen CLIP features. Third, it trains an active view selector with the same architecture and compares both components through ablation studies.
+
+\section{Problem Statement and Research Questions}
+
+The problem addressed in this report is language-guided active view selection for multi-view object perception. Given a set of candidate views of an object and a natural language instruction, the system must select a limited number of views and return a final predicted view that is most likely to satisfy the instruction.
+
+For an object with candidate views
+\[
+V = \{v_1, v_2, \ldots, v_n\}
+\]
+and a language instruction \(q\), the system first selects an observed subset
+\[
+S_k \subseteq V
+\]
+where \(k\) is the observation budget. It then ranks the views in \(S_k\) and returns the top-ranked view \(\hat{v}\). The prediction is correct if \(\hat{v}\) belongs to the ground-truth set \(G \subseteq V\).
+
+The main research question is:
+
+\begin{quote}
+Can a language-guided active view selection strategy, together with a learned observed-view reranker, improve vision-language perception under a limited observation budget?
+\end{quote}
+
+This main question is divided into the following sub-questions:
+
+\begin{itemize}
+    \item How can natural language instructions be used to score and rank candidate object views?
+    \item Does a CLIP-based active policy outperform random selection and exhaustive CLIP ranking?
+    \item Can a learned MLP reranker improve final view prediction beyond CLIP cosine similarity?
+    \item Can a trained active view selector improve over a fixed CLIP relevance-plus-novelty policy?
+    \item How do these methods transfer from CO3D-style object-view instructions to affordance-derived UMD+GT samples?
+    \item Which pipeline components contribute most to accuracy gains under different budgets?
+\end{itemize}
+
+The central hypothesis is that language-guided image--text similarity provides a useful prior for view selection, but that a lightweight learned model can better map CLIP features to instruction-specific ground-truth views. A secondary hypothesis is that a trained selector can further improve low-budget performance when viewpoint variation is informative, as in turntable affordance sequences.
+
+\section{Research Methodology}
+
+The project follows an experimental computer science methodology and is organised into six stages.
+
+First, the task is formulated as limited-budget sequential view selection followed by observed-view reranking. Each sample contains five candidate views, a language instruction, and one or more ground-truth views.
+
+Second, related literature is reviewed in active perception, view planning, vision-language models, CLIP-based image--text matching, multi-view object datasets, and language-guided active perception.
+
+Third, two evaluation datasets are prepared. The CO3D-based set contains five categories with 30 object instances each. Views are sampled at 20\% increments and later shuffled to remove first-view bias. The UMD+GT-based set converts affordance masks into language-guided samples, defining ground-truth views by relative affordance area.
+
+Fourth, the experimental pipeline is implemented. It includes CLIP feature extraction, a CLIP relevance-plus-novelty active policy, a learned MLP reranker, a trained active view selector, random and exhaustive CLIP baselines, and budget sweeps from 1 to 5.
+
+Fifth, methods are evaluated with repeated random trials. Each trial starts from a random initial view. Accuracy is measured by whether the final top-1 predicted view is ground truth. Top-\(k\) ranking accuracy and per-category or per-affordance breakdowns are also reported.
+
+Sixth, ablation studies isolate the contribution of each component relative to a shared baseline of random selection plus CLIP reranking. Gains are reported by category on CO3D and by affordance on UMD+GT.
+
+\section{Contribution of the Work}
+
+This project makes the following contributions:
+
+\begin{itemize}
+    \item It formulates language-guided active view selection as a limited-budget sequential selection and reranking problem.
+    \item It constructs two evaluation settings: a shuffled CO3D multi-view instruction dataset and an affordance-derived UMD+GT view-selection dataset.
+    \item It implements a CLIP-based active policy that combines instruction relevance with viewpoint novelty.
+    \item It trains a learned MLP reranker and a trained active view selector on frozen CLIP text and image features.
+    \item It evaluates all methods under budgets \(k \in \{1,2,3,4,5\}\) with repeated random-initial trials.
+    \item It provides paired ablation studies that measure each component's accuracy gain relative to a random-plus-CLIP baseline.
+    \item It analyses when the full trained pipeline helps, when the learned reranker alone is sufficient, and where remaining limitations remain.
+\end{itemize}
+
+\section{Structure of the Report}
+
+The remainder of this report is organised as follows.
+
+Chapter~\ref{chap:background} presents the background and literature review. It introduces active perception, vision-language models, multi-view object perception, language-guided active view selection, and the research gap addressed by this project.
+
+Chapter~\ref{chap:methodology} presents the methodology and implementation. It describes the datasets, CLIP scoring, active policies, learned reranker and selector, baselines, evaluation metrics, and training details.
+
+Chapter~\ref{chap:experiments-results} presents the experiments and results on CO3D and UMD+GT, including budget curves, top-\(k\) analysis, and ablation studies.
+
+Chapter~\ref{chap:conclusion} provides the discussion, conclusion, and future work. It summarises the main findings, discusses limitations, and outlines possible directions for extending the project.

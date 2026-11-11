@@ -1,0 +1,66 @@
+\documentclass[]{unswthesis}
+
+%%% Class options:
+
+%  undergrad (default)
+%  hdr
+
+%  11pt (default)
+%  12pt
+
+%  final (default)
+%  draft
+
+%  oneside (default for hdr)
+%  twoside (default for undergrad)
+
+
+%% Thesis details
+\thesistitle{Language-Guided Active View Selection for Vision-Language Perception}
+\thesisschool{School of Computer Science and Engineering}
+\thesisauthor{Qiyue Wang}
+\thesisZid{z5484179}
+\thesisdegree{Bachelor of Engineering in Computer Engineering}
+\thesisdate{April 2026}
+\thesissupervisor{Dr.\ Francisco Cruz Naranjo}% for undergrad theses only
+
+
+%% My own LaTeX macros, definitions, etc
+\input{definitions}
+
+
+\begin{document}
+
+%% pages in the ``frontmatter'' section have roman numeral page number
+\frontmatter  
+\maketitle
+
+\include{abstract}
+\include{acknowledgements}
+\include{abbreviations}
+
+\tableofcontents
+\listoffigures  % if required
+\listoftables  % if required
+
+%% pages in the ``mainmatter'' section have arabic page numbers and chapters are numbered
+\mainmatter
+
+\include{introduction}
+\include{background}
+
+\include{methodology}
+\include{experiments_and_results}
+
+\include{conclusion}
+
+%% chapters in the ``backmatter'' section do not have chapter numbering
+%% text in the ``backmatter'' is single spaced
+\backmatter
+\bibliographystyle{alpha}
+\bibliography{pubs}
+
+\include{appendix1}
+% \include{appendix2}
+
+\end{document}

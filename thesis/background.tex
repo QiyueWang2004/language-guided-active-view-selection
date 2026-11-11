@@ -1,0 +1,79 @@
+\chapter{Background and Literature Review}
+\label{chap:background}
+
+\section{Introduction}
+
+This chapter presents the background and literature review for the project. The project investigates language-guided active view selection for vision-language perception. The key idea is that a perception system should not always process every available view. Instead, it should select the most informative views according to the current language instruction and observation budget, then rank the observed views to produce a final prediction.
+
+The chapter is organised around five main areas. First, active perception and view planning are introduced as the general motivation for selecting useful viewpoints. Second, vision-language models are discussed as the foundation for connecting images with natural language instructions. Third, multi-view object perception is introduced because the project uses multiple views of the same object. Fourth, language-guided active view selection is reviewed as the closest area to this project. Finally, the chapter summarises the research gap addressed by this thesis.
+
+\section{Active Perception and View Planning}
+
+Active perception refers to the idea that a perception system should actively choose what to observe. Instead of passively receiving visual input, an active system can select camera viewpoints, sensor positions, or image observations to improve task performance. This is especially important in robotics, where perception is often limited by time, computation, occlusion, camera motion, and physical constraints.
+
+Zeng et al.~\cite{zeng_view_2020} provide a survey of view planning in robot active vision. They explain that view planning is concerned with selecting useful sensor viewpoints under task and system constraints. Their survey covers applications such as object reconstruction, scene reconstruction, object recognition, and pose estimation. This is relevant to the present project because language-guided active view selection can be understood as a simplified form of view planning. Instead of moving a physical camera, the system selects from a set of existing candidate views.
+
+The motivation from active vision is that not all views are equally useful. A view may be useful for one task but unhelpful for another. For example, a side view of a cup may be useful for detecting its handle, while a front view may be better for observing a printed design. In tool-affordance settings, a viewpoint may also change how clearly a graspable handle or cutting edge appears. Therefore, active perception requires a task-dependent decision about which viewpoint should be selected.
+
+In this project, the active perception problem is formulated as sequential view selection under a fixed observation budget. The system is given a set of candidate views and must select only a small number of them. After the budget is exhausted, the observed views are reranked and the highest-scoring view is returned as the final prediction. This reflects the practical situation where a robot may not have enough time or resources to inspect every possible view.
+
+\section{Vision-Language Models and CLIP}
+
+Vision-language models connect visual information with natural language. They are useful for tasks where the system must interpret an image according to a text description, question, or instruction. This makes them highly relevant to language-guided perception, where the target visual information is specified by natural language.
+
+A central model for this project is CLIP, introduced by Radford et al.~\cite{radford_learning_2021}. CLIP learns visual representations from natural language supervision by training on large-scale image--text pairs. Instead of training only on fixed object categories, CLIP learns to associate images with text descriptions. This enables zero-shot image classification and image--text matching.
+
+The key idea used in this project is CLIP-style image--text similarity. Both images and text are encoded into a shared embedding space. If an image matches a text prompt, their feature vectors should be close in that space. This allows the system to compare each candidate view with a natural language instruction and rank the views according to similarity.
+
+For example, if the instruction is
+\begin{quote}
+find the view where the printed design is front-facing
+\end{quote}
+then each candidate view can be compared with this instruction. The view with the highest image--text similarity score is treated as the most relevant view. This makes CLIP suitable for implementing a simple language-guided scoring policy.
+
+However, CLIP also has limitations. It is strong at broad image--text association, but it may be less reliable for fine-grained viewpoint reasoning. In this project, the model must distinguish between different views of the same object. This can be more difficult than recognising the object category itself. For example, several views may all contain a cup, but only one or two views may clearly show the handle or printed design. This limitation motivates the learned MLP reranker studied in this thesis: CLIP features are retained as a strong frozen representation, while a lightweight classifier is trained to map those features to instruction-specific ground-truth views.
+
+\section{Multi-View Object Perception}
+
+Multi-view object perception studies how multiple views of the same object can support visual understanding. A single object can appear very different from different camera angles. Some viewpoints may show important visual details, while others may hide them.
+
+The CO3D dataset introduced by Reizenstein et al.~\cite{reizenstein_common_2021} is relevant to this project because it provides real-world multi-view object data. The dataset contains object-centric videos from multiple categories and includes many views of real objects. This type of data is useful for studying how object appearance changes across viewpoints. In this thesis, a curated CO3D subset is used with five viewpoints per object and instruction-dependent ground-truth views.
+
+Affordance-centred RGB-D datasets provide a complementary setting. In particular, the UMD+GT dataset~\cite{myers_umd_affordance} annotates common tools with per-pixel affordance labels such as grasp, cut, scoop, contain, pound, and wrap-grasp, together with keypoints and turntable sequences from many viewpoints. Although the original annotations are pixel-level rather than view-selection labels, they can be converted into language-guided view-selection samples by asking which viewpoint most clearly presents a given affordance. This provides a second evaluation setting where ground truth can be derived systematically from mask area rather than only from manual front-facing judgements.
+
+Multi-view perception is important for this project because the task is not simply to classify an object. Instead, the system must identify which view best satisfies a language instruction. An object may be recognisable from many views, but the instruction may require a particular visual property to be visible. This makes the problem more specific than standard object recognition.
+
+\section{Language-Guided Active View Selection}
+
+The closest research area to this project is language-guided active view selection. In this setting, the system uses a language query, instruction, or question to decide which view should be selected.
+
+Multi-view visual question answering with active viewpoint selection is directly related to this idea~\cite{qiu_multi-view_2020}. In that task, a system must answer a visual question by selecting useful viewpoints. This is similar to the present project because both settings require the system to use language to guide visual observation. The difference is that this project focuses on selecting the view that best satisfies an instruction, rather than directly answering a question.
+
+Sripada et al.~\cite{sripada_scene_2025} propose scene exploration using vision-language models. Their AP-VLM framework combines active perception with a vision-language model to guide robotic exploration and answer semantic queries. This is highly relevant because it connects active perception with language-based reasoning. Their work supports the idea that a vision-language model can help a robot choose better viewpoints in partially observable environments.
+
+Wang et al.~\cite{wang_actiview_2025} introduce ActiView, a benchmark for evaluating active perception ability in multimodal large language models. This work is useful for the evaluation perspective of the present project. It shows that active perception is becoming an important capability for multimodal models, especially when the system must reason under limited visual information.
+
+These works show that active perception is moving beyond traditional geometry-based view planning. Modern systems increasingly use semantic goals, language instructions, and multimodal reasoning to decide what to observe. This supports the direction of the present project, where a natural language instruction is used to rank and select candidate object views.
+
+\section{Research Gap}
+
+The reviewed literature provides the foundation for this project, but there is still a useful gap for a focused experimental study.
+
+Traditional active vision focuses heavily on geometric tasks such as reconstruction, recognition, and pose estimation~\cite{zeng_view_2020}. Vision-language models such as CLIP provide a way to connect images and text~\cite{radford_learning_2021}, but they are not specifically designed for fine-grained active view selection. Multi-view datasets such as CO3D provide suitable data for studying object viewpoints~\cite{reizenstein_common_2021}, but selecting the best view according to a language instruction remains challenging. Affordance datasets provide rich pixel-level labels, yet they are rarely converted into budgeted language-guided view-selection benchmarks.
+
+Recent work on active perception with vision-language models shows strong potential~\cite{sripada_scene_2025,wang_actiview_2025}, but several questions remain open for a practical pipeline:
+
+\begin{itemize}
+    \item How much of the performance comes from CLIP similarity itself, and how much from an active selection policy?
+    \item Can a lightweight learned model on frozen CLIP features improve final observed-view ranking?
+    \item Can a trained selector improve over a fixed relevance-plus-novelty heuristic?
+    \item Do these conclusions hold both on instruction-labelled object views and on affordance-derived view-selection samples?
+\end{itemize}
+
+Therefore, this thesis investigates a focused pipeline: CLIP scoring, heuristic and trained active selection, learned reranking, and paired ablations on CO3D and UMD+GT. The setting is smaller than full robotic exploration, but it isolates an important part of the problem: deciding which views to observe and which observed view best answers a language instruction under a limited budget.
+
+\section{Summary}
+
+This chapter reviewed the main literature related to language-guided active view selection. Active perception and view planning motivate the need to select informative viewpoints under constraints. Vision-language models, especially CLIP, provide a practical method for comparing image views with text instructions. Multi-view object datasets and affordance annotations provide complementary settings where different views contain different useful information. Recent work on active viewpoint selection and VLM-based scene exploration shows that language-guided active perception is a relevant and growing research direction.
+
+Based on this literature, the project formulates language-guided active view selection as a limited-budget sequential selection and reranking problem. The next chapter presents the methodology and implementation used to evaluate this idea.

@@ -1,0 +1,54 @@
+\chapter{Discussion, Conclusion and Future Work}
+\label{chap:conclusion}
+
+\section{Discussion of Results}
+
+This project investigated language-guided active view selection for multi-view object perception. The main goal was to test whether CLIP-based scoring, a learned MLP reranker, and a trained active view selector can select views that satisfy a natural language instruction under a limited observation budget.
+
+The results provide clear support for language-guided scoring and stronger support for learned reranking. On both CO3D and UMD+GT, CLIP-only methods outperform non-semantic random selection, but they remain close to exhaustive CLIP. This indicates that image--text similarity is useful, yet cosine similarity alone is not a strong enough final ranker for fine-grained viewpoint instructions.
+
+The learned MLP reranker is the central improvement. By adapting frozen CLIP features to instruction-specific ground-truth views, it raises accuracy substantially as soon as multiple views are observed. On shuffled CO3D, random selection with learned reranking reaches 0.478 at budget~3 and 0.520 at budget~5, compared with about 0.31 for random-plus-CLIP. On UMD+GT, the same pattern is even stronger: learned reranking alone reaches 0.632 at budget~3 and 0.696 at budget~5.
+
+The value of the trained selector depends on the dataset. On UMD+GT, over 20 trials, the full pipeline of trained selection plus learned reranking is clearly best at low budgets, reaching \(0.669\pm0.011\) already at budget~2 and \(0.680\pm0.008\) at budget~3. Affordance visibility changes smoothly around the turntable, so the selector can learn which next view is likely to be useful. On CO3D, the full pipeline helps at budget~2, but CLIP relevance-plus-novelty combined with learned reranking can match or exceed it at budget~3. This is consistent with the fact that the selector and reranker share the same training objective and therefore tend to reinforce the same view preferences rather than explore complementary ones.
+
+Ablation studies make these contributions explicit. Every plotted gain is defined as accuracy(method) minus accuracy(random selection + CLIP rerank). Across both datasets, selection-only methods add only a few overall points, while any configuration that includes the learned reranker produces double-digit gains. The practical implication is that, for the current problem formulation, improving final observed-view ranking is more important than refining the CLIP heuristic alone.
+
+\section{Limitations}
+
+This project has several limitations.
+
+First, the selector and reranker are trained with the same binary ``is this view ground truth?'' objective. They therefore learn overlapping signals. A more natural active-perception objective would train the selector to choose the view that most improves the expected final answer given the views already observed.
+
+Second, candidate views are scored using their true image features before they have been ``visited''. This is acceptable for offline ranking from a pre-collected view set, but it is optimistic for embodied robotics, where the next image is unavailable until the camera moves. A realistic system would need to predict the value of a candidate pose from the current observation and camera geometry.
+
+Third, both datasets remain modest in scale. CO3D evaluation uses 50 samples (10 per category). UMD+GT has 345 test samples overall, but some affordances such as contain and wrap-grasp have only eight test samples after filters remove rotationally ambiguous cases. Per-group differences are therefore noisy.
+
+Fourth, ground-truth definitions are proxies. CO3D labels depend on human judgement of instruction satisfaction. UMD+GT labels use relative affordance mask area, which correlates with visibility but is not identical to human notions of the most informative viewpoint.
+
+Fifth, the system selects from pre-collected views and does not control a physical robot. It evaluates the decision component of active perception, not continuous camera motion, calibration, or closed-loop control.
+
+Finally, prompt design is fixed. Because the system depends on text embeddings, alternative phrasings of the same instruction could change both CLIP scores and learned-model behaviour.
+
+\section{Future Work}
+
+There are several directions for future work.
+
+First, the selector should be trained with a sequential decision objective. Instead of predicting whether a view is ground truth in isolation, it could estimate the expected accuracy gain of adding a view given the current observed set and the fixed reranker.
+
+Second, next-view prediction should be made pose-conditioned rather than image-oracle. A model that scores candidate camera poses without access to their images would better match real robotic constraints.
+
+Third, the datasets should be expanded. More CO3D categories, more UMD tools after less aggressive filtering, and graded relevance labels would make evaluation more robust.
+
+Fourth, stronger multimodal backbones could be tested. Larger vision-language models with better spatial grounding may improve both zero-shot CLIP baselines and the quality of frozen features used by the MLP.
+
+Fifth, the system could be extended to a real robot. The active policy would then choose the next camera pose, capture a new image, update the observed set, and stop when the budget or a confidence criterion is reached.
+
+Finally, richer language supervision could be studied, including multiple prompt templates, affordance-specific prompts, and instructions that combine viewpoint and action goals such as ``find a view suitable for grasping the handle''.
+
+\section{Conclusion}
+
+This thesis presented a language-guided active view selection pipeline for multi-view object perception. The system starts from a random view, selects additional views under a limited budget, and reranks the observed views to produce a final prediction. The pipeline includes a CLIP relevance-plus-novelty policy, a learned MLP reranker, and a trained active view selector, evaluated on a shuffled CO3D instruction dataset and an affordance-derived UMD+GT dataset.
+
+The main conclusion is that language-guided scoring is useful, but a lightweight learned reranker on frozen CLIP features is far more effective than CLIP cosine similarity alone. On UMD+GT, combining the trained selector with the learned reranker further improves low-budget performance, reaching about 0.67--0.68 accuracy by budgets 2--3 against a random-plus-CLIP baseline near 0.46, with stable variance across 20 trials. On CO3D, learned reranking remains the dominant contributor, while novelty-aware selection can complement it as well as or better than a selector trained with the same GT-view objective.
+
+Overall, this project provides a practical experimental foundation for language-guided active perception. With sequential selector training, pose-conditioned next-view prediction, larger datasets, and embodied evaluation, active view selection can become a stronger component of future robotic vision-language systems.
