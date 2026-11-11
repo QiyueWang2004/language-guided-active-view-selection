@@ -30,11 +30,12 @@ Plots and compact metrics live under [`results/`](results/):
 ```
 active_view_selection.py   # train + evaluate main pipeline
 ablation_study.py          # paired ablations vs random+CLIP baseline
+build_subset.py            # build / expand CO3D category subsets
 build_umd_annotations.py   # UMD mask → GT view labels
-build_*_subset.py          # CO3D category subset builders
+merge_annotations.py       # merge per-category annotation JSONs
 shuffle_dataset.py         # shuffle candidate view order
 evaluate_dataset.py        # annotation QA
-plot_comparison.py / export_*.py
+export_results.py          # CSV / top-k plot export from output dirs
 annotations/               # CO3D label JSONs (paths may need remapping)
 results/                   # plots, compact metrics, .pt checkpoints
 requirements.txt
@@ -50,20 +51,30 @@ pip install -r requirements.txt
 
 Needs PyTorch with CUDA recommended. CLIP weights download via `open_clip` on first run (`ViT-B-32` / `openai`).
 
-## Data
+## Data prep
 
-### CO3D annotations
+### CO3D subsets
 
-[`annotations/annotations_all_5sets_shuffled.json`](annotations/annotations_all_5sets_shuffled.json) lists samples with:
+```bash
+python build_subset.py --category cup --objects 10
+python build_subset.py --category teddybear --expand --objects 20
 
-- `instruction`, `views` (5 paths), `gt_views`  
-- Absolute paths like `E:/CO3D-subset-cup/cup/...` — **rewrite** these to your local image root before training  
+python merge_annotations.py \
+  --inputs E:/CO3D-subset-cup/annotations.json E:/CO3D-subset-book/annotations.json \
+           E:/CO3D-subset-teddybear/annotations.json E:/CO3D-subset-handbag/annotations.json \
+           E:/CO3D-subset-remote/annotations.json \
+  --out annotations/annotations_all_5sets.json
+
+python shuffle_dataset.py \
+  --labels_json annotations/annotations_all_5sets.json \
+  --out_json annotations/annotations_all_5sets_shuffled.json
+```
+
+[`annotations/annotations_all_5sets_shuffled.json`](annotations/annotations_all_5sets_shuffled.json) uses absolute paths like `E:/CO3D-subset-cup/cup/...` — rewrite these to your local image root before training.
 
 Object split by ID number (default in code): eval `1–10`, val `11–15`, train `16–30`.
 
 ### UMD+GT
-
-Build labels from UMD affordance masks with:
 
 ```bash
 python build_umd_annotations.py
@@ -72,8 +83,6 @@ python build_umd_annotations.py
 (Adjust paths inside the script for your UMD subset location.)
 
 ## Run evaluation / training
-
-Example — CO3D shuffled, budget sweep, train selector + reranker:
 
 ```bash
 python active_view_selection.py \
@@ -100,6 +109,14 @@ Ablations:
 python ablation_study.py \
   --labels_json annotations/annotations_all_5sets_shuffled.json \
   --out_dir outputs_ablation
+```
+
+Export CSVs / plots from an output directory:
+
+```bash
+python export_results.py summary --out_dir results/umd
+python export_results.py methods --out_dir results/co3d_shuffled
+python export_results.py plot-topk --out_dir results/umd
 ```
 
 ## Methods compared

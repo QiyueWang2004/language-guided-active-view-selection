@@ -39,12 +39,12 @@ def main() -> None:
     parser.add_argument(
         "--labels_json",
         type=str,
-        default=r"E:\CO3D-combined\annotations_all_5sets.json",
+        default="annotations/annotations_all_5sets.json",
     )
     parser.add_argument(
         "--out_json",
         type=str,
-        default=r"E:\CO3D-combined\annotations_all_5sets_shuffled.json",
+        default="annotations/annotations_all_5sets_shuffled.json",
     )
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument(
